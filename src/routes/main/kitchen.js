@@ -1,17 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const postData = require('./../../data/post_data');
+const postList = require('../../../resource/post_list.json');
 
 router.get("/post/:post_index", function (req, res, next) {
-    postData.getPost(req.params.post_index, function (result) {
-        return result;
-    });
+    return postList[index];
 });
 
 router.get("/recent_post", function (req, res, next) {
-    postData.getRecentPost(req.params.post_index, function (result) {
-        return result;
-    });
+    return postList[postList.length - 1];
 });
 
 module.exports = router;
