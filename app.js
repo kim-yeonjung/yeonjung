@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true})); // body parser
 app.use(bodyParser.json());
 app.locals.newrelic = newRelic; // NewRelic
-//app.use(favicon(__dirname + "/public/favicon/favicon-32x32.png")); // Favicon From http://www.favicon-generator.org/
+app.use(favicon(__dirname + "/public/favicon/favicon-32x32.png")); // Favicon From http://www.favicon-generator.org/
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
