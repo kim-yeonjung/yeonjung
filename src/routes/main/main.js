@@ -9,7 +9,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/portfolio", function (req, res, next) {
-    res.render('index', {data: ""});
+    res.render('portfolio', {data: ""});
 });
 
 module.exports = router;

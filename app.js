@@ -27,8 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 /** ================== ROUTER ================== **/
-app.use("/", require("./routes/main/main.js"));
-app.use("/api/data/read", require("./routes/api/kakao"));
+app.use("/", require("./src/routes/main/main.js"));
+app.use("/api/data/read", require("./src/routes/api/kakao"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
