@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const postList = require('../../../resource/post_list.json');
+const title = "YeonJung Kim - 쭝식당";
 
 router.get("/post/:post_index", function (req, res, next) {
-    return res.status(200).json(postList[req.params.post_index]);
+    res.render('basic_layout', {title: title, page: 'food_post', data: postList});
 });
 
 router.get("/recent_post", function (req, res, next) {
