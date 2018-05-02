@@ -32,7 +32,7 @@ hr {
     margin-top: 38px;
 }
 
-.container {
+.food-container {
     margin: 0 auto;
     width: 640px;
     height: 400px;
@@ -41,7 +41,7 @@ hr {
     position: relative;
 }
 
-.up-votes {
+.food-up-votes {
     position: absolute;
     left: 30px;
     bottom: 18px;
@@ -54,13 +54,7 @@ hr {
     line-height: 25px;
 }
 
-img.avatars {
-    position: absolute;
-    left: 101px;
-    bottom: 22px;
-}
-
-.details {
+.food-details {
     position: absolute;
     right: 0px;
     width: 210px;
@@ -70,36 +64,8 @@ img.avatars {
     border-bottom-right-radius: 4px;
 }
 
-.download, .recipe, .votes {
+.food-recipe {
     padding: 0 18px;
-}
-
-.download {
-    background: #80C59E;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 19px;
-    color: #348c6e;
-    height: 100px;
-    padding-top: 12px;
-}
-
-.download span {
-    display: block;
-    padding-left: 47px;
-}
-
-.download:before {
-    content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon-document.png");
-    position: relative;
-    top: 21px;
-    padding-right: 15px;
-}
-
-.recipe {
-    padding-top: 40px;
-    color: #4a5a67;
 }
 
 .recipe .name1 {
@@ -121,36 +87,10 @@ img.avatars {
     padding-top: 20px;
 }
 
-.recipe .prep-time:before {
+.food-recipe {
     content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon-time.png");
     position: relative;
     top: 4px;
     padding-right: 5px;
-}
-
-.recipe .calories {
     padding-top: 5px;
-}
-
-.recipe .calories:before {
-    content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon-calories.png");
-    position: relative;
-    top: 4px;
-    padding-right: 5px;
-}
-
-.votes {
-    color: #ec6744;
-    padding-top: 23px;
-}
-
-.votes .rating {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.votes img {
-    position: absolute;
-    bottom: 29px;
-    right: 39px;
 }

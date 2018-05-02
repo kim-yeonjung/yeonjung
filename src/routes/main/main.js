@@ -15,7 +15,13 @@ router.get("/portfolio", function (req, res, next) {
 
 router.get("/post/:post_id", function (req, res, next) {
     //req.params.post_id
-    res.render('food_card');
+    postData.getPost(req.params.post_index, function (result, error) {
+        if (error)
+            createError(404);
+        return res.status(200).json({
+            count: postData.getRecent()
+        });
+    });
 });
 
 router.get("/post_count", function (req, res, next) {
