@@ -1,6 +1,4 @@
 const newRelic = require("newrelic");
-const parseServer = require("parse-server").ParseServer;
-const parseDashboard = require("parse-dashboard");
 const express = require("express");
 const compression = require("compression");
 const favicon = require("serve-favicon");
@@ -10,45 +8,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require("body-parser");
-
-/** ================== SERVER CONFIG ================== **/
-const DB_URL = process.env.MONGODB_URI;
-const SERVER_URL = process.env.SERVER_URL;
-const APP_NAME = process.env.APP_NAME;
-const APP_ID = process.env.APP_ID;
-const FILE_KEY = process.env.FILE_KEY;
-const MASTER_KEY = process.env.MASTER_KEY;
-const ALLOW_INSECURE_HTTP = process.env.ALLOW_INSECURE_HTTP;
-
-/** ================== PARSE SERVER & DASHBOARD ================== **/
-const api = new parseServer({
-    databaseURI: DB_URL,
-    cloud: process.cwd() + "/cloud/main.js",
-    appId: APP_ID,
-    masterKey: MASTER_KEY,
-    fileKey: FILE_KEY,
-    serverURL: SERVER_URL
-});
-
-// Parse Platform Dashboard
-const dashboard = new parseDashboard({
-    "apps": [
-        {
-            "serverURL": SERVER_URL,
-            "appId": APP_ID,
-            "masterKey": MASTER_KEY,
-            "appName": APP_NAME
-        }
-    ],
-    "users": [
-        {
-            "apps": [{"appId": APP_ID}],
-            "user": process.env.DASHBOARD_ID,
-            "pass": process.env.DASHBOARD_PW
-        }
-    ],
-    "trustProxy": 1
-}, ALLOW_INSECURE_HTTP);
 
 /** ================== EXPRESS CONFIG ================== **/
 const app = express();
@@ -66,10 +25,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-/** ================== PARSE ROUTER ================== **/
-app.use("/parse", api);
-app.use("/dashboard", dashboard);
 
 /** ================== ROUTER ================== **/
 app.use("/", require("./routes/main/main.js"));
