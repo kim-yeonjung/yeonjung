@@ -3,62 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/ms-i  con-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-    <!-- shortcut icon -->
-    <link rel="apple-touch-icon" type="image/png" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
-    <link rel="manifest" href="/favicon/manifest.webmanifest" type="application/manifest+json">
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="/css/style.css">
-
     <title>Trend Reader : 전문가들의 관심사 엿보기</title>
 </head>
 <body>
-<% for(var index = 0; index < data.length; index++) { %>
-<% if(index % 3 == 0) { %>
-<div class="wrap">
-    <% } %>
-    <a href="<%= data[index].post_url %>">
-        <div class="tile">
-            <img src='<%- data[index].profile_url %>'/>
-            <div class="text">
-                <h1><%- data[index].post_title %></h1>
-                <h2 class="animate-text"><%- data[index].blog_name %></h2>
-                <p class="animate-text"><%- data[index].post_content %></p>
-            </div>
-        </div>
-    </a>
-    <% if(index % 3 == 2) { %>
-</div>
-<% } %>
-<% } %>
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous" content-type="text/javascript" charset="UTF-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous" content-type="text/javascript" charset="UTF-8"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous" content-type="text/javascript" charset="UTF-8"></script>
-
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-<script src="/js/firebase.js" charset="UTF-8" content-type="text/javascript"></script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44811735-7"></script>
-<script src="/js/google_analytics.js" charset="UTF-8" content-type="text/javascript"></script>
+Hello World!
 </body>
 </html>
