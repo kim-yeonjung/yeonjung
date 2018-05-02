@@ -24,7 +24,7 @@ router.get("/post/:post_id", function (req, res, next) {
     });
 });
 
-router.get("/post_count", function (req, res, next) {
+router.get("/recent_post", function (req, res, next) {
     return res.status(200).json({
         count: postData.getRecent()
     });
