@@ -13,13 +13,12 @@ const bodyParser = require("body-parser");
 
 /** ================== SERVER CONFIG ================== **/
 const DB_URL = process.env.MONGODB_URI;
-const PORT = process.env.PORT;
 const SERVER_URL = process.env.SERVER_URL;
 const APP_NAME = process.env.APP_NAME;
 const APP_ID = process.env.APP_ID;
 const FILE_KEY = process.env.FILE_KEY;
 const MASTER_KEY = process.env.MASTER_KEY;
-const ALLOW_INSECURE_HTTP = true;
+const ALLOW_INSECURE_HTTP = process.env.ALLOW_INSECURE_HTTP;
 
 /** ================== PARSE SERVER & DASHBOARD ================== **/
 const api = new parseServer({
@@ -30,6 +29,7 @@ const api = new parseServer({
     fileKey: FILE_KEY,
     serverURL: SERVER_URL
 });
+
 // Parse Platform Dashboard
 const dashboard = new parseDashboard({
     "apps": [
@@ -67,9 +67,11 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/** ================== ROUTER ================== **/
+/** ================== PARSE ROUTER ================== **/
 app.use("/parse", api);
 app.use("/dashboard", dashboard);
+
+/** ================== ROUTER ================== **/
 app.use("/", require("./routes/main/main.js"));
 app.use("/api/data/read", require("./routes/api/kakao"));
 
