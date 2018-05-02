@@ -7,8 +7,8 @@ router.get("/", function (req, res, next) {
     res.render('basic_layout', {title: title, page: 'food_post', data: postList});
 });
 
-router.get("/post/:post_index", function (req, res, next) {
-    res.render('basic_layout', {title: title, page: 'food_post', data: postList[req.params.post_index]});
+router.post("/food_view", function (req, res, next) {
+    res.render('basic_layout', {title: title, page: 'food_post', data: postList[req.body.index]});
 });
 
 router.get("/recent_post", function (req, res, next) {
