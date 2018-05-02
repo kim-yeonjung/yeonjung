@@ -8,7 +8,10 @@ router.get("/", function (req, res, next) {
 });
 
 router.post("/food_view", function (req, res, next) {
-    res.render('basic_layout', {title: title, page: 'food_view', data: postList[req.body.index]});
+    res.render('food_view', {
+        title: title + " " + req.body.index + "차 오픈",
+        data: postList[req.body.index]
+    });
 });
 
 router.get("/recent_post", function (req, res, next) {
