@@ -13,7 +13,7 @@ router.get("/portfolio", function (req, res, next) {
     res.render('portfolio', {data: ""});
 });
 
-router.get("/post:post_id", function (req, res, next) {
+router.get("/post/:post_id", function (req, res, next) {
     //req.params.post_id
     res.render('food_card');
 });
