@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const postList = require('../../../resource/post_list.json');
+const responseGenerator = require('./../../service/kakao/response_generator');
 
 // 최초 접근
 router.get("/keyboard", (req, res) => {
@@ -34,27 +35,20 @@ router.post("/message", (req, res) => {
 
     let type = req.body.type;
     let content = req.body.content;
-    let response = {};
+    let response;
 
     switch (content) {
         case "최근 오픈 기록":
-            response.message.text = "최근 오픈 입니다.";
-            response.message.message_button = {
-                "label": postList[0].index + "번째 오픈",
-                "url": postList[0].url
-            };
-            break;
-        case "모든 오픈 기록":
-            response.message.text = "준비중 입니다.";
+            responseGenerator.photoType(postList[0].index + '차 오픈', postList[0].post[0].img_src, postList[0].description, postList[0].url);
             break;
         case "홈페이지":
-            response.message.text = "https://yeonjung.herokuapp.com/kitchen/";
+            responseGenerator.buttonType('쭝식당 홈페이지 입니다.', '바로가기', 'https://yeonjung.herokuapp.com/kitchen/');
             break;
         case "계좌번호":
-            response.message.text = "카카오뱅크 3333-04-3410553 김연중";
+            responseGenerator.textType('카카오뱅크 3333-04-3410553 김연중');
             break;
         default:
-            response.message.text = "잘못된 요청 입니다.";
+            responseGenerator.textType('잘못된 요청 입니다.');
     }
     return res.status(200).json(response);
 });
