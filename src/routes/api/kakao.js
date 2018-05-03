@@ -45,7 +45,7 @@ router.post("/message", (req, res) => {
         case "모든 오픈 기록":
             let openList = [];
             for (let index = 0; index < postList.length; index++) {
-                openList.push((postList.length - (index + 1)) + ' 차 오픈 ' + postList[index].description);
+                openList.push((postList.length - index) + ' 차 오픈 ' + postList[index].description);
             }
             response = responseGenerator.textWithSubMenuType('모든 오픈 내역 입니다.', openList);
             break;
