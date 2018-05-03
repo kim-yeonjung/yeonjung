@@ -26,7 +26,12 @@ router.get("/chat_room/:user_key", (req, res) => {
 });
 
 // 메시지
-router.get("/message", (req, res) => {
+router.post("/message", (req, res) => {
+    res.set({
+        'content-type': 'application/json',
+        encoding: 'UTF-8'
+    });
+    
     let type = req.param('type');
     let content = req.param('content');
     let response = {};
