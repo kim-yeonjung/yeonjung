@@ -77,10 +77,10 @@
             <div class="fh5co-entry padding">
                 <div>
                     <% for(var index = 0; index < data.post.length; index++) { %>
-                    <img src="<%= data.post[index].img_src %>"
-                         alt="Header Image">
+                    <img style="max-width:800px" src="<%= data.post[index].img_src %>"
+                         alt="Food Image">
 
-                    <p><%- data.post[index].text %></p>
+                    <p style="text-align: center"><%- data.post[index].text %></p>
                     <% } %>
                 </div>
             </div>
