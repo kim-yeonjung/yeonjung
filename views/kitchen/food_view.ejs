@@ -90,7 +90,7 @@
                     </div>
                     <% } %>
                     <img src="">
-                    <p><%- data.post[index].text %></p >
+                    <p><%- data.post[index].text %></p>
                 </div>
             </div>
 
@@ -108,7 +108,7 @@
                 <div class="display-tc">
                     <div>
                         <span>Previous Post</span>
-                        <h2>How to be an affective web developer</h2>
+                        <h2><%- index - 1 + "차 오픈" %></h2>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 <div class="display-tc">
                     <div>
                         <span>Next Post</span>
-                        <h2>How to be an affective web developer</h2>
+                        <h2><%- index + 1 + "차 오픈" %></h2>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
 
 <footer>
     <div>
-        &copy; <%- new Date().getFullYear() %> YeonJung Kim Rights Reserved. Designed by <a
+        &copy; <%- new Date().getFullYear() %> YeonJung Kim All Rights Reserved. Designed by <a
                 href="http://freehtml5.co"
                 target="_blank">FreeHTML5.co</a> Demo
         Images: <a href="http://unsplash.com" target="_blank">Unsplash</a>
