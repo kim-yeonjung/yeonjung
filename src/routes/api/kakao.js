@@ -31,9 +31,9 @@ router.post("/message", (req, res) => {
         'content-type': 'application/json',
         encoding: 'UTF-8'
     });
-    
-    let type = req.param('type');
-    let content = req.param('content');
+
+    let type = req.body.type;
+    let content = req.body.content;
     let response = {};
 
     switch (content) {
