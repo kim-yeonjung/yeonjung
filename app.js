@@ -9,6 +9,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require("body-parser");
 
+app.locals.newrelic = newRelic; // NewRelic
+
 /** ================== EXPRESS CONFIG ================== **/
 const app = express();
 app.use(helmet()); // user helmet for safety
@@ -18,7 +20,6 @@ app.set('views', path.join(__dirname, 'views')); // view engine setup
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true})); // body parser
 app.use(bodyParser.json());
-app.locals.newrelic = newRelic; // NewRelic
 app.use(favicon(__dirname + "/public/favicon/favicon-32x32.png")); // Favicon From http://www.favicon-generator.org/
 app.use(logger('dev'));
 app.use(express.json());
