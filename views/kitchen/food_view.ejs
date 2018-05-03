@@ -76,7 +76,7 @@
         <div class="fh5co-post">
             <div class="fh5co-entry padding">
                 <div>
-                    <% for(var index = 0; index < data.post.length; index++) { %>
+                    <% for(let index = 0; index < data.post.length; index++) { %>
                     <img style="max-width:800px;display: block; margin-left: auto; margin-right: auto; width: 50%;"
                          src="<%= data.post[index].img_src %>"
                          alt="Food Image">
@@ -93,7 +93,7 @@
     <div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url(images/project-4.jpg)">
         <div class="overlay"></div>
         <% if(index !== 0) { %>
-        <a class="copy" href="/kitchen/food_view?index=<%= (index - 1) %>">
+        <a class="copy" href="/kitchen/food_view?index=<%- (parseInt(index) - 1) %>">
             <div class="display-t">
                 <div class="display-tc">
                     <div>
@@ -108,7 +108,7 @@
     <div class="fh5co-cover next fh5co-cover-sm" style="background-image: url(images/project-5.jpg)">
         <div class="overlay"></div>
         <% if(index !== recent_index) { %>
-        <a class="copy" href="/kitchen/food_view?index=<%= (index + 1) %>">
+        <a class="copy" href="/kitchen/food_view?index=<%- (parseInt(index) + 1) %>">
             <div class="display-t">
                 <div class="display-tc">
                     <div>
