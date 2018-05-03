@@ -8,9 +8,10 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/food_view", function (req, res, next) {
+    let index = req.param('index');
     res.render('kitchen/food_view', {
-        title: title + " " + req.body.index + "차 오픈",
-        data: postList[req.body.index]
+        title: title + " " + index + "차 오픈",
+        data: postList[index]
     });
 });
 
