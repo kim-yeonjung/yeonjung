@@ -12,7 +12,8 @@ router.get("/food_view", function (req, res, next) {
     res.render('kitchen/food_view', {
         title: title + " " + index + "차 오픈",
         index: index,
-        data: postList[index]
+        data: postList[index],
+        recent_index: postList.length
     });
 });
 
