@@ -31,29 +31,25 @@ router.get("/message", (req, res) => {
     let content = req.param('content');
     let response = {};
 
-    if (type === "text") {
-        switch (content) {
-            case "최근 오픈 기록":
-                response.message.text = "최근 오픈 입니다.";
-                response.message.message_button = {
-                    "label": postList[0].index + "번째 오픈",
-                    "url": postList[0].url
-                };
-                break;
-            case "모든 오픈 기록":
-                response.message.text = "준비중 입니다.";
-                break;
-            case "홈페이지":
-                response.message.text = "https://yeonjung.herokuapp.com/kitchen/";
-                break;
-            case "계좌번호":
-                response.message.text = "카카오뱅크 3333-04-3410553 김연중";
-                break;
-        }
-    } else {
-        switch (content) {
-
-        }
+    switch (content) {
+        case "최근 오픈 기록":
+            response.message.text = "최근 오픈 입니다.";
+            response.message.message_button = {
+                "label": postList[0].index + "번째 오픈",
+                "url": postList[0].url
+            };
+            break;
+        case "모든 오픈 기록":
+            response.message.text = "준비중 입니다.";
+            break;
+        case "홈페이지":
+            response.message.text = "https://yeonjung.herokuapp.com/kitchen/";
+            break;
+        case "계좌번호":
+            response.message.text = "카카오뱅크 3333-04-3410553 김연중";
+            break;
+        default:
+            response.message.text = "잘못된 요청 입니다.";
     }
     return res.status(200).json(response);
 });
