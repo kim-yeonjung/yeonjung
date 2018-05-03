@@ -51,7 +51,7 @@ router.post("/message", (req, res) => {
             break;
         default:
             if (content.includes('차 오픈')) {
-                let index = parseInt(content.split(" ")[0]) - 1;
+                let index = postList.length - parseInt(content.split(" ")[0]) + 1;
                 response = responseGenerator.photoType(postList[index].description, postList[index].post[0].img_src, (postList[index].index + 1) + '차 오픈', postList[index].url);
             } else {
                 response = responseGenerator.textType('잘못된 요청 입니다.');
