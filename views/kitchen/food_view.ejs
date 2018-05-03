@@ -77,7 +77,8 @@
             <div class="fh5co-entry padding">
                 <div>
                     <% for(var index = 0; index < data.post.length; index++) { %>
-                    <img style="max-width:800px" src="<%= data.post[index].img_src %>"
+                    <img style="max-width:800px;display: block; margin-left: auto; margin-right: auto; width: 50%;"
+                         src="<%= data.post[index].img_src %>"
                          alt="Food Image">
 
                     <p style="text-align: center"><%- data.post[index].text %></p>
