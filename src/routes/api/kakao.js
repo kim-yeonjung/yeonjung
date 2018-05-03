@@ -42,8 +42,20 @@ router.post("/message", (req, res) => {
         case "계좌번호":
             response = responseGenerator.textType('카카오뱅크 3333-04-3410553 김연중');
             break;
+        case "모든 오픈 기록":
+            let openList = [];
+            for (let index = 0; index < postList.length; index++) {
+                openList.push((index + 1) + ' 차 오픈\n' + postList[index].description);
+            }
+            response = responseGenerator.textWithSubMenuType('모든 오픈 내역 입니다.', openList);
+            break;
         default:
-            response = responseGenerator.textType('잘못된 요청 입니다.');
+            if (content.contains('차 오픈')) {
+                let index = parseInt(content.split(' ')) - 1;
+                response = responseGenerator.photoType(postList[index].description, postList[index].post[0].img_src, (postList[index].index + 1) + '차 오픈', postList[index].url);
+            } else {
+                response = responseGenerator.textType('잘못된 요청 입니다.');
+            }
     }
     return res.status(200).json(response);
 });

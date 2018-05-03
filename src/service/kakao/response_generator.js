@@ -1,6 +1,6 @@
 let message = {};
 
-message.rootMenu = ['최근 오픈 기록', '모든 오픈 기록', '계좌번호'];
+message.rootMenu = ['최근 오픈 기록', '모든 오픈 기록', '계좌번호', '홈페이지'];
 
 message.textType = (text) => {
     return {
