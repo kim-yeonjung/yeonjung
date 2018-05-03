@@ -8,9 +8,9 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/food_view", function (req, res, next) {
-    let index = req.param('index');
+    let index = parseInt(req.param('index'));
     res.render('kitchen/food_view', {
-        title: title + " " + index + "차 오픈",
+        title: title + " " + (index + 1) + "차 오픈",
         index: index,
         data: postList[index],
         recent_index: postList.length
