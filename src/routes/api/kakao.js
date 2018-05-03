@@ -7,12 +7,7 @@ const responseGenerator = require('./../../service/kakao/response_generator');
 router.get("/keyboard", (req, res) => {
     return res.status(200).json({
         "type": "buttons",
-        "buttons": [
-            "최근 오픈 기록",
-            "모든 오픈 기록",
-            "홈페이지",
-            "계좌번호"
-        ]
+        "buttons": responseGenerator.rootMenu
     });
 });
 
