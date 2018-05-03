@@ -39,16 +39,16 @@ router.post("/message", (req, res) => {
 
     switch (content) {
         case "최근 오픈 기록":
-            responseGenerator.photoType(postList[0].index + '차 오픈', postList[0].post[0].img_src, postList[0].description, postList[0].url);
+            response = responseGenerator.photoType(postList[0].index + '차 오픈', postList[0].post[0].img_src, postList[0].description, postList[0].url);
             break;
         case "홈페이지":
-            responseGenerator.buttonType('쭝식당 홈페이지 입니다.', '바로가기', 'https://yeonjung.herokuapp.com/kitchen/');
+            response = responseGenerator.buttonType('쭝식당 홈페이지 입니다.', '바로가기', 'https://yeonjung.herokuapp.com/kitchen/');
             break;
         case "계좌번호":
-            responseGenerator.textType('카카오뱅크 3333-04-3410553 김연중');
+            response = responseGenerator.textType('카카오뱅크 3333-04-3410553 김연중');
             break;
         default:
-            responseGenerator.textType('잘못된 요청 입니다.');
+            response = responseGenerator.textType('잘못된 요청 입니다.');
     }
     return res.status(200).json(response);
 });
