@@ -50,7 +50,7 @@ message.buttonType = (text, label, buttonUrl) => {
     };
 };
 
-message.textWithSubMenuType = (text, type, subMenu) => {
+message.textWithSubMenuType = (text, subMenu) => {
     return {
         "message": {
             "text": text,
