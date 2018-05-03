@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 /** ================== ROUTER ================== **/
 app.use("/", require("./src/routes/main/main.js"));
 app.use("/kitchen", require("./src/routes/main/kitchen.js"));
-app.use("/api/kakao", require("./src/routes/api/kakao"));
+app.use("/api/kitchen/kakao", require("./src/routes/api/kakao"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
