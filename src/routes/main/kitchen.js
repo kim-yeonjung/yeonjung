@@ -11,7 +11,7 @@ router.get("/food_view", function (req, res, next) {
     let index = parseInt(req.param('index'));
     res.render('kitchen/food_view', {
         title: title + " " + (index + 1) + "차 오픈",
-        index: index,
+        index: postList.length - index,
         data: postList[index],
         recent_index: postList.length
     });
