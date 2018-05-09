@@ -6,12 +6,12 @@
         </div>
         <div class="card-body">
             <div class="author">
-                <a href="#">
+                <a href="<%= data[index].link %>">
                     <img class="avatar border-gray" src="<%= data[index].cover %>" alt="book cover">
                     <h5 class="title"> <%= data[index].title %></h5>
                 </a>
                 <p class="description">
-
+                    ISBN : <%= data[index].isbn %>
                 </p>
             </div>
             <hr>
