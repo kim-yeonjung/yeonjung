@@ -9,7 +9,7 @@ router.get("/", function (req, res) {
     res.render('basic_layout', {
         title: title,
         page: 'book/book_list',
-        data: req.param('category').includes("it") ? itBookList : elseBookList
+        data: req.param('category').includes("it") ? itBookList : elseBookList, active_index: 0
     });
 });
 

@@ -52,7 +52,7 @@
 
 <body class="">
 <div class="wrapper ">
-    <div class="sidebar" data-color="orange">
+    <div class="sidebar" data-color="blue">
         <!--
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
@@ -66,43 +66,43 @@
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="active">
+                <li <%= active_index === 0 ? ' class=active' : '' %>>
                     <a href="/">
                         <i class="now-ui-icons design_app"></i>
                         <p>HOME</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 1 ? ' class=active' : '' %>>
                     <a href="/portfolio">
                         <i class="now-ui-icons users_circle-08"></i>
                         <p>PORTFOLIO</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 2 ? ' class=active' : '' %>>
                     <a href="./blog">
                         <i class="now-ui-icons education_atom"></i>
                         <p>BLOG</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 3 ? ' class=active' : '' %>>
                     <a href="/kitchen">
                         <i class="now-ui-icons location_map-big"></i>
                         <p>KITCHEN</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 4 ? ' class=active' : '' %>>
                     <a href="/movie">
                         <i class="now-ui-icons media-1_button-play"></i>
                         <p>MOVIE</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 5 ? ' class=active' : '' %>>
                     <a href="/book?category=it">
                         <i class="now-ui-icons education_agenda-bookmark"></i>
                         <p>BOOK IT</p>
                     </a>
                 </li>
-                <li>
+                <li <%= active_index === 6 ? ' class=active' : '' %>>
                     <a href="/book?category=else">
                         <i class="now-ui-icons education_agenda-bookmark"></i>
                         <p>BOOK NON IT</p>

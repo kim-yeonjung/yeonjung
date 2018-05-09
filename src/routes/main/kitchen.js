@@ -4,7 +4,7 @@ const postList = require('../../../resource/kitchen/kitchen_list.json');
 const title = "YeonJung Kim - 쭝식당";
 
 router.get("/", function (req, res) {
-    res.render('basic_layout', {title: title, page: 'kitchen/food_list', data: postList});
+    res.render('basic_layout', {title: title, page: 'kitchen/food_list', data: postList, active_index: 3});
 });
 
 router.get("/food_view", function (req, res) {
@@ -12,13 +12,10 @@ router.get("/food_view", function (req, res) {
     res.render('kitchen/food_view', {
         title: title + " " + (index + 1) + "차 오픈",
         index: index,
-        data: postList[postList.length - (index+1)],
+        data: postList[postList.length - (index + 1)],
         recent_index: postList.length
+        , active_index: 3
     });
-});
-
-router.get("/recent_post", function (req, res) {
-    return res.status(200).json(postList[postList.length - 1]);
 });
 
 module.exports = router;
