@@ -5,7 +5,7 @@ const router = express.Router();
 //next(createError(404));
 
 router.get("/", function (req, res) {
-    res.render('basic_layout', {title: 'YeonJung Kim', page: 'blank', active_index: 0});
+    res.render('basic_layout', {title: 'YeonJung Kim', page: 'index', active_index: 0});
 });
 
 router.get("/portfolio", function (req, res) {
