@@ -1,7 +1,6 @@
 [
   {
     "title": "프로그래밍 면접 이렇게 준비한다 3판",
-    "cover": "http://211.185.62.15/kolis/2014/KMO201428406.jpg",
     "summary": "IT 분야 취업과 프로그래밍 면접을 준비하는 이들을 위한 안내서",
     "recommend": "5",
     "isbn": "9788968480843",
@@ -9,7 +8,6 @@
   },
   {
     "title": "프로그래밍 언어론",
-    "cover": "http://211.185.62.15/kolis/2004/KMO200439601.jpg",
     "summary": "introduces students to the main constructs of contemporary programming languages",
     "recommend": "5",
     "isbn": "9780273769101",
@@ -17,7 +15,6 @@
   },
   {
     "title": "나는 프로그래머다. 2",
-    "cover": "http://211.185.62.15/kolis/2016/KMO201641688.jpg",
     "summary": "이 책은 <나는 프로그래머다> 12회부터 23회 방송 내용",
     "recommend": "4",
     "isbn": "9788968482908",
@@ -25,7 +22,6 @@
   },
   {
     "title": "나는 프로그래머다. 1",
-    "cover": "http://211.185.62.15/kolis/2016/KMO201609248.jpg",
     "summary": "이 책은 <나는 프로그래머다> 1회부터 11회 방송 내용",
     "recommend": "4",
     "isbn": "9788968482281",
@@ -33,7 +29,6 @@
   },
   {
     "title": "읽기 좋은 코드가 좋은 코드다",
-    "cover": "http://211.185.62.15/kolis/2012/KMO201222725.jpg",
     "summary": "이 책은 매우 읽기 편한 코드를 작성하는 방법을 설명한다.",
     "recommend": "5",
     "isbn": "9788979149142",
@@ -41,7 +36,6 @@
   },
   {
     "title": "누워서 읽는 알고리즘",
-    "cover": "http://211.185.62.15/kolis/2016/KMO201609249.jpg",
     "summary": "알고리즘을 둘러싼 33가지 재미있는 이야기",
     "recommend": "3",
     "isbn": "9788968482274",
@@ -49,7 +43,6 @@
   },
   {
     "title": "뉴욕의 프로그래머",
-    "cover": "http://t0.gstatic.com/images?q=tbn:ANd9GcQ_XFMNfWiuUPzAJ49ZvTw6Nt2RZuS5qWXvcWfq-mABlNRs0pz-",
     "summary": "세계금융시장의 심장, 뉴욕 월스트리트 금융회사에서 근무하는 프로그래머들의 이야기를 소설 형식으로 다루고 있다.",
     "recommend": "5",
     "isbn": "9788979145120",
@@ -57,8 +50,7 @@
   },
   {
     "title": "누워서 읽는 퍼즐북",
-    "cover": "http://t3.gstatic.com/images?q=tbn:ANd9GcR-t1h9B46khQYjEiTTMLdFZsn8_6QvIDChzxkAnkNlPHMBFQVM",
-    "summary": "이 책은 에세이 형식의 퍼즐북 이다.",
+     "summary": "이 책은 에세이 형식의 퍼즐북 이다.",
     "recommend": "3",
     "isbn": "9788979147193",
     "link": "https://books.google.co.kr/books/about/%EB%88%84%EC%9B%8C%EC%84%9C_%EC%9D%BD%EB%8A%94_%ED%8D%BC%EC%A6%90%EB%B6%81.html?id=ymOwAwAAQBAJ&source=kp_cover&redir_esc=y"

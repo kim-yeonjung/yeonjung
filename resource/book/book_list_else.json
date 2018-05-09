@@ -1,7 +1,6 @@
 [
   {
     "title": "나미야 잡화점의 기적",
-    "cover": "./",
     "summary": "히가시노 게이고의 차기 대표작으로 손꼽힐『나미야 잡화점의 기적』",
     "recommend": "4",
     "isbn": "9788972756194",
@@ -9,7 +8,6 @@
   },
   {
     "title": "용의자 X의 헌신",
-    "cover": "http://211.185.62.15/kolis/2007/KMO20070031301.jpg",
     "summary": "《용의자 X의 헌신》은 히가시노 게이고의 추리 소설이다. ",
     "recommend": "5",
     "isbn": "8972753696",
@@ -17,7 +15,6 @@
   },
   {
     "title": "트와일라잇",
-    "cover": "http://211.185.62.15/kolis/2008/KMO200833209.jpg",
     "summary": "[트와일라잇] 시리즈 1",
     "recommend": "4",
     "isbn": "9788937832208",
@@ -25,7 +22,6 @@
   },
   {
     "title": "뉴문",
-    "cover": "http://t3.gstatic.com/images?q=tbn:ANd9GcQXiDN1WXXtHtGYRBOlZX-Go_hBE9zXkZRBonTePqu1ieS2BYiQ",
     "summary": "[트와일라잇] 시리즈 2",
     "recommend": "4",
     "isbn": "9788937832628",
@@ -33,7 +29,6 @@
   },
   {
     "title": "이클립스",
-    "cover": "http://211.185.62.15/kolis/2009/KMO200901657.jpg",
     "summary": "[트와일라잇] 시리즈 3",
     "recommend": "4",
     "isbn": "9788937832468",
@@ -41,7 +36,6 @@
   },
   {
     "title": "브레이킹 던",
-    "cover": "http://t1.gstatic.com/images?q=tbn:ANd9GcQ9tVpAqf0WosuqcJSZRyIZFBzz214Z5rVZcOUiI0WASyd9Jvkn",
     "summary": "[트와일라잇] 시리즈 4",
     "recommend": "4",
     "isbn": "9788937833489",
