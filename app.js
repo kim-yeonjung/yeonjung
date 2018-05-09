@@ -1,4 +1,4 @@
-const newRelic = require("newrelic");
+//const newRelic = require("newrelic");
 const express = require("express");
 const compression = require("compression");
 const favicon = require("serve-favicon");
@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views')); // view engine setup
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true})); // body parser
-app.locals.newrelic = newRelic; // NewRelic
+//app.locals.newrelic = newRelic; // NewRelic
 app.use(favicon(__dirname + "/public/favicon/favicon-32x32.png")); // Favicon From http://www.favicon-generator.org/
 app.use(logger('dev'));
 app.use(express.json());

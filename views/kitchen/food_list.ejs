@@ -1,14 +1,35 @@
-<div class="fh5co-post">
-    <% for(var index = 0; index < data.length; index++) { %>
-    <div class="fh5co-entry padding">
-        <img src="<%= data[index].post[0].img_src %>" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-        <div>
-            <span class="fh5co-post-date"><%= data[index].date %></span>
-            <h2>
-                <a href="https://yeonjung.herokuapp.com/kitchen/food_view?index=<%= data[index].index %>"><%= data[index].index + 1 %>
-                    번째 오픈</a></h2>
-            <p><%= data[index].description %></p>
+<% for(var index = 0; index < data.length; index++) { %>
+<div class="col-md-4">
+    <div class="card card-user">
+        <div class="image">
+            <img src="<%= data[index].post[0].img_src %>" alt="food image">
+        </div>
+        a
+        <div class="card-body">
+            <div class="author">
+                <a href="#">
+                    <img class="avatar border-gray" src="<%= data[index].post[0].img_src %>" alt="...">
+                    <h5 class="title">Mike Andrew</h5>
+                </a>
+                <p class="description">
+                    michael24
+                </p>
+            </div>
+            <p class="description text-center">
+                <%= data[index].description %>
+            </p>
+        </div>
+        <hr>
+        <div class="button-container">
+            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-google-plus-g"></i>
+            </button>
         </div>
     </div>
-    <% } %>
-</div>
+</div> <% } %>
