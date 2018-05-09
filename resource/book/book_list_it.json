@@ -46,5 +46,21 @@
     "recommend": "3",
     "isbn": "9788968482274",
     "link": "http://www.nl.go.kr/nl/search/SearchDetail.nl?category_code=ct&service=KOLIS&vdkvgwkey=269162779&colltype=DAN_HOLD&place_code_info=100&place_name_info=%EC%84%9C%EA%B3%A0%EC%9E%90%EB%A3%8C%EC%8B%A0%EC%B2%AD%EB%8C%80%281%EC%B8%B5%29&manage_code=MA&shape_code=B&refLoc=null&category=&srchFlag=Y&h_kwd=%EB%88%84%EC%9B%8C%EC%84%9C+%EC%9D%BD%EB%8A%94+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&lic_yn=N&mat_code=GM&topF1=title_author&kwd=%EB%88%84%EC%9B%8C%EC%84%9C+%EC%9D%BD%EB%8A%94+%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&dan=&yon=&disabled=&media=&web=&map=&music=&etc=&archive=&cip=&kolisNet=&korcis="
+  },
+  {
+    "title": "뉴욕의 프로그래머",
+    "cover": "http://t0.gstatic.com/images?q=tbn:ANd9GcQ_XFMNfWiuUPzAJ49ZvTw6Nt2RZuS5qWXvcWfq-mABlNRs0pz-",
+    "summary": "세계금융시장의 심장, 뉴욕 월스트리트 금융회사에서 근무하는 프로그래머들의 이야기를 소설 형식으로 다루고 있다.",
+    "recommend": "5",
+    "isbn": "9788979145120",
+    "link": "https://books.google.co.kr/books/about/%EB%89%B4%EC%9A%95%EC%9D%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8.html?id=fWKwAwAAQBAJ&source=kp_cover&redir_esc=y"
+  },
+  {
+    "title": "누워서 읽는 퍼즐북",
+    "cover": "http://t3.gstatic.com/images?q=tbn:ANd9GcR-t1h9B46khQYjEiTTMLdFZsn8_6QvIDChzxkAnkNlPHMBFQVM",
+    "summary": "이 책은 에세이 형식의 퍼즐북 이다.",
+    "recommend": "3",
+    "isbn": "9788979147193",
+    "link": "https://books.google.co.kr/books/about/%EB%88%84%EC%9B%8C%EC%84%9C_%EC%9D%BD%EB%8A%94_%ED%8D%BC%EC%A6%90%EB%B6%81.html?id=ymOwAwAAQBAJ&source=kp_cover&redir_esc=y"
   }
 ]
