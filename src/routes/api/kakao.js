@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const postList = require('../../../resource/post_list.json');
+const postList = require('../../../resource/kitchen/kitchen_list.json');
 const responseGenerator = require('./../../service/kakao/response_generator');
 
 // 최초 접근
