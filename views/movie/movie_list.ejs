@@ -2,21 +2,19 @@
 <div class="col-md-4">
     <div class="card card-user">
         <div class="image">
-            <img src="<%= data[index].post[0].img_src %>" alt="food image">
+            <img src="<%= data[index].cover %>" alt="book cover">
         </div>
         <div class="card-body">
             <div class="author">
-                <a href="./food_view?index=<%= data[index].index %>">
-                    <img class="avatar border-gray" src="<%= data[index].post[0].img_src %>" alt="...">
-                    <h5 class="title"> <%= data[index].index + 1 %> 번째 오픈</h5>
+                <a href="#">
+                    <img class="avatar border-gray" src="<%= data[index].cover %>" alt="book cover">
+                    <h5 class="title"> <%= data[index].title %></h5>
                 </a>
                 <p class="description">
-                    <%= data[index].date %>
                 </p>
             </div>
             <hr>
             <p class="description text-center">
-                <%= data[index].description %>
             </p>
         </div>
         <!--
