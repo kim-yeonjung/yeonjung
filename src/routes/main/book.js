@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const postList = require('../../../resource/book_list.json');
+const postList = require('../../../resource/book/book_list.json');
 
 const title = "YeonJung Kim - 읽은 도서";
 
