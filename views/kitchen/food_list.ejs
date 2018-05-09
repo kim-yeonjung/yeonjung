@@ -4,21 +4,22 @@
         <div class="image">
             <img src="<%= data[index].post[0].img_src %>" alt="food image">
         </div>
-        a
         <div class="card-body">
             <div class="author">
-                <a href="#">
+                <a href="./food_view?index=<%= data[index].index %>">
                     <img class="avatar border-gray" src="<%= data[index].post[0].img_src %>" alt="...">
-                    <h5 class="title">Mike Andrew</h5>
+                    <h5 class="title"> <%= data[index].index + 1 %> 번째 오픈</h5>
                 </a>
                 <p class="description">
-                    michael24
+                    <%= data[index].date %>
                 </p>
             </div>
+            <hr>
             <p class="description text-center">
                 <%= data[index].description %>
             </p>
         </div>
+        <!--
         <hr>
         <div class="button-container">
             <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
@@ -31,6 +32,7 @@
                 <i class="fab fa-google-plus-g"></i>
             </button>
         </div>
+        -->
     </div>
 </div>
 <% } %>
