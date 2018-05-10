@@ -1,0 +1,41 @@
+{
+  "profile": "",
+  "career": [
+    {
+      "title": "",
+      "position": "",
+      "description": ""
+    }
+  ],
+  "activity": [
+    {
+      "title": "",
+      "position": "",
+      "description": ""
+    }
+  ],
+  "project": [
+    {
+      "title": "",
+      "description": "",
+      "link1": "",
+      "link2": ""
+    }
+  ],
+  "license": [
+    {
+      "title": "",
+      "grade": "",
+      "organization": "",
+      "date": ""
+    }
+  ],
+  "award": [
+    {
+      "title": "",
+      "grade": "",
+      "organization": "",
+      "date": ""
+    }
+  ]
+}
