@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-//const createError = require('http-errors');
-//next(createError(404));
-
 router.get("/", function (req, res) {
     res.render('basic_layout', {title: 'YeonJung Kim', page: 'index', active_index: 0});
 });
