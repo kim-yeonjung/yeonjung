@@ -9,11 +9,11 @@ router.get("/", function (req, res) {
 
 router.get("/detail", function (req, res) {
     let index = parseInt(req.param('index'));
-    res.render('kitchen/detail', {
+    res.render('basic_layout', {
         title: title + " " + (index + 1) + "차 오픈",
         index: index,
         data: postList[postList.length - (index + 1)],
-        recent_index: postList.length,
+        recent_index: postList.length, page: 'kitchen/detail',
         active_index: 3
     });
 });

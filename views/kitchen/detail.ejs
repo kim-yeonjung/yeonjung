@@ -1,154 +1,16 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="YeonJung Kim Private Server"/>
-    <meta name="keywords"
-          content="cook, yeonjung, private, server, blog"/>
-    <meta name="author" content="YeonJung Kim"/>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#000000">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="<%= title %>"/>
-    <meta property="og:image" content="<%- data.post[0].img_src %>"/>
-    <meta property="og:url" content="https://yeonjung.herokuapp.com/"/>
-    <meta property="og:site_name" content="YeonJung Kim"/>
-    <meta property="og:description" content=<%- title %>/>
-
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="/layout/css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="/layout/css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="/layout/css/style.css">
-    <!-- Modernizr JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body class="single">
-
-<div class="fh5co-loader"></div>
-
-<div id="page">
-    <div id="fh5co-aside" style="background-image: url(<%- data.post[0].img_src %>)"
-         data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <nav role="navigation">
-            <ul>
-                <li><a href="/kitchen"><i class="icon-home"></i></a></li>
-            </ul>
-        </nav>
-        <div class="page-title">
-            <img src="/favicon/ms-icon-310x310.png" alt="profile image">
-            <span><%- data.date %></span>
-            <h2><%- data.description %></h2>
-        </div>
+<div class="card">
+    <div class="card-header">
+        <h4 class="title"><%- data.description %></h4>
+        <p class="category"><%- data.date %></p>
     </div>
-    <div id="fh5co-main-content">
-        <div class="fh5co-post">
-            <div class="fh5co-entry padding">
-                <div>
-                    <% for(let index = 0; index < data.post.length; index++) { %>
-                    <img style="max-width:800px;display: block; margin-left: auto; margin-right: auto; width: 50%;"
-                         src="<%= data.post[index].img_src %>"
-                         alt="Food Image">
+    <div class="card-body">
 
-                    <p style="text-align: center"><%- data.post[index].text %></p>
-                    <% } %>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 이전, 다음 게시글
-<div class="fh5co-navigation">
-    <div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url(images/project-4.jpg)">
-        <div class="overlay"></div>
-        <% if(index !== 0) { %>
-        <a class="copy" href="/kitchen/food_view?index=<%- (parseInt(index) - 1) %>">
-            <div class="display-t">
-                <div class="display-tc">
-                    <div>
-                        <span>Previous Post</span>
-                        <h2><%- (index - 1) + "차 오픈" %></h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <% } %>
-    </div>
-    <div class="fh5co-cover next fh5co-cover-sm" style="background-image: url(images/project-5.jpg)">
-        <div class="overlay"></div>
-        <% if(index !== recent_index) { %>
-        <a class="copy" href="/kitchen/food_view?index=<%- (parseInt(index) + 1) %>">
-            <div class="display-t">
-                <div class="display-tc">
-                    <div>
-                        <span>Next Post</span>
-                        <h2><%- (parseInt(index) + 1)+ "차 오픈" %></h2>
-                    </div>
-                </div>
-            </div>
-        </a>
+        <% for(let index = 0; index < data.post.length; index++) { %>
+        <div class="typography-line">
+            <img style="max-width:800px;display: block; margin-left: auto; margin-right: auto; width: 80%;"
+                 src="<%= data.post[index].img_src %>"
+                 alt="Food Image">
+            <h6 style="text-align: center;padding: 16px;"><%- data.post[index].text %></h6></div>
         <% } %>
     </div>
 </div>
--->
-<footer>
-    <div>
-        &copy; <%- new Date().getFullYear() %> YeonJung Kim All Rights Reserved. Designed by <a
-                href="http://freehtml5.co"
-                target="_blank">FreeHTML5.co</a> Demo
-        Images: <a href="http://unsplash.com" target="_blank">Unsplash</a>
-    </div>
-</footer>
-
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
-
-<!-- jQuery -->
-<script src="/layout/js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="/layout/js/jquery.stellar.min.js"></script>
-<!-- Main -->
-<script src="/layout/js/main.js"></script>
-
-</body>
-</html>
-
