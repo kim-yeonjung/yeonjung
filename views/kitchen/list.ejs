@@ -6,7 +6,7 @@
         </div>
         <div class="card-body">
             <div class="author">
-                <a href="./food_view?index=<%= data[index].index %>">
+                <a href="./detail?index=<%= data[index].index %>">
                     <img class="avatar border-gray" src="<%= data[index].post[0].img_src %>" alt="...">
                     <h5 class="title"> <%= data[index].index + 1 %> 번째 오픈</h5>
                 </a>
@@ -19,20 +19,12 @@
                 <%= data[index].description %>
             </p>
         </div>
-        <!--
         <hr>
         <div class="button-container">
-            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                <i class="fab fa-facebook-f"></i>
-            </button>
-            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                <i class="fab fa-google-plus-g"></i>
-            </button>
+            <a class="btn btn-neutral btn-icon btn-round btn-lg" href="<%= data[index].url %>">
+                <i class="fab far fa-comment"></i>
+            </a>
         </div>
-        -->
     </div>
 </div>
 <% } %>
