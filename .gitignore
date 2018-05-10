@@ -57,10 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# realm DB는 서버에 올라간 뒤 생성
-*.realm
-*.lock
-
 # 이건 어째야 쫌 안생길까
 .idea/
-test.js
+node_modules/
