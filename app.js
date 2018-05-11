@@ -24,8 +24,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
+app.use('/public', express.static(path.join(__dirname, 'public')));
 /** ================== ROUTER ================== **/
 app.use("/", require("./src/routes/main/main.js"));
 app.use("/kitchen", require("./src/routes/main/kitchen.js"));
