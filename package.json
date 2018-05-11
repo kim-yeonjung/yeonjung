@@ -5,7 +5,7 @@
   "main": "newrelic.js",
   "scripts": {
     "test": "nodemon ./bin/www",
-    "start": "./node_modules/.bin/pm2 start ./bin/www"
+    "start": "node ./node_modules/.bin/pm2 start --attach ./bin/www"
   },
   "private": true,
   "engines": {
