@@ -6,7 +6,7 @@ const title = "YeonJung Kim - 프로젝트";
 
 router.get("/", function (req, res) {
     let projectList = [];
-    fs.readdirSync('./../../../resource/project/post').forEach(file => {
+    fs.readdirSync(__dirname + '/../../..//resource/project/post').forEach(file => {
         let temp = {
             'title': file.split('-')[2].replace('.md', ''),
             'index': file.split('-')[0],
