@@ -1,0 +1,18 @@
+<% for(var index = 0; index < data.length; index++) { %>
+<div class="col-md-4">
+    <div class="card card-user">
+        <div class="image" style="height: 200px">
+            <img src="https://github.com/duswnd25/yeonjung/blob/resource/resource/movie/image/icanspeak.gif?raw=true"
+                 alt="project cover">
+        </div>
+        <div class="card-body">
+            <div class="author">
+                <a href="#">
+                    <h5 class="title"> <%= data[index].title %></h5>
+                </a>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+<% } %>
