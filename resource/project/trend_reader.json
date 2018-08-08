@@ -1,7 +1,7 @@
 {
     "title": "Trend Reader (Server & Web)",
     "is_open_source": true,
-    "image_src": "/public/content/project/image/trendreader.gif",
+    "image_src": "/public/content/project/image/trendreader.png",
     "date": 20171029,
     "reference": {
         "reference": "https://trendreader.herokuapp.com/",
