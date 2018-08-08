@@ -226,13 +226,21 @@ let data = {
     ]
 };
 
+function custonSort(a, b) {
+    if (a.date === b.date) {
+        return 0
+    }
+    return a.date > b.date ? -1 : 1;
+}
+
+
 exports.getData = function () {
     let projectList = [];
     fs.readdirSync(__dirname + './../project').forEach(file => {
         let data = require(__dirname + './../project/' + file);
         projectList.push(data);
     });
+    projectList.sort(custonSort);
     data.project = projectList;
-    console.log(data.project);
     return data;
 };

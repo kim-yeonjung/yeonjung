@@ -2,7 +2,7 @@
     "title": "포도밭",
     "is_open_source": false,
     "image_src": "/public/content/project/image/vineyard.gif",
-    "date": "20170225",
+    "date": 20170225,
     "reference": {
         "reference": "https://duswnd25.github.io/VineYard/",
         "store": "",
