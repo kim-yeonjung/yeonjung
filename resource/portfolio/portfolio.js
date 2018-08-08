@@ -236,14 +236,10 @@ let data = {
 exports.getData = function () {
     let projectList = [];
     fs.readdirSync(__dirname + './../project/post').forEach(file => {
-        let temp = {
-            'title': file.split('-')[2].replace('.md', ''),
-            'index': file.split('-')[0],
-            'src': file.split('-')[1]
-        };
-        projectList.push(temp);
+        fs.readFile(__dirname + './../project/post/' + file, 'utf8', function (err, data) {
+            console.log(data);
+        });
     });
     data.project = projectList;
-
     return data;
 };

@@ -109,7 +109,7 @@
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
-            
+
             <section class="latest section">
                 <div class="section-inner">
                     <h2 class="heading">Latest Projects</h2>
@@ -117,8 +117,10 @@
 
                         <div class="item featured text-center">
                             <h3 class="title"><a
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/"
-                                        target="_blank">KickStarter - Velocity</a></h3>
+                                        href="<%= data.project[0].link1 %>"
+                                        target="_blank"><%= data.project[0].title %></a></h3>
+                            <span
+                                    class="badge badge-theme">Open Source</span></h3>
                             <p class="summary">A popular Bootstrap 4 theme for promoting startup products</p>
                             <div class="featured-image has-ribbon">
                                 <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/"
@@ -144,6 +146,7 @@
                                target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
                         </div><!--//item-->
                         <hr class="divider"/>
+                        <% for(index = 1;index < data.project.length;index++){ %>
                         <div class="item row">
                             <a class="col-md-4 col-12"
                                href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
@@ -166,135 +169,7 @@
                                       target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                             </div><!--//desc-->
                         </div><!--//item-->
-
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="/public/portfolio/images/projects/project-2.png"
-                                     alt="project name"/>
-                            </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                            target="_blank">DevStudio - Bootstrap 4 Theme for WebDev Agencies and
-                                        Freelance Developers</a></h3>
-                                <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus
-                                    dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                    aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante
-                                    dolor non turpis.</p>
-                                <p><a class="more-link"
-                                      href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
-                                      target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
-
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="/public/portfolio/images/projects/project-3.png"
-                                     alt="project name"/>
-                            </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/"
-                                            target="_blank">Startup Kit - Bootstrap 4 Theme for SaaS Startups</a></h3>
-                                <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus
-                                    dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                    aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante
-                                    dolor non turpis.</p>
-                                <p><a class="more-link"
-                                      href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/"
-                                      target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
-
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/tempo-bootstrap-theme-for-startups/"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="/public/portfolio/images/projects/project-4.png"
-                                     alt="project name"/>
-                            </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/tempo-bootstrap-theme-for-startups/"
-                                            target="_blank">Tempo - Bootstrap 4 Theme for Startups</a></h3>
-                                <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus
-                                    dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                    aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante
-                                    dolor non turpis.</p>
-                                <p><a class="more-link"
-                                      href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/tempo-bootstrap-theme-for-startups/"
-                                      target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="/public/portfolio/images/projects/project-5.png"
-                                     alt="project name"/>
-                            </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/"
-                                            target="_blank">Delta - Bootstrap 4 Theme for Promoting Mobile Apps</a></h3>
-                                <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum. Aenean
-                                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
-                                    eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
-                                    semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                                <p><a class="more-link"
-                                      href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/"
-                                      target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
-
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </section><!--//section-->
-
-            <section class="projects section">
-                <div class="section-inner">
-                    <h2 class="heading">Other Projects</h2>
-                    <div class="content">
-                        <div class="item">
-                            <h3 class="title"><a
-                                        href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/">Pillar
-                                    - Free Bootstrap 4 Resume/CV Template for Developers</a> <span
-                                        class="badge badge-theme">Free</span></h3>
-                            <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam,
-                                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                                commodi consequatu.</p>
-                            <p><a class="more-link"
-                                  href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/"
-                                  target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title"><a href="#">Project Title Cras eget lacus</a> <span
-                                        class="badge badge-theme">Open Source</span></h3>
-                            <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies
-                                risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin
-                                velit in, molestie nulla. </p>
-                            <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>View
-                                    on GitHub</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title"><a href="#">Project Title Maecenas Ornare</a> <span
-                                        class="badge badge-theme">Open Source</span></h3>
-                            <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac
-                                ultrices sed.</p>
-                            <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>View
-                                    on GitHub</a></p>
-                        </div><!--//item-->
-
-                        <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fas fa-chevron-right"></i></a>
+                        <% } %>
 
                     </div><!--//content-->
                 </div><!--//section-inner-->
