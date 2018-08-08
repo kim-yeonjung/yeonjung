@@ -130,42 +130,43 @@
                                 <a href="<%= data.project[0].reference.reference %>"
                                    target="_blank">
                                     <img class="img-fluid project-image"
-                                         src="<%= data.project[0].reference.image_src %>"
+                                         src="<%= data.project[0].image_src %>"
                                          alt="<%= data.project[0].title %>"/>
                                 </a>
                                 <div class="ribbon">
                                     <div class="text">New</div>
                                 </div>
                             </div>
-
-                            <a class="btn btn-cta-secondary"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/"
-                               target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
                         </div><!--//item-->
 
                         <hr class="divider"/>
 
                         <% for(index = 1;index < data.project.length;index++){ %>
                         <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
+                            <a class="col-md-4 col-12" href="<%= data.project[index].reference.reference %>"
                                target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="/public/portfolio/images/projects/project-1.png"
-                                     alt="project name"/>
+                                <img class="img-fluid project-image" src="<%= data.project[index].image_src %>"
+                                     alt="<%= data.project[index].title %>"/>
                             </a>
                             <div class="desc col-md-8 col-12">
-                                <h3 class="title"><a
-                                            href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                            target="_blank">Instance - Bootstrap 4 Portfolio Theme for Aspiring Full
-                                        Stack Developers</a></h3>
-                                <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus
-                                    dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                    aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante
-                                    dolor non turpis.</p>
-                                <p><a class="more-link"
-                                      href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
-                                      target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                <h3 class="title">
+                                    <a href="<%= data.project[index].reference.reference %>"
+                                       target="_blank"><%= data.project[index].title %>
+                                        <% if (data.project[index].is_open_source === true){ %>
+                                        <span class="badge badge-theme">Open Source</span>
+                                        <% } %>
+                                    </a>
+                                </h3>
+
+                                <p class="mb-2"><%= data.project[index].description %></p>
+
+                                <p>
+                                    <a class="more-link" href="<%= data.project[index].reference.reference %>"
+                                       target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Find out more
+                                    </a>
+                                </p>
                             </div><!--//desc-->
                         </div><!--//item-->
                         <% } %>
