@@ -124,6 +124,16 @@
                                 <% if (data.project[0].is_open_source === true){ %>
                                 <span class="badge badge-theme">Open Source</span>
                                 <% } %>
+                                <% if (data.project[0].reference.store.length > 10){ %>
+                                <a href="<%= data.project[0].reference.store %>">
+                                    <i class="fab fa-google-play"></i>
+                                </a>
+                                <% } %>
+                                <% if (data.project[0].reference.github.length > 10){ %>
+                                <a href="<%= data.project[0].reference.github %>">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <% } %>
                             </h3>
                             <p class="summary"><%= data.project[0].description %></p>
                             <div class="featured-image has-ribbon">
@@ -160,6 +170,16 @@
                                        target="_blank"><%= data.project[index].title %>
                                         <% if (data.project[index].is_open_source === true){ %>
                                         <span class="badge badge-theme">Open Source</span>
+                                        <% } %>
+                                        <% if (data.project[index].reference.store.length > 10){ %>
+                                        <a href="<%= data.project[index].reference.store %>">
+                                            <i class="fab fa-google-play"></i>
+                                        </a>
+                                        <% } %>
+                                        <% if (data.project[index].reference.github.length > 10){ %>
+                                        <a href="<%= data.project[index].reference.github %>">
+                                            <i class="fab fa-github"></i>
+                                        </a>
                                         <% } %>
                                     </a>
                                 </h3>
