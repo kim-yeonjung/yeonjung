@@ -117,36 +117,34 @@
                     <div class="content">
 
                         <div class="item featured text-center">
-                            <h3 class="title"><a
-                                        href="<%= data.project[0].link1 %>"
-                                        target="_blank"><%= data.project[0].title %></a></h3>
-                            <span
-                                    class="badge badge-theme">Open Source</span></h3>
-                            <p class="summary">A popular Bootstrap 4 theme for promoting startup products</p>
+                            <h3 class="title">
+                                <a href="<%= data.project[0].reference.reference %>"
+                                   target="_blank"><%= data.project[0].title %></a>
+                                <br>
+                                <% if (data.project[0].is_open_source === true){ %>
+                                <span class="badge badge-theme">Open Source</span>
+                                <% } %>
+                            </h3>
+                            <p class="summary"><%= data.project[0].description %></p>
                             <div class="featured-image has-ribbon">
-                                <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/"
+                                <a href="<%= data.project[0].reference.reference %>"
                                    target="_blank">
                                     <img class="img-fluid project-image"
-                                         src="/public/portfolio/images/projects/project-featured.png"
-                                         alt="project name"/>
+                                         src="<%= data.project[0].reference.image_src %>"
+                                         alt="<%= data.project[0].title %>"/>
                                 </a>
                                 <div class="ribbon">
                                     <div class="text">New</div>
                                 </div>
                             </div>
 
-                            <div class="desc text-left">
-                                <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor
-                                    eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit
-                                    pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis. Ut enim
-                                    ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                                    laboriosam.</p>
-                            </div><!--//desc-->
                             <a class="btn btn-cta-secondary"
                                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/"
                                target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
                         </div><!--//item-->
+
                         <hr class="divider"/>
+
                         <% for(index = 1;index < data.project.length;index++){ %>
                         <div class="item row">
                             <a class="col-md-4 col-12"

@@ -115,14 +115,7 @@ let data = {
             "description": ""
         }
     ],
-    "project": [
-        {
-            "title": "",
-            "description": "",
-            "link1": "",
-            "link2": ""
-        }
-    ],
+    "project": [],
     "license": [
         {
             "title": "GTQ 2급",
@@ -235,11 +228,11 @@ let data = {
 
 exports.getData = function () {
     let projectList = [];
-    fs.readdirSync(__dirname + './../project/post').forEach(file => {
-        fs.readFile(__dirname + './../project/post/' + file, 'utf8', function (err, data) {
-            console.log(data);
-        });
+    fs.readdirSync(__dirname + './../project').forEach(file => {
+        let data = require(__dirname + './../project/' + file);
+        projectList.push(data);
     });
     data.project = projectList;
+    console.log(data.project);
     return data;
 };

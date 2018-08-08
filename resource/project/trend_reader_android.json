@@ -1,0 +1,17 @@
+{
+    "title": "Trend Reader (Android)",
+    "is_open_source": false,
+    "image_src": "/public/content/project/image/trendreader_android.gif",
+    "date": "20171120",
+    "reference": {
+        "reference": "https://play.google.com/store/apps/details?id=app.kimyeonjung.trendreader",
+        "store": "https://play.google.com/store/apps/details?id=app.kimyeonjung.trendreader",
+        "github": ""
+    },
+    "tech": [
+        "Android",
+        "Realm",
+        "FCM"
+    ],
+    "description": "이전에 만들었던 Trend Reader 서비스의 안드로이드 어플리케이션"
+}
