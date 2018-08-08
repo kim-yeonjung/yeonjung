@@ -10,7 +10,7 @@
     "private": true,
     "engines": {
         "node": "10.5.0",
-        "npm": "6.1.0"
+        "npm": "6.3.0"
     },
     "repository": {
         "type": "git",
