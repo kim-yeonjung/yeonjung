@@ -5,7 +5,6 @@ const Cheerio = require('cheerio');
 const puppeteer = require('puppeteer');
 
 Router.get("/", function (req, res) {
-
     puppeteer.launch()
         .then((browser) => {
             return browser.newPage()
@@ -34,7 +33,9 @@ Router.get("/", function (req, res) {
 });
 
 Router.get("/portfolio", function (req, res) {
-    res.render('portfolio');
+    res.render('portfolio', {
+        data: require('./../../../resource/portfolio/portfolio').getData()
+    });
 });
 
 module.exports = Router;
