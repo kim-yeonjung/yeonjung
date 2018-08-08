@@ -137,6 +137,12 @@
                                     <div class="text">New</div>
                                 </div>
                             </div>
+                            <br>
+                            <% for(innerIndex = 0;innerIndex < data.project[0].tech.length;innerIndex++){ %>
+                            <li class="list-inline-item">
+                                <span class="badge badge-primary badge-pill"><%= data.project[0].tech[innerIndex] %></span>
+                            </li>
+                            <% } %>
                         </div><!--//item-->
 
                         <hr class="divider"/>
@@ -159,7 +165,14 @@
                                 </h3>
 
                                 <p class="mb-2"><%= data.project[index].description %></p>
-
+                                <br>
+                                <ul class="list-inline">
+                                    <% for(innerIndex = 0;innerIndex < data.project[index].tech.length;innerIndex++){ %>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-primary badge-pill"><%= data.project[index].tech[innerIndex] %></span>
+                                    </li>
+                                    <% } %>
+                                </ul>
                                 <p>
                                     <a class="more-link" href="<%= data.project[index].reference.reference %>"
                                        target="_blank">
