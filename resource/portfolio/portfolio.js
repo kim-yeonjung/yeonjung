@@ -236,8 +236,8 @@ function custonSort(a, b) {
 
 exports.getData = function () {
     let projectList = [];
-    fs.readdirSync(__dirname + './../project').forEach(file => {
-        let data = require(__dirname + './../project/' + file);
+    fs.readdirSync(__dirname + '/../project').forEach(file => {
+        let data = require(__dirname + '/../project/' + file);
         projectList.push(data);
     });
     projectList.sort(custonSort);
