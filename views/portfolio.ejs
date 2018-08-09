@@ -28,10 +28,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-          type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
     <!-- FontAwesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
             integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
@@ -205,6 +201,21 @@
                         </div><!--//item-->
                         <% } %>
 
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+            <section class="activity section">
+                <div class="section-inner">
+                    <h2 class="heading">Activity</h2>
+                    <div class="content">
+                        <% for(index = 0;index < data.award.length;index++){ %>
+                        <div class="item">
+                            <h3 class="title"><%= data.award[index].title %> <%= data.award[index].grade %> - <span
+                                        class="place"><%= data.award[index].organization %></span>
+                                <span class="year">(<%= data.award[index].date %>)</span></h3>
+                        </div>
+                        <% } %>
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
