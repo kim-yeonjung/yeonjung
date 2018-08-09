@@ -108,13 +108,6 @@ let data = {
             ]
         }
     ],
-    "activity": [
-        {
-            "title": "",
-            "position": "",
-            "description": ""
-        }
-    ],
     "project": [],
     "license": [
         {
