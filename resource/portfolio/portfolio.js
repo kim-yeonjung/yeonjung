@@ -2,7 +2,8 @@ const fs = require('fs');
 let data = {
     "name": "YeonJung Kim",
     "job": "Student",
-    "profile_image_src": "https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-1/p240x240/20431252_1424912337594313_2648547940675637225_n.jpg?_nc_cat=0&oh=de4be995ce67b29973404317976ed333&oe=5C103DBB",
+    "about": "컴퓨터정보공학부 3학년 재학 중에 있습니다.",
+    "profile_image_src": "https://avatars3.githubusercontent.com/u/4367890?s=460&v=4",
     "contact": {
         "linkedin": "https://kr.linkedin.com/in/%EC%97%B0%EC%A4%91-%EA%B9%80-172989119",
         "github": "http://github.com/duswnd25",
@@ -45,7 +46,6 @@ let data = {
             "percentage": "25"
         }
     ],
-    "about": "컴퓨터정보공학부 3학년 재학 중에 있습니다.",
     "education": [
         {
             "name": "가톨릭대학교",
@@ -66,8 +66,6 @@ let data = {
             "end": "2011"
         }
     ],
-    "career": [],
-    "project": [],
     "license": [
         {
             "title": "GTQ 2급",
@@ -90,6 +88,8 @@ let data = {
             "date": "2006"
         }
     ],
+    "career": [],
+    "project": [],
     "award": []
 };
 
