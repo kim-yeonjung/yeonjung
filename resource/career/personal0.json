@@ -1,0 +1,15 @@
+{
+    "company": "개인",
+    "role": "외주 개발자",
+    "description": "머신러닝 학습용 데이터 크롤러 및 DB > CSV 프로그램 제작",
+    "date": "2018.8",
+    "end": "",
+    "tech": [
+        "Java",
+        "My SQL",
+        "Node.js",
+        "Selenium",
+        "Puppeteer",
+        "SQLITE"
+    ]
+}

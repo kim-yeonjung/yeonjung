@@ -129,6 +129,8 @@ a.dotted-link:hover {
 
 .header .profile-image {
     margin-right: 30px;
+    max-width: 240px;
+    max-height: 240px;
 }
 
 .header .profile-content .name {
@@ -647,6 +649,8 @@ a.dotted-link:hover {
     .header .profile-image {
         float: none !important;
         margin: 0 auto;
+        max-width: 180px;
+        max-height: 180px;
     }
 
     .header .profile-content {
