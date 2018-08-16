@@ -31,13 +31,13 @@ let data = {
             "title": "Java",
             "description": "",
             "level": "Junior",
-            "percentage": "30"
+            "percentage": "40"
         },
         {
             "title": "Android",
             "description": "어플리케이션 제작 가능",
             "level": "Junior",
-            "percentage": "35"
+            "percentage": "40"
         },
         {
             "title": "Node.js & express",
