@@ -66,28 +66,7 @@ let data = {
             "end": "2011"
         }
     ],
-    "license": [
-        {
-            "title": "GTQ 2급",
-            "organization": "한국생산성본부",
-            "date": "2015"
-        },
-        {
-            "title": "운전면허 1종 보통",
-            "organization": "전남지방경찰청",
-            "date": "2014"
-        },
-        {
-            "title": "워드프로세서 1급",
-            "organization": "대한상공회의소",
-            "date": "2007"
-        },
-        {
-            "title": "워드프로세서 2급",
-            "organization": "대한상공회의소",
-            "date": "2006"
-        }
-    ],
+    "license": [],
     "career": [],
     "project": [],
     "award": []
@@ -101,27 +80,33 @@ function dateSort(a, b) {
 }
 
 exports.getData = function () {
-    let projectList = [], awardList = [], careerList = [];
-
+    let projectList = [], awardList = [], careerList = [], licenseList = [];
+    let path = '/../../resource/portfolio';
 
     // 프로젝트
-    fs.readdirSync(__dirname + '/../project').forEach(file => {
-        projectList.push(require(__dirname + '/../project/' + file));
+    fs.readdirSync(__dirname + path + '/project').forEach(file => {
+        projectList.push(require(__dirname + path + '/project/' + file));
     });
 
     // 수상
-    fs.readdirSync(__dirname + '/../award').forEach(file => {
-        awardList.push(require(__dirname + '/../award/' + file));
+    fs.readdirSync(__dirname + path + '/award').forEach(file => {
+        awardList.push(require(__dirname + path + '/award/' + file));
     });
 
     // 경력
-    fs.readdirSync(__dirname + '/../career').forEach(file => {
-        careerList.push(require(__dirname + '/../career/' + file));
+    fs.readdirSync(__dirname + path + '/career').forEach(file => {
+        careerList.push(require(__dirname + path + '/career/' + file));
+    });
+
+    // 자격증
+    fs.readdirSync(__dirname + path + '/license').forEach(file => {
+        licenseList.push(require(__dirname + path + '/license/' + file));
     });
 
     data.project = projectList.sort(dateSort);
     data.award = awardList.sort(dateSort);
     data.career = careerList.sort(dateSort);
+    data.license = licenseList.sort(dateSort);
 
     return data;
 };
