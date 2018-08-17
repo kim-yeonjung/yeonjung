@@ -66,6 +66,7 @@ let data = {
             "end": "2011"
         }
     ],
+    "conference": [],
     "license": [],
     "career": [],
     "project": [],
@@ -80,7 +81,7 @@ function dateSort(a, b) {
 }
 
 exports.getData = function () {
-    let projectList = [], awardList = [], careerList = [], licenseList = [];
+    let projectList = [], awardList = [], careerList = [], licenseList = [], conferenceList = [];
     let path = '/../../resource/portfolio';
 
     // 프로젝트
@@ -103,10 +104,16 @@ exports.getData = function () {
         licenseList.push(require(__dirname + path + '/license/' + file));
     });
 
+    // 컨퍼런스
+    fs.readdirSync(__dirname + path + '/conference').forEach(file => {
+        conferenceList.push(require(__dirname + path + '/conference/' + file));
+    });
+
     data.project = projectList.sort(dateSort);
     data.award = awardList.sort(dateSort);
     data.career = careerList.sort(dateSort);
     data.license = licenseList.sort(dateSort);
+    data.conference = conferenceList.sort(dateSort);
 
     return data;
 };

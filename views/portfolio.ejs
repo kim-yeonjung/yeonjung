@@ -87,22 +87,22 @@
                     <h2 class="heading">Work Experience</h2>
                     <div class="content">
                         <% for(index = 0;index < data.career.length;index++){ %>
-                        <div class="item">
-                            <h3 class="title"><%= data.career[index].role %> - <span
-                                        class="place"><%= data.career[index].company %></span><br>
-                                <span class="year">
+                            <div class="item">
+                                <h3 class="title"><%= data.career[index].role %> - <span
+                                            class="place"><%= data.career[index].company %></span><br>
+                                    <span class="year">
                                     (<%= data.career[index].date %> - <%= data.career[index].end %>)
                                 </span>
-                            </h3>
-                            <p><%= data.career[index].description %> </p>
-                            <ul class="list-inline">
-                                <% for(var innerIndex = 0;innerIndex < data.career[index].tech.length;innerIndex++){ %>
-                                <li class="list-inline-item">
-                                    <span class="badge badge-primary badge-pill"><%= data.career[index].tech[innerIndex] %></span>
-                                </li>
-                                <% } %>
-                            </ul>
-                        </div>
+                                </h3>
+                                <p><%= data.career[index].description %> </p>
+                                <ul class="list-inline">
+                                    <% for(var innerIndex = 0;innerIndex < data.career[index].tech.length;innerIndex++){ %>
+                                        <li class="list-inline-item">
+                                            <span class="badge badge-primary badge-pill"><%= data.career[index].tech[innerIndex] %></span>
+                                        </li>
+                                    <% } %>
+                                </ul>
+                            </div>
                         <% } %>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -119,17 +119,17 @@
                                    target="_blank"><%= data.project[0].title %></a>
                                 <br>
                                 <% if (data.project[0].is_open_source === true){ %>
-                                <span class="badge badge-theme">Open Source</span>
+                                    <span class="badge badge-theme">Open Source</span>
                                 <% } %>
                                 <% if (data.project[0].reference.store.length > 10){ %>
-                                <a href="<%= data.project[0].reference.store %>">
-                                    <i class="fab fa-google-play"></i>
-                                </a>
+                                    <a href="<%= data.project[0].reference.store %>">
+                                        <i class="fab fa-google-play"></i>
+                                    </a>
                                 <% } %>
                                 <% if (data.project[0].reference.github.length > 10){ %>
-                                <a href="<%= data.project[0].reference.github %>">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                                    <a href="<%= data.project[0].reference.github %>">
+                                        <i class="fab fa-github"></i>
+                                    </a>
                                 <% } %>
                             </h3>
                             <p class="summary"><%= data.project[0].description %></p>
@@ -146,59 +146,59 @@
                             </div>
                             <br>
                             <% for(innerIndex = 0;innerIndex < data.project[0].tech.length;innerIndex++){ %>
-                            <li class="list-inline-item">
-                                <span class="badge badge-primary badge-pill"><%= data.project[0].tech[innerIndex] %></span>
-                            </li>
+                                <li class="list-inline-item">
+                                    <span class="badge badge-primary badge-pill"><%= data.project[0].tech[innerIndex] %></span>
+                                </li>
                             <% } %>
                         </div><!--//item-->
 
                         <hr class="divider"/>
 
                         <% for(index = 1;index < data.project.length;index++){ %>
-                        <div class="item row">
-                            <a class="col-md-4 col-12" href="<%= data.project[index].reference.reference %>"
-                               target="_blank">
-                                <img class="img-fluid project-image" src="<%= data.project[index].image_src %>"
-                                     alt="<%= data.project[index].title %>"/>
-                            </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title">
-                                    <a href="<%= data.project[index].reference.reference %>"
-                                       target="_blank"><%= data.project[index].title %>
-                                        <% if (data.project[index].is_open_source === true){ %>
-                                        <span class="badge badge-theme">Open Source</span>
-                                        <% } %>
-                                        <% if (data.project[index].reference.store.length > 10){ %>
-                                        <a href="<%= data.project[index].reference.store %>">
-                                            <i class="fab fa-google-play"></i>
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="<%= data.project[index].reference.reference %>"
+                                   target="_blank">
+                                    <img class="img-fluid project-image" src="<%= data.project[index].image_src %>"
+                                         alt="<%= data.project[index].title %>"/>
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">
+                                        <a href="<%= data.project[index].reference.reference %>"
+                                           target="_blank"><%= data.project[index].title %>
+                                            <% if (data.project[index].is_open_source === true){ %>
+                                                <span class="badge badge-theme">Open Source</span>
+                                            <% } %>
+                                            <% if (data.project[index].reference.store.length > 10){ %>
+                                                <a href="<%= data.project[index].reference.store %>">
+                                                    <i class="fab fa-google-play"></i>
+                                                </a>
+                                            <% } %>
+                                            <% if (data.project[index].reference.github.length > 10){ %>
+                                                <a href="<%= data.project[index].reference.github %>">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                            <% } %>
                                         </a>
-                                        <% } %>
-                                        <% if (data.project[index].reference.github.length > 10){ %>
-                                        <a href="<%= data.project[index].reference.github %>">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                        <% } %>
-                                    </a>
-                                </h3>
+                                    </h3>
 
-                                <p class="mb-2"><%= data.project[index].description %></p>
-                                <br>
-                                <ul class="list-inline">
-                                    <% for(innerIndex = 0;innerIndex < data.project[index].tech.length;innerIndex++){ %>
-                                    <li class="list-inline-item">
-                                        <span class="badge badge-primary badge-pill"><%= data.project[index].tech[innerIndex] %></span>
-                                    </li>
-                                    <% } %>
-                                </ul>
-                                <p>
-                                    <a class="more-link" href="<%= data.project[index].reference.reference %>"
-                                       target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Find out more
-                                    </a>
-                                </p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
+                                    <p class="mb-2"><%= data.project[index].description %></p>
+                                    <br>
+                                    <ul class="list-inline">
+                                        <% for(innerIndex = 0;innerIndex < data.project[index].tech.length;innerIndex++){ %>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-primary badge-pill"><%= data.project[index].tech[innerIndex] %></span>
+                                            </li>
+                                        <% } %>
+                                    </ul>
+                                    <p>
+                                        <a class="more-link" href="<%= data.project[index].reference.reference %>"
+                                           target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Find out more
+                                        </a>
+                                    </p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
                         <% } %>
 
                     </div><!--//content-->
@@ -210,11 +210,11 @@
                     <h2 class="heading">Award</h2>
                     <div class="content">
                         <% for(index = 0;index < data.award.length;index++){ %>
-                        <div class="item">
-                            <h3 class="title"><%= data.award[index].title %> <%= data.award[index].grade %> - <span
-                                        class="place"><%= data.award[index].organization %></span>
-                                <span class="year">(<%= data.award[index].date %>)</span></h3>
-                        </div>
+                            <div class="item">
+                                <h3 class="title"><%= data.award[index].title %> <%= data.award[index].grade %> - <span
+                                            class="place"><%= data.award[index].organization %></span>
+                                    <span class="year">(<%= data.award[index].date %>)</span></h3>
+                            </div>
                         <% } %>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -257,7 +257,7 @@
                             <li>
                                 <i class="fas fa-link"></i>
                                 <span class="sr-only">Website:</span>
-                                <a href="#">https://www.website.com</a>
+                                <a href="#"><%= data.basic_information.website %></a>
                             </li>
                             <li>
                                 <i class="fab fa-blogger-b"></i>
@@ -275,21 +275,21 @@
                     <div class="content">
                         <div class="skillset">
                             <% for(index = 0;index < data.language_programming.length;index++) { %>
-                            <div class="item">
-                                <h3 class="level-title"><%= data.language_programming[index].title %>
-                                    <span class="level-label" data-toggle="tooltip"
-                                          data-placement="left" data-animation="true"
-                                          title="<%= data.language_programming[index].description %>">
+                                <div class="item">
+                                    <h3 class="level-title"><%= data.language_programming[index].title %>
+                                        <span class="level-label" data-toggle="tooltip"
+                                              data-placement="left" data-animation="true"
+                                              title="<%= data.language_programming[index].description %>">
                                         <i class="fas fa-info-circle"></i>
-                                        <%= data.language_programming[index].level %>
+                                            <%= data.language_programming[index].level %>
                                     </span>
-                                </h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner"
-                                         data-level="<%= data.language_programming[index].percentage %>%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    </h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner"
+                                             data-level="<%= data.language_programming[index].percentage %>%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
                             <% } %>
                         </div>
                     </div><!--//content-->
@@ -301,14 +301,14 @@
                     <h2 class="heading">Education</h2>
                     <div class="content">
                         <% for (index = 0;index < data.education.length;index++) { %>
-                        <div class="item">
-                            <h3 class="title"><i class="fas fa-graduation-cap"></i>
-                                <%= data.education[index].description %>
-                            </h3>
-                            <h4 class="university"><%= data.education[index].name %>
-                                <span class="year">(<%= data.education[index].start %>
-                                    ~ <%= data.education[index].end %>)</span></h4>
-                        </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i>
+                                    <%= data.education[index].description %>
+                                </h3>
+                                <h4 class="university"><%= data.education[index].name %>
+                                    <span class="year">(<%= data.education[index].start %>
+                                        ~ <%= data.education[index].end %>)</span></h4>
+                            </div><!--//item-->
                         <% } %>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -319,13 +319,13 @@
                     <h2 class="heading">Licnese</h2>
                     <div class="content">
                         <% for (var index = 0;index < data.license.length;index++) { %>
-                        <div class="item">
-                            <h3 class="title"><i class="far fa-address-card"></i>
-                                <%= data.license[index].title %>
-                            </h3>
-                            <h4 class="organization"><%= data.license[index].organization %>
-                                <span class="year"><%= data.license[index].date %></span></h4>
-                        </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="far fa-address-card"></i>
+                                    <%= data.license[index].title %>
+                                </h3>
+                                <h4 class="organization"><%= data.license[index].organization %>
+                                    <span class="year"><%= data.license[index].date %></span></h4>
+                            </div><!--//item-->
                         <% } %>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -337,10 +337,10 @@
                     <div class="content">
                         <ul class="list-unstyled">
                             <% for(index = 0;index < data.language.length;index++){ %>
-                            <li class="item">
-                                <span class="title"><strong><%= data.language[index].title %>:</strong></span>
-                                <span class="level"><%= data.language[index].level %></span>
-                            </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong><%= data.language[index].title %>:</strong></span>
+                                    <span class="level"><%= data.language[index].level %></span>
+                                </li><!--//item-->
                             <% } %>
                         </ul>
                     </div><!--//content-->
@@ -362,10 +362,17 @@
                     <h2 class="heading">Conferences</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-                            <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2014</a> (San
-                                Francisco)
-                            </li>
-                            <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            <% for (index = 0; index < data.conference.length; index++) { %>
+                                <li>
+                                    <%
+                                        var input = (data.conference[index].date.toString());
+                                        var text = input.substr(0, 4) + '년 ' + input.substr(4, 2) + '월 ' + input.substr(6, 2) + '일';
+                                    %>
+                                    <%= data.conference[index].title %>
+                                    <i class="far fa-calendar-alt" title="<%= text %>"></i>
+                                    <i class="fas fa-map-marker-alt" title="<%= data.conference[index].location %>"></i>
+                                </li>
+                            <% } %>
                         </ul>
                     </div><!--//content-->
                 </div><!--//section-inner-->
