@@ -1,23 +1,23 @@
 {
-    "title": "Trend Reader (Server & Web)",
-    "is_open_source": true,
-    "image_src": "/public/content/project/image/trendreader.png",
-    "date": 20171029,
-    "reference": {
-        "reference": "https://trendreader.herokuapp.com/",
-        "store": "",
-        "github": "https://github.com/duswnd25/trend_reader"
-    },
-    "tech": [
-        "Heroku",
-        "Node.js",
-        "Parse Platform",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "FCM",
-        "express.js",
-        "MongoDB"
-    ],
-    "description": "트랜드 읽어주는 서비스, 국내 IT 기술 블로그를 모아서 보여줍니다."
+  "title": "Trend Reader (Server & Web)",
+  "is_open_source": true,
+  "image_src": "/public/content/project/image/trendreader.png",
+  "date": 20171029,
+  "reference": {
+    "reference": "https://trendreader.herokuapp.com/",
+    "store": "",
+    "github": "https://github.com/duswnd25/trend_reader"
+  },
+  "tech": [
+    "Heroku",
+    "Node.js",
+    "Parse Platform",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "FCM",
+    "express.js",
+    "MongoDB"
+  ],
+  "description": "트랜드 읽어주는 서비스, 국내 IT 기술 블로그를 모아서 보여줍니다."
 }

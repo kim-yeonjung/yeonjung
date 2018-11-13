@@ -1,13 +1,13 @@
 {
-    "company": "GH International MERKEN",
-    "role": "쇼핑몰 유지 보수 및 전산 담당",
-    "description": "쇼핑몰 플랫폼 이전 및 유지/보수 각종 전산작업 담당",
-    "date": "2017.10",
-    "end": "",
-    "tech": [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "cafe24"
-    ]
+  "company": "GH International MERKEN",
+  "role": "쇼핑몰 유지 보수 및 전산 담당",
+  "description": "쇼핑몰 플랫폼 이전 및 유지/보수 각종 전산작업 담당",
+  "date": "2017.10",
+  "end": "",
+  "tech": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "cafe24"
+  ]
 }

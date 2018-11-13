@@ -1,16 +1,16 @@
 {
-    "title": "After Call",
-    "is_open_source": true,
-    "image_src": "/public/content/holder.jpg",
-    "date": 20150702,
-    "reference": {
-        "reference": "https://duswnd25.github.io/Remind-ME/",
-        "store": "",
-        "github": "https://github.com/duswnd25/Remind-ME"
-    },
-    "tech": [
-        "Android",
-        "Parse.com Local"
-    ],
-    "description": "저장하기는 싫지만 저장해야하는 전화번호 별도 관리 오랜만에 친구에게 전화걸어보기"
+  "title": "After Call",
+  "is_open_source": true,
+  "image_src": "/public/content/holder.jpg",
+  "date": 20150702,
+  "reference": {
+    "reference": "https://duswnd25.github.io/Remind-ME/",
+    "store": "",
+    "github": "https://github.com/duswnd25/Remind-ME"
+  },
+  "tech": [
+    "Android",
+    "Parse.com Local"
+  ],
+  "description": "저장하기는 싫지만 저장해야하는 전화번호 별도 관리 오랜만에 친구에게 전화걸어보기"
 }

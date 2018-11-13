@@ -1,21 +1,21 @@
 {
-    "title": "포트폴리오 사이트",
-    "is_open_source": true,
-    "image_src": "/public/content/project/image/yeonjung.png",
-    "date": 20180510,
-    "reference": {
-        "reference": "https://yeonjung.herokuapp.com/",
-        "store": "",
-        "github": "https://github.com/duswnd25/yeonjung"
-    },
-    "tech": [
-        "Heroku",
-        "Node.js",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "express.js",
-        "Chat bot"
-    ],
-    "description": "포트폴리오 및 챗봇 사이트"
+  "title": "포트폴리오 사이트",
+  "is_open_source": true,
+  "image_src": "/public/content/project/image/yeonjung.png",
+  "date": 20180510,
+  "reference": {
+    "reference": "https://yeonjung.herokuapp.com/",
+    "store": "",
+    "github": "https://github.com/duswnd25/yeonjung"
+  },
+  "tech": [
+    "Heroku",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "express.js",
+    "Chat bot"
+  ],
+  "description": "포트폴리오 및 챗봇 사이트"
 }
