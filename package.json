@@ -9,8 +9,8 @@
   },
   "private": true,
   "engines": {
-    "node": "10.9.0",
-    "npm": "6.4.0"
+    "node": "10.12.0",
+    "npm": "6.4.1"
   },
   "repository": {
     "type": "git",
@@ -35,11 +35,8 @@
     "http-errors": "^1.7.0",
     "morgan": "^1.9.0",
     "newrelic": "^4.7.0",
-    "npm": "^6.3.0",
     "pm2": "^2.10.4",
-    "puppeteer": "^1.6.2",
     "request": "^2.87.0",
-    "request-promise": "^4.2.2",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {

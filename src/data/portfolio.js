@@ -5,7 +5,7 @@ let data = {
     "about": "컴퓨터정보공학부 3학년 재학 중에 있습니다.",
     "profile_image_src": "https://avatars3.githubusercontent.com/u/4367890?s=460&v=4",
     "contact": {
-        "linkedin": "https://kr.linkedin.com/in/%EC%97%B0%EC%A4%91-%EA%B9%80-172989119",
+        "linkedin": "https://kr.linkedin.com/in/연중-김-172989119",
         "github": "http://github.com/duswnd25",
         "mail": "duswnd25@gmail.com"
     },
@@ -37,13 +37,43 @@ let data = {
             "title": "Android",
             "description": "어플리케이션 제작 가능",
             "level": "Junior",
-            "percentage": "40"
+            "percentage": "45"
         },
         {
             "title": "Node.js & express",
             "description": "",
             "level": "Junior",
             "percentage": "25"
+        },
+        {
+            "title": "Parse Platform",
+            "description": "",
+            "level": "Junior",
+            "percentage": "40"
+        },
+        {
+            "title": "Crawler (Selenium)",
+            "description": "",
+            "level": "Junior",
+            "percentage": "50"
+        },
+        {
+            "title": "Lex & Yacc",
+            "description": "",
+            "level": "Junior",
+            "percentage": "20"
+        },
+        {
+            "title": "MySQL",
+            "description": "",
+            "level": "Junior",
+            "percentage": "10"
+        },
+        {
+            "title": "Mongo DB",
+            "description": "",
+            "level": "Junior",
+            "percentage": "30"
         }
     ],
     "education": [
