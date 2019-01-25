@@ -1,6 +1,6 @@
 {
   "name": "yeonjung",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "개인용 서버",
   "main": "app.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "private": true,
   "engines": {
-    "node": "10.12.0",
-    "npm": "6.4.1"
+    "node": "11.8.0",
+    "npm": "6.7.0"
   },
   "repository": {
     "type": "git",
