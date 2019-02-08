@@ -4,9 +4,9 @@
 
 # Site
 title: YeonJung Kim
-subtitle:
-description:
-keywords:
+subtitle: As for me, all I know is that I know nothing.
+description: YeonJung Kim Blog
+keywords: blog, tech, programming
 author: YeonJung Kim
 language: ko
 timezone: Asia/Seoul
@@ -43,7 +43,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,7 +52,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -79,3 +79,20 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# sitemap auto generator
+sitemap:
+  path: sitemap.xml
+
+# rss feed auto generator
+feed:
+  # feed type (atom / rss2)
+  type: rss2
+  # feed path (Default: atom.xml / rss2.xml)
+  path: rss2.xml
+  # 최신 포스트의 수 설정. (0 또는 false 입력시 전체 포스트)
+  limit: 20
+
+auto_dir_categorize:
+  enable: true  # options:true, false; default is true
+  force: false # options:true, false; default is false
