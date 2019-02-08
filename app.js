@@ -1,3 +1,9 @@
+/** :::::::::::::::::: CONFIG **/
+const config = require(appRoot + '/src/config/config.global');
+if (config.isProduction()) {
+    require('newrelic');
+}
+
 /** :::::::::::::::::: MODULE **/
 const compression = require("compression");
 const favicon = require("serve-favicon");
@@ -11,8 +17,6 @@ const timeout = require('connect-timeout');
 /** :::::::::::::::::: GLOBAL CONFIG **/
 global.appRoot = path.resolve(__dirname);
 
-/** :::::::::::::::::: CONFIG **/
-const config = require(appRoot + '/src/config/config.global');
 
 /** :::::::::::::::::: EXPRESS SETUP **/
 const app = express();
@@ -54,4 +58,5 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
     return res.status(500).send({ error: err });
 });
+
 module.exports = app;
