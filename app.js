@@ -1,21 +1,18 @@
-const path = require('path');
-/** :::::::::::::::::: GLOBAL CONFIG **/
-global.appRoot = path.resolve(__dirname);
-
-/** :::::::::::::::::: CONFIG **/
-const config = require(appRoot + '/src/config/config.global');
-if (config.isProduction()) {
-    require('newrelic');
-}
-
 /** :::::::::::::::::: MODULE **/
 const compression = require("compression");
 const favicon = require("serve-favicon");
 const helhmet = require("helmet");
 const express = require('express');
 const cookieParser = require('cookie-parser');
+const path = require('path');
 const logger = require('morgan');
 const timeout = require('connect-timeout');
+
+/** :::::::::::::::::: GLOBAL CONFIG **/
+global.appRoot = path.resolve(__dirname);
+
+/** :::::::::::::::::: CONFIG **/
+const config = require(appRoot + '/src/config/config.global');
 
 /** :::::::::::::::::: EXPRESS SETUP **/
 const app = express();
