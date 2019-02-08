@@ -27,6 +27,7 @@ app.use(cookieParser());
 /** ================== ROUTER ================== **/
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use("/", require("./src/routes/main/main.js"));
+app.use('/blog', express.static('./blog/public'));
 app.use("/kitchen", require("./src/routes/main/kitchen.js"));
 app.use("/api/kitchen/kakao", require("./src/routes/api/kakao"));
 
