@@ -16,9 +16,11 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const timeout = require('connect-timeout');
+const newRelic = require("newrelic");
 
 /** :::::::::::::::::: EXPRESS SETUP **/
 const app = express();
+app.locals.newrelic = newRelic;
 app.use(timeout('5s'));
 app.use(compression());
 app.use(cookieParser());
