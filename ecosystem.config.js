@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name: 'YEONJUNG',
     script: './bin/www',
-    instances: 6,
+    instances: 3,
     autorestart: true,
     watch: false,
     max_memory_restart: '256M',
