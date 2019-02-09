@@ -22,6 +22,8 @@
 
 
 
+<link rel="alternative" href="https://yeonjung.herokuapp.com/blog/rss2.xml" title="Cluster 환경에서의 Parse Dashboard" type="application/atom+xml">
+
 
 
 <link rel="icon" href="https://yeonjung.herokuapp.com/public/favicon/favicon.ico">
@@ -65,11 +67,6 @@
 
     
     
-    
-    
-
-    
-    
 <link rel="stylesheet" href="/blog/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
@@ -79,6 +76,10 @@
 
     
     
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
     
 
 
@@ -145,6 +146,11 @@
                     7분 read (About 1016 words)
                 </span>
                 
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
                 
             </div>
         </div>
@@ -303,20 +309,10 @@
             </div>
         </nav>
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="http://github.com/ppoffice">
+            <a class="level-item button is-link is-rounded" href="http://github.com/duswnd25">
                 팔로우</a>
         </div>
         
-        
-        <div class="level is-mobile">
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="http://github.com/duswnd25">
-                
-                <i class="fab fa-github"></i>
-                
-            </a>
-            
-        </div>
         
     </div>
 </div>
@@ -506,6 +502,11 @@
                 &copy; 2019 YeonJung Kim&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
+                <br>
+                <span id="busuanzi_container_site_uv">
+                Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                
                 </p>
             </div>
             <div class="level-end">
@@ -611,17 +612,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/blog/js/back-to-top.js" defer></script>
 
 
-    
-    
-
-    
-    
     
     
 
@@ -636,6 +632,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
+    
+
     
 
 
