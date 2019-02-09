@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.use('/',appRoot + '/googlee98418e615463718.html');
+//rter.use('/',appRoot + '/googlee98418e615463718.html');
 
 router.get("/old_v1", function (req, res) {
     res.render('portfolio_v1', {
