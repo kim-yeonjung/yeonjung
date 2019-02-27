@@ -1,6 +1,7 @@
 ---
 title: Cluster 환경에서의 Parse Dashboard
 date: 2019-02-09 02:58:46
+thumbnail: https://yeonjung.herokuapp.com/blog/image/form_tampered.png
 tags:
   - parse-dashboard
   - cluster

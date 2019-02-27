@@ -1,6 +1,6 @@
 ---
 title: NodeJS + Express 의 잔여 메모리와 응답시간
-thumbnail: /image/response_time.png
+thumbnail: https://yeonjung.herokuapp.com/blog/image/response_time.png
 date: 2019-02-27 19:08:26
 tags:
   - express
