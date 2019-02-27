@@ -1,7 +1,7 @@
 ---
 title: Cluster 환경에서의 Parse Dashboard
 date: 2019-02-09 02:58:46
-thumbnail: https://yeonjung.herokuapp.com/blog/image/form_tampered.png
+thumbnail: /image/form_tampered.png
 tags:
   - parse-dashboard
   - cluster
@@ -14,6 +14,8 @@ NPM의 방대한 라이브러리와 Javascript의 다양한 자료들은 부족�
 
 저는 그중에서도 Node.js + Express + Parse Server + MongoDB + Parse Dashboard 구조를 주로 사용하는데
 
+<!-- more -->
+
 개인적으로는 Java를 좋아하지만, 학교 수업에서 배운 Tomcat + Servlet은 개인적으로는 취향에 맞지 않았고
 
 SQL은 다들 사용하니 제 주변에선 잘 안 쓰는 MongoDB를 써보고 싶은 마음도 있긴 했지만
@@ -21,8 +23,6 @@ SQL은 다들 사용하니 제 주변에선 잘 안 쓰는 MongoDB를 써보고 
 과거 Facebook에서 Parse.com이라는 서비스를 운영했을 때 사용한 경험이 좋아서 선호하는 경향도 있습니다.
 
 Parse가 오픈소스가 아닌 Facebook에서 호스팅 서비스를 할 당시에는 서버 인프라를 제가 고려할 필요가 없었지만
-
-<!-- more -->
 
 서비스 종료 후 오픈소스로 공개된 이후에는 사용자에게는 두 가지 선택지가 생겼습니다.
 
@@ -45,6 +45,8 @@ Cloud Job을 해당 호스팅 업체에 맞춰 마이그레이션 할 자신이 
 Cloud 서버에 올리고 더 나은 성능과 가용성을 위해 Cluster를 적용하게 되었고
 
 기쁜 마음으로 Dashboard에 접속한 저에게는 하얀 화면의 검은 글씨가 기다릴 뿐이었습니다.
+
+![나를 기다리는 하얀 화면](/blog/image/form_tampered.png)
 
 이 문제를 해결하기 위해 stack overflow도 검색하고 다양한 문서를 찾아봤지만, 해당 문제는 공식 문서에도 없었으며 (지금은 모르겠습니다)
 
