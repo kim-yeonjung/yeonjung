@@ -195,9 +195,9 @@
 <p>I ran into this issue after upgrading to 1.1.2 and I hunted down the root cause.</p>
 <p>As per PR #774 (this line of code), the cookie secret will be set to a random value if you do not set it yourself. This is intentional and documented in the CLI.</p>
 <p>So, if you are running in a load balanced environment (or in using NodeJS cluster) be sure to set your cookieSessionSecret:</p>
-<p>From CLI:<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--cookieSessionSecret &quot;your-secret-here&quot;</span><br></pre></td></tr></table></figure></p>
+<p>From CLI:<br><figure class="highlight ada hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">--cookieSessionSecret "your-secret-here"</span></span><br></pre></td></tr></table></figure></p>
 <p>From NodeJS (options is the 2nd argument of constructor):</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">new ParseDashboard(&#123;</span><br><span class="line">// settings here</span><br><span class="line">&#125;, &#123;</span><br><span class="line">  cookieSessionSecret: &apos;your-secret-here&apos;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight haxe hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">new</span> <span class="hljs-type">ParseDashboard</span>(&#123;</span><br><span class="line"><span class="hljs-comment">// settings here</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">  cookieSessionSecret: <span class="hljs-type"></span>'your-secret-<span class="hljs-keyword">here</span><span class="hljs-string">'</span></span><br><span class="line"><span class="hljs-string">&#125;);</span></span><br></pre></td></tr></table></figure>
 <p>즉, 별도의 cookieSession값을 지정하지 않으면 랜덤으로 값이 지정되는데 cluster 환경 또는 로드밸런싱 환경에서는 프로세스마다 해당 값이 다르게 지정되기 때문에 발생하는 문제 같습니다.</p>
 <p>이 문제에 대해 해결책을 알려준 JeremyPlease 에게 감사합니다.</p>
 
@@ -260,7 +260,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -280,7 +280,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        6
                     </p>
                 </div>
             </div>
@@ -308,7 +308,7 @@
                 <span class="level-item">NodeJs</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/blog/categories/NodeJs/Parse/">
@@ -338,7 +338,7 @@
                     <span class="level-item">2월 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -364,15 +364,36 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/express/">
+                        <span class="tag">express</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/memory/">
+                        <span class="tag">memory</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/blog/tags/node-js/">
                         <span class="tag">node.js</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/parse-dashboard/">
                         <span class="tag">parse-dashboard</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/response-time/">
+                        <span class="tag">response time</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -393,6 +414,25 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <a href="/blog/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/images/thumbnail.svg" alt="NodeJS + Express 의 잔여 메모리와 응답시간">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T10:08:26.000Z">2019-02-27</time></div>
+                    <a href="/blog/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="has-link-black-ter is-size-6">NodeJS + Express 의 잔여 메모리와 응답시간</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/NodeJs/">NodeJs</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -436,6 +476,25 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <a href="/blog/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/images/thumbnail.svg" alt="NodeJS + Express 의 잔여 메모리와 응답시간">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T10:08:26.000Z">2019-02-27</time></div>
+                    <a href="/blog/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="has-link-black-ter is-size-6">NodeJS + Express 의 잔여 메모리와 응답시간</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/NodeJs/">NodeJs</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
