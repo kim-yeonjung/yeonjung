@@ -2,9 +2,9 @@
 title: Cluster 환경에서의 Parse Dashboard
 date: 2019-02-09 02:58:46
 tags:
-    - parse-dashboard
-    - cluster
-    - node.js
+  - parse-dashboard
+  - cluster
+  - node.js
 ---
 
 Node.js와 웹 프레임워크를 사용해 구현한 웹 서버는 생산성이나 편의성 면에서 확실히 매력이 있습니다.
@@ -20,6 +20,8 @@ SQL은 다들 사용하니 제 주변에선 잘 안 쓰는 MongoDB를 써보고 
 과거 Facebook에서 Parse.com이라는 서비스를 운영했을 때 사용한 경험이 좋아서 선호하는 경향도 있습니다.
 
 Parse가 오픈소스가 아닌 Facebook에서 호스팅 서비스를 할 당시에는 서버 인프라를 제가 고려할 필요가 없었지만
+
+<!-- more -->
 
 서비스 종료 후 오픈소스로 공개된 이후에는 사용자에게는 두 가지 선택지가 생겼습니다.
 
@@ -47,19 +49,11 @@ Cloud 서버에 올리고 더 나은 성능과 가용성을 위해 Cluster를 �
 
 다른 개발자들이 올린 질문의 답변도 어느 하나 저에게 도움이 되는 답변이 없었으며 엉뚱한 답변이 많았습니다.
 
-
-
 그러던 중 해당 문제의 솔루션에 대해 언급한 내용을 github의 issues 중 하나의 댓글에서 발견하였고
 
 (왜 이게 공식 문서에 포함이 되지 않는지 아직도 의문스러운데 어느 정도 규모있는 기업에서는 Parse Dashboard를 사용하지 않고 다른 솔루션을 사용하지 않을까 싶습니다)
 
-
-
 해당 내용은 다음과 같습니다.
-
-
-
-
 
 I ran into this issue after upgrading to 1.1.2 and I hunted down the root cause.
 
@@ -68,6 +62,7 @@ As per PR #774 (this line of code), the cookie secret will be set to a random va
 So, if you are running in a load balanced environment (or in using NodeJS cluster) be sure to set your cookieSessionSecret:
 
 From CLI:
+
 ```
 --cookieSessionSecret "your-secret-here"
 ```
@@ -83,7 +78,5 @@ new ParseDashboard({
 ```
 
 즉, 별도의 cookieSession값을 지정하지 않으면 랜덤으로 값이 지정되는데 cluster 환경 또는 로드밸런싱 환경에서는 프로세스마다 해당 값이 다르게 지정되기 때문에 발생하는 문제 같습니다.
-
-
 
 이 문제에 대해 해결책을 알려준 JeremyPlease 에게 감사합니다.

@@ -4,17 +4,17 @@
 
     <sitemap>
         <loc>http://yeonjung.herokuapp.com/blog/post-sitemap.xml</loc>
-        <lastmod>2019-02-27T14:43:45.833Z</lastmod>
+        <lastmod>2019-02-27T14:57:46.975Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://yeonjung.herokuapp.com/blog/category-sitemap.xml</loc>
-        <lastmod>2019-02-27T10:02:07.704Z</lastmod>
+        <lastmod>2019-02-27T14:57:39.831Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://yeonjung.herokuapp.com/blog/tag-sitemap.xml</loc>
-        <lastmod>2019-02-27T10:02:07.704Z</lastmod>
+        <lastmod>2019-02-27T14:57:39.831Z</lastmod>
     </sitemap>
 
 </sitemapindex>

@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="YeonJung Kim">
 <meta property="og:description" content="Node.js와 웹 프레임워크를 사용해 구현한 웹 서버는 생산성이나 편의성 면에서 확실히 매력이 있습니다. NPM의 방대한 라이브러리와 Javascript의 다양한 자료들은 부족한 실력에도 원하는 목적을 달성하게 도와줍니다. 저는 그중에서도 Node.js + Express + Parse Server + MongoDB + Parse Dashboard 구조를">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-02-27T10:02:07.704Z">
+<meta property="og:updated_time" content="2019-02-27T14:57:39.831Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cluster 환경에서의 Parse Dashboard">
 <meta name="twitter:description" content="Node.js와 웹 프레임워크를 사용해 구현한 웹 서버는 생산성이나 편의성 면에서 확실히 매력이 있습니다. NPM의 방대한 라이브러리와 Javascript의 다양한 자료들은 부족한 실력에도 원하는 목적을 달성하게 도와줍니다. 저는 그중에서도 Node.js + Express + Parse Server + MongoDB + Parse Dashboard 구조를">
@@ -143,7 +143,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7분 read (About 1016 words)
+                    7분 read (About 1017 words)
                 </span>
                 
                 
@@ -168,6 +168,7 @@
 <p>SQL은 다들 사용하니 제 주변에선 잘 안 쓰는 MongoDB를 써보고 싶은 마음도 있긴 했지만</p>
 <p>과거 Facebook에서 Parse.com이라는 서비스를 운영했을 때 사용한 경험이 좋아서 선호하는 경향도 있습니다.</p>
 <p>Parse가 오픈소스가 아닌 Facebook에서 호스팅 서비스를 할 당시에는 서버 인프라를 제가 고려할 필요가 없었지만</p>
+<a id="more"></a>
 <p>서비스 종료 후 오픈소스로 공개된 이후에는 사용자에게는 두 가지 선택지가 생겼습니다.</p>
 <p>Cloud 업체가 Parse를 호스팅하여 제공하는 서비스를 사용.</p>
 <p>직접 Parse 서버를 호스팅하여 사용.</p>
@@ -187,7 +188,8 @@
 <p>I ran into this issue after upgrading to 1.1.2 and I hunted down the root cause.</p>
 <p>As per PR #774 (this line of code), the cookie secret will be set to a random value if you do not set it yourself. This is intentional and documented in the CLI.</p>
 <p>So, if you are running in a load balanced environment (or in using NodeJS cluster) be sure to set your cookieSessionSecret:</p>
-<p>From CLI:<br><figure class="highlight ada hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">--cookieSessionSecret "your-secret-here"</span></span><br></pre></td></tr></table></figure></p>
+<p>From CLI:</p>
+<figure class="highlight ada hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">--cookieSessionSecret "your-secret-here"</span></span><br></pre></td></tr></table></figure>
 <p>From NodeJS (options is the 2nd argument of constructor):</p>
 <figure class="highlight haxe hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">new</span> <span class="hljs-type">ParseDashboard</span>(&#123;</span><br><span class="line"><span class="hljs-comment">// settings here</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">  cookieSessionSecret: <span class="hljs-type"></span>'your-secret-<span class="hljs-keyword">here</span><span class="hljs-string">'</span></span><br><span class="line"><span class="hljs-string">&#125;);</span></span><br></pre></td></tr></table></figure>
 <p>즉, 별도의 cookieSession값을 지정하지 않으면 랜덤으로 값이 지정되는데 cluster 환경 또는 로드밸런싱 환경에서는 프로세스마다 해당 값이 다르게 지정되기 때문에 발생하는 문제 같습니다.</p>
