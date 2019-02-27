@@ -1,6 +1,6 @@
 ---
 title: NodeJS + Express 의 잔여 메모리와 응답시간
-thumbnail: /image/response_time.png
+thumbnail: /blog/image/response_time.png
 date: 2019-02-27 19:08:26
 tags:
   - express
@@ -9,7 +9,7 @@ tags:
   - response time
 ---
 
-![응답시간 이미지](/image/response_time.png)
+![응답시간 이미지](/blog/image/response_time.png)
 
 작년 초 지인의 소개로 모 인디게임의 서버 프로그램을 개발하였습니다.
 
