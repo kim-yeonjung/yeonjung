@@ -46,7 +46,6 @@ app.set("view engine", "ejs");
 
 /** :::::::::::::::::: ROUTER **/
 app.use("/public", express.static(path.join(__dirname, "public")));
-app.use("/", express.static(path.join(__dirname, "seo")));
 app.use("/", require("./src/routes/main/main.js"));
 app.use("/kitchen", require("./src/routes/main/kitchen.js"));
 app.use("/api/kitchen/kakao", require("./src/routes/api/kakao"));
