@@ -3,7 +3,7 @@ version: 2.3.0
 # Path or URL to the website's icon
 favicon: https://yeonjung.herokuapp.com/public/favicon/favicon.ico
 # Path or URL to RSS atom.xml
-rss: https://yeonjung.herokuapp.com/blog/rss2.xml
+rss: https://duswnd25.github.io/rss2.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 logo: https://yeonjung.herokuapp.com/public/blog/logo.png
 # Open Graph metadata
