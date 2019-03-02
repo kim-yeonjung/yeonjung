@@ -3,17 +3,17 @@
 
 
     <sitemap>
-        <loc>http://yeonjung.herokuapp.com/blog/post-sitemap.xml</loc>
+        <loc>https://duswnd25.github.io/post-sitemap.xml</loc>
         <lastmod>2019-03-01T15:02:50.432Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yeonjung.herokuapp.com/blog/category-sitemap.xml</loc>
+        <loc>https://duswnd25.github.io/category-sitemap.xml</loc>
         <lastmod>2019-02-28T17:12:51.803Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yeonjung.herokuapp.com/blog/tag-sitemap.xml</loc>
+        <loc>https://duswnd25.github.io/tag-sitemap.xml</loc>
         <lastmod>2019-02-28T17:12:51.803Z</lastmod>
     </sitemap>
 
