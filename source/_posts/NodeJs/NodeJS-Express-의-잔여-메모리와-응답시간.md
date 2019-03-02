@@ -101,7 +101,7 @@ app.use(function(err, req, res, next) {
 |  95%  |            2s |
 |  50%  |          0.2s |
 
-![개선된? 상태](/blog/image/response_time.png)
+![개선된? 상태](/image/response_time.png)
 RPS는 약 10 정도 더 늘어났으며 피크시간대에도 더 나은 성능을 보여주기 시작했습니다.
 
 다만 이 수치는 해당 기간 사용자 수가 20% 이상 증가하여 서버 인스턴스를 평균적으로 1개 정도 추가하였음을 고려하고 보시면 감사하겠습니다.

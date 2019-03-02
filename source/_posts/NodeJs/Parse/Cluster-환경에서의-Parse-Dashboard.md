@@ -46,7 +46,7 @@ Cloud 서버에 올리고 더 나은 성능과 가용성을 위해 Cluster를 �
 
 기쁜 마음으로 Dashboard에 접속한 저에게는 하얀 화면의 검은 글씨가 기다릴 뿐이었습니다.
 
-![나를 기다리는 하얀 화면](/blog/image/form_tampered.png)
+![나를 기다리는 하얀 화면](/image/form_tampered.png)
 
 이 문제를 해결하기 위해 stack overflow도 검색하고 다양한 문서를 찾아봤지만, 해당 문제는 공식 문서에도 없었으며 (지금은 모르겠습니다)
 
