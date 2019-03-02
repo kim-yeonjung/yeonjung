@@ -9,21 +9,21 @@
 
     <url>
         <loc>https://duswnd25.github.io/categories/DailyLife/</loc>
-        <lastmod>2019-03-02T22:24:05.443Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/categories/NodeJs/Parse/</loc>
-        <lastmod>2019-03-02T22:24:14.926Z</lastmod>
+        <lastmod>2019-03-02T22:42:44.905Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/categories/NodeJs/</loc>
-        <lastmod>2019-03-02T22:24:24.244Z</lastmod>
+        <lastmod>2019-03-02T22:42:44.912Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/categories/NodeJs/Parse/</loc>
+        <lastmod>2019-03-02T22:42:44.912Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
