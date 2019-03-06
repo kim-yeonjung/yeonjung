@@ -1,11 +1,7 @@
 {
   "company": "질링스",
   "role": "Back-End Developer",
-  "description": "Node.js와  MongoDB, AWS를 활용하여 
-  자체 서비스에 필요한 데이터 수집용 크롤러 개발, 
-  내부 운영툴 유지보수 및 기획 변경에 따른 신규 기능 개발,
-  3자 소프트웨어를 위한 Rest API 개발,
-  개발환경 및 외부 API, 내부 API 문서화",
+  "description": "Node.js와  MongoDB, AWS를 활용하여 자체 서비스에 필요한 데이터 수집용 크롤러 개발, 내부 운영툴 유지보수 및 기획 변경에 따른 신규 기능 개발, 3자 소프트웨어를 위한 Rest API 개발, 개발환경 및 외부 API, 내부 API 문서화",
   "date": "2018.12",
   "end": "2019.02",
   "tech": [
