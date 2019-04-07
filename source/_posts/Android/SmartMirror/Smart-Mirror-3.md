@@ -78,4 +78,4 @@ AutofitTextView greetingTextView = findViewById(R.id.greeting_text); greetingTex
 
 짠~! 이렇게 카메라 위에 정보가 출력되었습니다!
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_7.jpg)
+![설명 이미지7](/image/smart_mirror/smart_mirror_7.jpg)

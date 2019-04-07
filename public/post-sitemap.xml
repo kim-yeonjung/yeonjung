@@ -8,24 +8,8 @@
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2017/12/01/Android/SmartMirror/Smart-Mirror-5/</loc>
-        <lastmod>2019-04-07T16:10:50.198Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/2017/11/26/Android/SmartMirror/Smart-Mirror-4/</loc>
-        <lastmod>2019-04-07T16:10:42.433Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-3/</loc>
-        <lastmod>2019-04-07T16:10:28.305Z</lastmod>
+        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-1/</loc>
+        <lastmod>2019-04-07T16:13:54.113Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,15 +17,31 @@
 
     <url>
         <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-2/</loc>
-        <lastmod>2019-04-07T16:10:14.090Z</lastmod>
+        <lastmod>2019-04-07T16:13:48.556Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-1/</loc>
-        <lastmod>2019-04-07T16:00:57.708Z</lastmod>
+        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-3/</loc>
+        <lastmod>2019-04-07T16:13:25.220Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/2017/11/26/Android/SmartMirror/Smart-Mirror-4/</loc>
+        <lastmod>2019-04-07T16:13:17.295Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/2017/12/01/Android/SmartMirror/Smart-Mirror-5/</loc>
+        <lastmod>2019-04-07T16:12:46.058Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,7 +56,7 @@
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2019/03/01/DailyLife/%EB%9C%BB%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%9C%A0%EB%AA%A9%EB%AF%BC-%EC%9D%B8%EC%83%9D-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B0%94%EB%80%90%EC%A0%90/</loc>
+        <loc>https://duswnd25.github.io/2019/02/27/NodeJs/NodeJS-Express-%EC%9D%98-%EC%9E%94%EC%97%AC-%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80-%EC%9D%91%EB%8B%B5%EC%8B%9C%EA%B0%84/</loc>
         <lastmod>2019-04-07T15:26:26.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -64,7 +64,7 @@
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2019/02/27/NodeJs/NodeJS-Express-%EC%9D%98-%EC%9E%94%EC%97%AC-%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80-%EC%9D%91%EB%8B%B5%EC%8B%9C%EA%B0%84/</loc>
+        <loc>https://duswnd25.github.io/2019/03/01/DailyLife/%EB%9C%BB%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%9C%A0%EB%AA%A9%EB%AF%BC-%EC%9D%B8%EC%83%9D-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B0%94%EB%80%90%EC%A0%90/</loc>
         <lastmod>2019-04-07T15:26:26.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

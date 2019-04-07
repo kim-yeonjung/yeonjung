@@ -44,7 +44,7 @@ tags:
 ```
 저는 이 중에서 TextClock을 사용하였는데 여기서 별도로 수정한 부분은 alpha와 format24Hour 입니다. 거울위에 반투명하게 표시하기 위해서 alpha값을 변경하였으며 TextClock은 기본적으로 시간과 분만 표시하기 때문에 초까지 표시하기 위해서 format24Hour 의 값을 hh:mm:ss로 설정하였습니다. 이 부분은 대부분의 언어, 프로그램에서 시간을 표시하는 방법과 동일합니다.
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_8.jpg)
+![설명 이미지8](/image/smart_mirror/smart_mirror_8.jpg)
 
 이제 반투명하게 시간을 표시할 수 있게 되었습니다.
 
@@ -101,6 +101,6 @@ WeatherItem weatherItem = new WeatherItem();
         }
         return weatherItem;
 ```
-![설명 이미지2](/blog/image/smart_mirror/smart_mirror_9.jpg)
+![설명 이미지9](/image/smart_mirror/smart_mirror_9.jpg)
 
-![설명 이미지3](/blog/image/smart_mirror/smart_mirror_10.jpg)
+![설명 이미지10](/image/smart_mirror/smart_mirror_10.jpg)

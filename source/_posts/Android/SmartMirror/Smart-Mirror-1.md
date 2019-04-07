@@ -16,9 +16,9 @@ tags:
 
 <!-- more -->
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_1.jpg)
+![설명 이미지1](/image/smart_mirror/smart_mirror_1.jpg)
 
-![설명 이미지2](/blog/image/smart_mirror/smart_mirror_1.jpg)
+![설명 이미지2](/image/smart_mirror/smart_mirror_1.jpg)
 
 많은 프로그래머들이 짬내서 한 번씩 만들어보고 있고 저마다 자신만의 거울을 만들고 있습니다. 당연히 거울을 만드는 방법도 전부 다릅니다. 라즈베리파이, 태블릿PC 등등 재료도 다르고 모니터를 쓰느냐 거울을 잘라서 만드느냐도 갈립니다.
 

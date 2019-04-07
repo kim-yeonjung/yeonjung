@@ -111,6 +111,6 @@ TTS (Text To Speech)의 경우 여러 라이브러리가 있습니다. 외국 �
 
 오픈소스로 공개된 스마트 거울도 많으니 관심있으신분은 직접 돌려보시는것 도 괜찮을듯 합니다.
 
-![설명 이미지11](/blog/image/smart_mirror/smart_mirror_11.jpg)
+![설명 이미지11](/image/smart_mirror/smart_mirror_11.jpg)
 
-![설명 이미지12](/blog/image/smart_mirror/smart_mirror_12.jpg)
+![설명 이미지12](/image/smart_mirror/smart_mirror_12.jpg)

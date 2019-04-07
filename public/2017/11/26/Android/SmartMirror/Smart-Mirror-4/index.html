@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="YeonJung Kim">
 <meta property="og:description" content="실제 데이터 연동하기이제 틀은 갖췄으니 실제 데이터를 연동해야합니다. 이번에 구현할 부분은  지정시간 이후 Greeting 메시지 제거, 시간 표시 날씨정보 표시  입니다.">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://duswnd25.github.io/blog/image/smart_mirror/smart_mirror_8.jpg">
-<meta property="og:image" content="https://duswnd25.github.io/blog/image/smart_mirror/smart_mirror_9.jpg">
-<meta property="og:image" content="https://duswnd25.github.io/blog/image/smart_mirror/smart_mirror_10.jpg">
-<meta property="og:updated_time" content="2019-04-07T16:10:42.433Z">
+<meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_8.jpg">
+<meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_9.jpg">
+<meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_10.jpg">
+<meta property="og:updated_time" content="2019-04-07T16:13:17.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Smart Mirror #4">
 <meta name="twitter:description" content="실제 데이터 연동하기이제 틀은 갖췄으니 실제 데이터를 연동해야합니다. 이번에 구현할 부분은  지정시간 이후 Greeting 메시지 제거, 시간 표시 날씨정보 표시  입니다.">
-<meta name="twitter:image" content="https://duswnd25.github.io/blog/image/smart_mirror/smart_mirror_8.jpg">
+<meta name="twitter:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_8.jpg">
 
 
 
@@ -153,7 +153,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5분 read (About 797 words)
+                    5분 read (About 794 words)
                 </span>
                 
                 
@@ -184,7 +184,7 @@
 <p>시간정보 표시는 그렇게 어렵지 않습니다. 이미 안드로이드에서 TextClock, DigitalClock , AnalogClock 등 위젯을 지원하고 있으며 별도의 작업 없이 추가만 하면 알아서 시간을 표시합니다.</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">TextClock</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">"center"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">"@android:color/white"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:maxLines</span>=<span class="hljs-string">"1"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:alpha</span>=<span class="hljs-string">"0.5"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:format24Hour</span>=<span class="hljs-string">"hh:mm:ss"</span></span></span><br><span class="line"><span class="hljs-tag">        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">"@dimen/greeting_message_size"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>저는 이 중에서 TextClock을 사용하였는데 여기서 별도로 수정한 부분은 alpha와 format24Hour 입니다. 거울위에 반투명하게 표시하기 위해서 alpha값을 변경하였으며 TextClock은 기본적으로 시간과 분만 표시하기 때문에 초까지 표시하기 위해서 format24Hour 의 값을 hh:mm:ss로 설정하였습니다. 이 부분은 대부분의 언어, 프로그램에서 시간을 표시하는 방법과 동일합니다.</p>
-<p><img src="/blog/image/smart_mirror/smart_mirror_8.jpg" alt="설명 이미지1"></p>
+<p><img src="/image/smart_mirror/smart_mirror_8.jpg" alt="설명 이미지8"></p>
 <p>이제 반투명하게 시간을 표시할 수 있게 되었습니다.</p>
 <h1 id="날씨-정보"><a href="#날씨-정보" class="headerlink" title="날씨 정보"></a>날씨 정보</h1><p>날씨 정보는 현재 위치의 날씨를 인터넷에서 받아오게 구현하였는데 이 과정에서 기기의 GPS 등은 사용하지 않았습니다.</p>
 <p>그 이유는 LocationManager 등을 사용하려면 위치정보 권한 요청을 해야 하기 때문에 번거롭다고 생각하였고 웹사이트에서 사용하는 ip 기반 위치 조회를 사용하였습니다.</p>
@@ -196,8 +196,8 @@
 </ol>
 <p>두 순서 모두 데이터를 json형식으로 반환하기 때문에 okhttp로 값을 받아오고 이를 JSONObject로 가져왔습니다.</p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">WeatherItem weatherItem = <span class="hljs-keyword">new</span> WeatherItem();</span><br><span class="line">        OkHttpClient client = <span class="hljs-keyword">new</span> OkHttpClient();</span><br><span class="line"></span><br><span class="line">        Location location = <span class="hljs-keyword">new</span> Location(<span class="hljs-string">""</span>);</span><br><span class="line">        location.setLatitude(<span class="hljs-number">37.4536</span>);</span><br><span class="line">        location.setLongitude(<span class="hljs-number">126.7317</span>);</span><br><span class="line"></span><br><span class="line">        Request request = <span class="hljs-keyword">new</span> Request.Builder().url(<span class="hljs-string">"http://ip-api.com/json"</span>).build();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">            JSONObject responseJson = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">            <span class="hljs-keyword">double</span> latitude = responseJson.getDouble(<span class="hljs-string">"lat"</span>);</span><br><span class="line">            <span class="hljs-keyword">double</span> longitude = responseJson.getDouble(<span class="hljs-string">"lon"</span>);</span><br><span class="line">            location.setLatitude(latitude);</span><br><span class="line">            location.setLongitude(longitude);</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String url = <span class="hljs-string">"https://api.darksky.net/forecast/"</span></span><br><span class="line">                + params[<span class="hljs-number">0</span>].getResources().getString(R.string.darksky_key)</span><br><span class="line">                + <span class="hljs-string">"/"</span> + location.getLatitude() + <span class="hljs-string">","</span> + location.getLongitude();</span><br><span class="line"></span><br><span class="line">        request = <span class="hljs-keyword">new</span> Request.Builder().url(url).build();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">            JSONObject data = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">            data = data.getJSONObject(<span class="hljs-string">"currently"</span>);</span><br><span class="line"></span><br><span class="line">            weatherItem.setSummary(data.getString(<span class="hljs-string">"summary"</span>));</span><br><span class="line">            weatherItem.setTemperature(data.getDouble(<span class="hljs-string">"temperature"</span>));</span><br><span class="line">            weatherItem.setImageId(iconResources.get(data.getString(<span class="hljs-string">"icon"</span>)));</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> weatherItem;</span><br></pre></td></tr></table></figure>
-<p><img src="/blog/image/smart_mirror/smart_mirror_9.jpg" alt="설명 이미지2"></p>
-<p><img src="/blog/image/smart_mirror/smart_mirror_10.jpg" alt="설명 이미지3"></p>
+<p><img src="/image/smart_mirror/smart_mirror_9.jpg" alt="설명 이미지9"></p>
+<p><img src="/image/smart_mirror/smart_mirror_10.jpg" alt="설명 이미지10"></p>
 
         </div>
         

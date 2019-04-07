@@ -16,7 +16,7 @@ tags:
 
 <!-- more -->
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_3.jpg)
+![설명 이미지3](/image/smart_mirror/smart_mirror_3.jpg)
 
 다만 이 화면은 FaceTracker는 기본적으로 후면 카메라를 사용하게 되어 있는데 거울을 만들기 위해 전면으로 바꿔놓은 상태라 캡쳐하기 좀 힘들어서 비틀다보니 몇몇 얼굴이 인식되지 않았는데요. 실제로는 인식률이 좋고 거울을 여러명이 같이 볼 일은 별로 없으니 상관 없을듯 합니다.
 
@@ -26,17 +26,17 @@ tags:
 
 이제 제 필요와 실력에 맞게 너프할 차례입니다. 먼저, 제가 알아보기 쉽게 하나로 합쳐져 있던 클래스를 분리하고 변수명도 제 취향에 맞게 정리하였습니다.
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_4.jpg)
+![설명 이미지4](/image/smart_mirror/smart_mirror_4.jpg)
 
 ## 카메라 전환
 
 저는 거울이 목표이기 때문에 후면카메라를 전면으로 전환하려고 합니다.
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_5.jpg)
+![설명 이미지5](/image/smart_mirror/smart_mirror_5.jpg)
 
 메인 액티비티에서 이 부분을
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_6.jpg)
+![설명 이미지6](/image/smart_mirror/smart_mirror_6.jpg)
 
 이렇게 변경해 주면 됩니다. 거울이 목표이니 별도의 전환 기능은 필요 없습니다.
 
