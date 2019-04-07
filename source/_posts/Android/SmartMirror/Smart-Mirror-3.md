@@ -1,6 +1,6 @@
 ---
 title: 'Smart Mirror #3'
-thumbnail: /image/smart_mirror/smart_mirror_7.png
+thumbnail: /image/smart_mirror/smart_mirror_7.jpg
 date: 2017-11-25 14:23:00
 tags:
   - Smart Mirror
@@ -78,4 +78,4 @@ AutofitTextView greetingTextView = findViewById(R.id.greeting_text); greetingTex
 
 짠~! 이렇게 카메라 위에 정보가 출력되었습니다!
 
-![설명 이미지1](/blog/image/smart_mirror/smart_mirror_7.png)
+![설명 이미지1](/blog/image/smart_mirror/smart_mirror_7.jpg)
