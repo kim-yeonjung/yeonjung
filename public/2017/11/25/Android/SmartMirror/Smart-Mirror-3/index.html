@@ -17,7 +17,7 @@
 <meta property="og:description" content="이제 카메라 위에 정보를 띄워봅시다.먼저 저는 다음과 같은 정보를 띄우려고 합니다.  날씨 인사  다른 정보는 차차 추가하기로 하고 일단 저 두가지만 해보기로 합니다. Layout">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_7.jpg">
-<meta property="og:updated_time" content="2019-04-07T16:13:25.220Z">
+<meta property="og:updated_time" content="2019-05-12T08:12:07.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Smart Mirror #3">
 <meta name="twitter:description" content="이제 카메라 위에 정보를 띄워봅시다.먼저 저는 다음과 같은 정보를 띄우려고 합니다.  날씨 인사  다른 정보는 차차 추가하기로 하고 일단 저 두가지만 해보기로 합니다. Layout">
@@ -177,34 +177,42 @@
 </ol>
 <p>다른 정보는 차차 추가하기로 하고 일단 저 두가지만 해보기로 합니다.</p>
 <h2 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h2><a id="more"></a>
+
 <blockquote>
 <p>인사말 layout</p>
 </blockquote>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">me.grantland.widget.AutofitTextView</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span> <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/greeting_text"</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"100dp"</span> <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:maxLines</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"@dimen/default_pad"</span> <span class="hljs-attr">android:textAlignment</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">"@android:color/white"</span> <span class="hljs-attr">android:textStyle</span>=<span class="hljs-string">"bold"</span> <span class="hljs-attr">app:sizeToFit</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">tools:showIn</span>=<span class="hljs-string">"@layout/activity_main"</span> <span class="hljs-attr">tools:text</span>=<span class="hljs-string">"안녕하세요."</span> <span class="hljs-attr">tools:textSize</span>=<span class="hljs-string">"50sp"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>날씨 layout</p>
 </blockquote>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">"http://schemas.android.com/apk/res/android"</span> <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">"http://schemas.android.com/apk/res-auto"</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">"http://schemas.android.com/tools"</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"200dp"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"100dp"</span> <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">"center|start"</span> <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"horizontal"</span> <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"@dimen/default_pad"</span> <span class="hljs-attr">tools:showIn</span>=<span class="hljs-string">"@layout/activity_main"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/main_weather_image"</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"80dp"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"80dp"</span> <span class="hljs-attr">tools:src</span>=<span class="hljs-string">"@drawable/ic_cloud"</span> /&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"match_parent"</span> <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">"vertical"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">me.grantland.widget.AutofitTextView</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/weather_temp_text"</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"0dp"</span> <span class="hljs-attr">android:layout_weight</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:maxLines</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"4dp"</span> <span class="hljs-attr">android:textAlignment</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">"@android:color/white"</span> <span class="hljs-attr">app:sizeToFit</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">tools:text</span>=<span class="hljs-string">"60°C"</span> /&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">me.grantland.widget.AutofitTextView</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">"@+id/weather_type_text"</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">"match_parent"</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">"0dp"</span> <span class="hljs-attr">android:layout_weight</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:maxLines</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">android:padding</span>=<span class="hljs-string">"4dp"</span> <span class="hljs-attr">android:textAlignment</span>=<span class="hljs-string">"center"</span> <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">"@android:color/white"</span> <span class="hljs-attr">app:sizeToFit</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">tools:text</span>=<span class="hljs-string">"SUNNY"</span> /&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>그리고 카메라 preivew가 있는 레이아웃에 다음과 같이 추가하였습니다.</p>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">layout</span>=<span class="hljs-string">"@layout/item_weather"</span> /&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">layout</span>=<span class="hljs-string">"@layout/item_hello"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h1><p>이제 레이아웃을 추가하였습니다. 하지만 소스를 잘 보면 tools로 텍스트와 이미지를 설정하였습니다. 이는 개발의 편의를 위해 개발 화면에서만 값이 보여지고 실제 화면에서는 보여지지 않습니다.</p>
 <p>목표는 날씨, 기분에 따라 변하는 메시지, 이미지 이기 때문에 Java에서 이를 변경하도록 하겠습니다.</p>
 <blockquote>
 <p>메시지로 사용할 resource<br>다국어 지원을 위해 별도의 xml 파일을 만들어서 관리하도록 하였습니다. 저는 파일명은 각각 greeting_message_array, weather_array로 하였습니다.</p>
 </blockquote>
 <figure class="highlight xml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">string-array</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"greeting_messages"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>안녕하세요.<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>반갑습니다.<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>환영합니다.<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">string-array</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span> <span class="hljs-meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">string-array</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"weather_type"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>맑음<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>눈<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>비<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">string-array</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>인사말을 만들 클래스</p>
 </blockquote>
 <p>별도의 클래스에서 인사말을 만들게 하였습니다. 굳이 이렇게 할 필요는 없지만 추후 이름을 붙인다거나 등의 작업을 위해 분리하였습니다.</p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> app.kimyeonjung.visionmirror.greeting; <span class="hljs-keyword">import</span> android.content.Context; <span class="hljs-keyword">import</span> java.util.Random; <span class="hljs-keyword">import</span> app.kimyeonjung.visionmirror.R; <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GreetingBuilder</span> </span>&#123; <span class="hljs-keyword">private</span> Context context; <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">GreetingBuilder</span><span class="hljs-params">(Context context)</span> </span>&#123; <span class="hljs-keyword">this</span>.context = context; &#125; <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getRandomGreetingMessage</span><span class="hljs-params">()</span> </span>&#123; String[] messageArray = context.getResources().getStringArray(R.array.greeting_messages); <span class="hljs-keyword">return</span> messageArray[<span class="hljs-keyword">new</span> Random().nextInt(messageArray.length - <span class="hljs-number">1</span>)]; &#125; &#125;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>날씨정보</p>
 </blockquote>
 <p>아직 정보를 인터넷에서 받아오는 부분은 구현하지 않았기 때문에 아무 값이나 넣어보았습니다.</p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> app.kimyeonjung.visionmirror.weather; <span class="hljs-keyword">import</span> android.content.Context; <span class="hljs-keyword">import</span> java.util.Random; <span class="hljs-keyword">import</span> app.kimyeonjung.visionmirror.R; <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WeatherBuilder</span> </span>&#123; <span class="hljs-keyword">private</span> Context context; <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">WeatherBuilder</span><span class="hljs-params">(Context context)</span> </span>&#123; <span class="hljs-keyword">this</span>.context = context; &#125; <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getWeatherImage</span><span class="hljs-params">()</span> </span>&#123; <span class="hljs-keyword">int</span>[] images = &#123; R.drawable.ic_cloud, R.drawable.ic_electric, R.drawable.ic_partly_cloudy, R.drawable.ic_rain, R.drawable.ic_snow &#125;; <span class="hljs-keyword">return</span> images[<span class="hljs-keyword">new</span> Random().nextInt(images.length - <span class="hljs-number">1</span>)]; &#125; <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getTemperature</span><span class="hljs-params">()</span> </span>&#123; <span class="hljs-keyword">int</span>[] temps = &#123;<span class="hljs-number">60</span>, <span class="hljs-number">50</span>, <span class="hljs-number">13</span>, <span class="hljs-number">20</span>, <span class="hljs-number">16</span>, <span class="hljs-number">165</span>, <span class="hljs-number">10</span>, <span class="hljs-number">6514</span>, <span class="hljs-number">651</span>, <span class="hljs-number">65</span>&#125;; <span class="hljs-keyword">return</span> temps[<span class="hljs-keyword">new</span> Random().nextInt(temps.length - <span class="hljs-number">1</span>)]; &#125; <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>&#123; String[] types = context.getResources().getStringArray(R.array.weather_type); <span class="hljs-keyword">return</span> types[<span class="hljs-keyword">new</span> Random().nextInt(types.length - <span class="hljs-number">1</span>)]; &#125; &#125;</span><br></pre></td></tr></table></figure>
+
 <p>그리고 마지막으로 액티비티에서 값을 설정해주면</p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AutofitTextView greetingTextView = findViewById(R.id.greeting_text); greetingTextView.setText(<span class="hljs-keyword">new</span> GreetingBuilder(<span class="hljs-keyword">this</span>).getRandomGreetingMessage()); WeatherBuilder weatherBuilder = <span class="hljs-keyword">new</span> WeatherBuilder(<span class="hljs-keyword">this</span>); ImageView weatherImageView = findViewById(R.id.weather_image); weatherImageView.setImageResource(weatherBuilder.getWeatherImage()); AutofitTextView temperatureView = findViewById(R.id.weather_temp_text); temperatureView.setText(String.valueOf(weatherBuilder.getTemperature())); AutofitTextView typeView = findViewById(R.id.weather_type_text); typeView.setText(weatherBuilder.getType());</span><br></pre></td></tr></table></figure>
+
 <h1 id="결과"><a href="#결과" class="headerlink" title="결과"></a>결과</h1><p>짠~! 이렇게 카메라 위에 정보가 출력되었습니다!</p>
 <p><img src="/image/smart_mirror/smart_mirror_7.jpg" alt="설명 이미지7"></p>
 
@@ -319,7 +327,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        10
                     </p>
                 </div>
             </div>
@@ -329,7 +337,7 @@
                         카테고리
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -339,7 +347,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        17
                     </p>
                 </div>
             </div>
@@ -378,6 +386,14 @@
                 <span class="level-item tag">5</span>
             </span>
         </a></li></ul></li><li>
+        <a class="level is-marginless" href="/categories/Crawling/">
+            <span class="level-start">
+                <span class="level-item">Crawling</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/DailyLife/">
             <span class="level-start">
                 <span class="level-item">DailyLife</span>
@@ -414,6 +430,17 @@
             아카이브
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">5월 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/03/">
@@ -487,6 +514,27 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Crawling/">
+                        <span class="tag">Crawling</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Parsing/">
+                        <span class="tag">Parsing</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Scraping/">
+                        <span class="tag">Scraping</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Smart-Mirror/">
                         <span class="tag">Smart Mirror</span>
                         <span class="tag is-grey">5</span>
@@ -549,6 +597,27 @@
                     </a>
                 </div>
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/스크래핑/">
+                        <span class="tag">스크래핑</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/크롤링/">
+                        <span class="tag">크롤링</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/파싱/">
+                        <span class="tag">파싱</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -565,6 +634,44 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #2">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-20T03:48:28.000Z">2019-05-20</time></div>
+                    <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="has-link-black-ter is-size-6">crawling, parsing #2</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T03:48:28.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="has-link-black-ter is-size-6">crawling, parsing #1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -618,44 +725,6 @@
                     <a href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/" class="has-link-black-ter is-size-6">Cluster 환경에서의 Parse Dashboard</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a> / <a class="has-link-grey -link" href="/categories/NodeJs/Parse/">Parse</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_12.jpg" alt="Smart Mirror #5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-12-01T08:55:00.000Z">2017-12-01</time></div>
-                    <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="has-link-black-ter is-size-6">Smart Mirror #5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_8.jpg" alt="Smart Mirror #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-11-25T16:35:00.000Z">2017-11-26</time></div>
-                    <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="has-link-black-ter is-size-6">Smart Mirror #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
                     </p>
                 </div>
             </div>
@@ -687,6 +756,44 @@
         
         <article class="media">
             
+            <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #2">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-20T03:48:28.000Z">2019-05-20</time></div>
+                    <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="has-link-black-ter is-size-6">crawling, parsing #2</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T03:48:28.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="has-link-black-ter is-size-6">crawling, parsing #1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/image/nomad.jpg" alt="뜻하지 않은 유목민 인생 그리고 바뀐점">
@@ -737,44 +844,6 @@
                     <a href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/" class="has-link-black-ter is-size-6">Cluster 환경에서의 Parse Dashboard</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a> / <a class="has-link-grey -link" href="/categories/NodeJs/Parse/">Parse</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_12.jpg" alt="Smart Mirror #5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-12-01T08:55:00.000Z">2017-12-01</time></div>
-                    <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="has-link-black-ter is-size-6">Smart Mirror #5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_8.jpg" alt="Smart Mirror #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-11-25T16:35:00.000Z">2017-11-26</time></div>
-                    <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="has-link-black-ter is-size-6">Smart Mirror #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
                     </p>
                 </div>
             </div>
@@ -913,7 +982,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>

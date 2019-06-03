@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "npm i && hexo g && hexo deploy && git add . && git commit -am \"site update\" && git push"
+		"start": "npm run generate && npm run deploy && npm run git_update",
+		"generate": "./node_modules/.bin/hexo g",
+		"deploy": "./node_modules/.bin/hexo deploy",
+		"git_update": "git add . && git commit -am \"site update\" && git push",
+		"check": "./node_modules/.bin/npm-check -u"
 	},
 	"hexo": {
 		"version": "3.8.0"
@@ -17,11 +21,12 @@
 		"hexo-generator-feed": "^1.2.2",
 		"hexo-generator-index": "^0.2.1",
 		"hexo-generator-json-content": "^4.1.3",
-		"hexo-generator-seo-friendly-sitemap": "0.0.22",
+		"hexo-generator-seo-friendly-sitemap": "0.0.25",
 		"hexo-generator-tag": "^0.2.0",
 		"hexo-renderer-ejs": "^0.3.1",
-		"hexo-renderer-marked": "^0.3.2",
+		"hexo-renderer-marked": "^1.0.0",
 		"hexo-renderer-stylus": "^0.3.3",
-		"hexo-server": "^0.3.1"
+		"hexo-server": "^0.3.1",
+		"npm-check": "^5.9.0"
 	}
 }

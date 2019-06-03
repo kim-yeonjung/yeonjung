@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_4.jpg">
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_5.jpg">
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_6.jpg">
-<meta property="og:updated_time" content="2019-04-07T16:13:48.556Z">
+<meta property="og:updated_time" content="2019-05-12T08:12:07.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Smart Mirror #2">
 <meta name="twitter:description" content="Android Vision 알아보기먼저 목표인 기분에 따라 달라지는 인사말 을 책임져줄 Android Vision을 알아보기로 했습니다. 여기에서 Google Sample을 찾아볼 수 있는데요 저는 여기서 FaceTracker를 사용하려고 합니다. FaceTracker 실행하기실행은 그저 소스를 받아와서 컴파일 하면 끝입니다. 실행시키면 다음과 같은 화면을">
@@ -176,6 +176,7 @@
             <h1 id="Android-Vision-알아보기"><a href="#Android-Vision-알아보기" class="headerlink" title="Android Vision 알아보기"></a>Android Vision 알아보기</h1><p>먼저 목표인 기분에 따라 달라지는 인사말 을 책임져줄 Android Vision을 알아보기로 했습니다. 여기에서 Google Sample을 찾아볼 수 있는데요 저는 여기서 FaceTracker를 사용하려고 합니다.</p>
 <h1 id="FaceTracker-실행하기"><a href="#FaceTracker-실행하기" class="headerlink" title="FaceTracker 실행하기"></a>FaceTracker 실행하기</h1><p>실행은 그저 소스를 받아와서 컴파일 하면 끝입니다. 실행시키면 다음과 같은 화면을 볼 수 있습니다.</p>
 <a id="more"></a>
+
 <p><img src="/image/smart_mirror/smart_mirror_3.jpg" alt="설명 이미지3"></p>
 <p>다만 이 화면은 FaceTracker는 기본적으로 후면 카메라를 사용하게 되어 있는데 거울을 만들기 위해 전면으로 바꿔놓은 상태라 캡쳐하기 좀 힘들어서 비틀다보니 몇몇 얼굴이 인식되지 않았는데요. 실제로는 인식률이 좋고 거울을 여러명이 같이 볼 일은 별로 없으니 상관 없을듯 합니다.</p>
 <h1 id="Android-Vision-소스-수정"><a href="#Android-Vision-소스-수정" class="headerlink" title="Android Vision 소스 수정"></a>Android Vision 소스 수정</h1><h2 id="Class-분리"><a href="#Class-분리" class="headerlink" title="Class 분리"></a>Class 분리</h2><p>이제 제 필요와 실력에 맞게 너프할 차례입니다. 먼저, 제가 알아보기 쉽게 하나로 합쳐져 있던 클래스를 분리하고 변수명도 제 취향에 맞게 정리하였습니다.</p>
@@ -298,7 +299,7 @@
                         포스트
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        10
                     </p>
                 </div>
             </div>
@@ -308,7 +309,7 @@
                         카테고리
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -318,7 +319,7 @@
                         태그
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        17
                     </p>
                 </div>
             </div>
@@ -357,6 +358,14 @@
                 <span class="level-item tag">5</span>
             </span>
         </a></li></ul></li><li>
+        <a class="level is-marginless" href="/categories/Crawling/">
+            <span class="level-start">
+                <span class="level-item">Crawling</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/DailyLife/">
             <span class="level-start">
                 <span class="level-item">DailyLife</span>
@@ -393,6 +402,17 @@
             아카이브
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">5월 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/03/">
@@ -466,6 +486,27 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Crawling/">
+                        <span class="tag">Crawling</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Parsing/">
+                        <span class="tag">Parsing</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Scraping/">
+                        <span class="tag">Scraping</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Smart-Mirror/">
                         <span class="tag">Smart Mirror</span>
                         <span class="tag is-grey">5</span>
@@ -528,6 +569,27 @@
                     </a>
                 </div>
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/스크래핑/">
+                        <span class="tag">스크래핑</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/크롤링/">
+                        <span class="tag">크롤링</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/파싱/">
+                        <span class="tag">파싱</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -544,6 +606,44 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #2">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-20T03:48:28.000Z">2019-05-20</time></div>
+                    <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="has-link-black-ter is-size-6">crawling, parsing #2</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T03:48:28.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="has-link-black-ter is-size-6">crawling, parsing #1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -597,44 +697,6 @@
                     <a href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/" class="has-link-black-ter is-size-6">Cluster 환경에서의 Parse Dashboard</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a> / <a class="has-link-grey -link" href="/categories/NodeJs/Parse/">Parse</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_12.jpg" alt="Smart Mirror #5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-12-01T08:55:00.000Z">2017-12-01</time></div>
-                    <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="has-link-black-ter is-size-6">Smart Mirror #5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_8.jpg" alt="Smart Mirror #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-11-25T16:35:00.000Z">2017-11-26</time></div>
-                    <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="has-link-black-ter is-size-6">Smart Mirror #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
                     </p>
                 </div>
             </div>
@@ -666,6 +728,44 @@
         
         <article class="media">
             
+            <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #2">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-20T03:48:28.000Z">2019-05-20</time></div>
+                    <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="has-link-black-ter is-size-6">crawling, parsing #2</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/(source/crawling/crawling_1.png)" alt="crawling, parsing #1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T03:48:28.000Z">2019-05-16</time></div>
+                    <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="has-link-black-ter is-size-6">crawling, parsing #1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/image/nomad.jpg" alt="뜻하지 않은 유목민 인생 그리고 바뀐점">
@@ -716,44 +816,6 @@
                     <a href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/" class="has-link-black-ter is-size-6">Cluster 환경에서의 Parse Dashboard</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a> / <a class="has-link-grey -link" href="/categories/NodeJs/Parse/">Parse</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_12.jpg" alt="Smart Mirror #5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-12-01T08:55:00.000Z">2017-12-01</time></div>
-                    <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="has-link-black-ter is-size-6">Smart Mirror #5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/smart_mirror/smart_mirror_8.jpg" alt="Smart Mirror #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2017-11-25T16:35:00.000Z">2017-11-26</time></div>
-                    <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="has-link-black-ter is-size-6">Smart Mirror #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Android/">Android</a> / <a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
                     </p>
                 </div>
             </div>
@@ -892,7 +954,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
