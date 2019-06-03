@@ -1,6 +1,6 @@
 ---
-title: 'crawling, parsing #2'
-thumbnail: /image/crawling/crawling_1.png
+title: '크롤링 그리고 파싱 #2'
+thumbnail: /image/crawling/crawling_0.png
 date: 2019-05-20 12:48:28
 tags:
     - Crawling
