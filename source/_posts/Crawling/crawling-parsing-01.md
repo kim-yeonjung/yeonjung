@@ -1,6 +1,6 @@
 ---
 title: 'crawling, parsing #1'
-thumbnail: /image/(source/crawling/crawling_1.png)
+thumbnail: /image/source/crawling/crawling_1.png
 date: 2019-05-16 12:48:28
 tags:
     - Crawling
@@ -13,9 +13,10 @@ tags:
 ---
 
 > 크롤링 시리즈
-1. [크롤링은 왜 하는걸까]()
-2. [꼭 Python, Node.js 로만 가능할까?]()
-3. [크롤링을 하는데 알야야 할 것은?]()
+
+1. [크롤링은 왜 하는걸까](https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-01)
+2. [꼭 Python, Node.js 로만 가능할까?](https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02)
+3. [크롤링을 하는데 알야야 할 것은?](https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-03)
 
 ---
 

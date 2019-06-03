@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>YeonJung Kim Blog</description>
-    <pubDate>Mon, 03 Jun 2019 20:09:39 GMT</pubDate>
+    <pubDate>Mon, 03 Jun 2019 20:17:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,12 +20,12 @@
       
         &lt;blockquote&gt;
 &lt;p&gt;크롤링 시리즈&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;크롤링은 왜 하는걸까&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;꼭 Python, Node.js 로만 가능할까?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;크롤링을 하는데 알야야 할 것은?&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-01&quot;&gt;크롤링은 왜 하는걸까&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02&quot;&gt;꼭 Python, Node.js 로만 가능할까?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-03&quot;&gt;크롤링을 하는데 알야야 할 것은?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;꼭-Python-Node-js-로만-가능할까&quot;&gt;&lt;a href=&quot;#꼭-Python-Node-js-로만-가능할까&quot; class=&quot;headerlink&quot; title=&quot;꼭 Python, Node.js 로만 가능할까?&quot;&gt;&lt;/a&gt;꼭 Python, Node.js 로만 가능할까?&lt;/h1&gt;&lt;p&gt;정답부터 말하면 그렇지 않다.&lt;/p&gt;
 &lt;p&gt;크롤링 강좌, 자료 등에는 자주 등장하는 조합이 몇가지 있다. 가장 많이 등장하는 조합은&lt;/p&gt;
@@ -39,7 +39,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<blockquote><p>크롤링 시리즈</p><ol><li><a href="">크롤링은 왜 하는걸까</a></li><li><a href="">꼭 Python, Node.js 로만 가능할까?</a></li><li><a href="">크롤링을 하는데 알야야 할 것은?</a></li></ol></blockquote><hr><h1 id="꼭-Python-Node-js-로만-가능할까"><a href="#꼭-Python-Node-js-로만-가능할까" class="headerlink" title="꼭 Python, Node.js 로만 가능할까?"></a>꼭 Python, Node.js 로만 가능할까?</h1><p>정답부터 말하면 그렇지 않다.</p><p>크롤링 강좌, 자료 등에는 자주 등장하는 조합이 몇가지 있다. 가장 많이 등장하는 조합은</p><ul><li>Python + BeautifulSoup</li><li>Python + Selenium</li><li>Node.js + cheerio</li><li>Node.js + Selenium</li></ul><p>이런 조합이 가장 많이 눈에 띄는데 가장 눈에 띄는 조합은 당연 Python + BeautifulSoup 이다.</p><a id="more"></a><blockquote><p>가장 아름다운 하나의 답이 존재한다</p></blockquote><p>라는 디자인 철학에서 알 수 있듯이 주변에서 사용해본 사람들은 모두 쉽고 빠른 속도로 개발할 수 있다고 한다. 심지어 웬만한 작업 (머신러닝, 웹서버, etc) 은 모두 할 수 있으니 관련 자료가 많지 않나 싶다. (심지어 Node.js 설치하다보면 파이썬이 같이 설치된다)</p><p>물론 나는 그런 내용과 관계 없이 크롤링 작업에 파이썬을 써본적은 없다. 주로</p><ul><li>Java + Selenium + Jsoup</li><li>Java + OkHttp + Jsoup</li><li>Node.js + request + cheerio</li><li>Node.js + puppeteer + cheerio</li></ul><p>이런 조합으로 많이 작업했다. 물론 따로 특정 환경에서 필요하면 그 환경에 맞춰서 작업했다.</p><p>C# 코드를 작성한적도 있고 JQuery를 사용한적도 있다. 즉, 크롤링을 하는데 있어서 사용하는 언어 등은 전혀 문제가 되지 않는다. 환경에 따라 난이도의 차이는 있을지 몰라도 ‘저는 파이썬을 할 줄 몰라서 못할것 같아요’ 같은 일은 없다는 것이다.</p><p>당연히 저는 프로그래밍을 못해서 크롤링을 못해요 라는 말도 하지 않아도 된다. 이미 다양한 자료가 있고 심지어 VBA 등에서도 크롤링이 가능하다. 구글 스프레드시트를 사용해서 하는 크롤링도 본 적 있으니 그저 찾아보기만 하면 된다.</p><p>대부분의 경우에 내가 해야 할 작업은 이미 누군가가 열심히 삽질해서 얻은 노하우를 인터넷에 공개해 놓았기 때문에 처음부터 끝까지 홀로 삽질할 걱정은 하지 않아도 된다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>크롤링 시리즈</p></blockquote><ol><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-01">크롤링은 왜 하는걸까</a></li><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02">꼭 Python, Node.js 로만 가능할까?</a></li><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-03">크롤링을 하는데 알야야 할 것은?</a></li></ol><hr><h1 id="꼭-Python-Node-js-로만-가능할까"><a href="#꼭-Python-Node-js-로만-가능할까" class="headerlink" title="꼭 Python, Node.js 로만 가능할까?"></a>꼭 Python, Node.js 로만 가능할까?</h1><p>정답부터 말하면 그렇지 않다.</p><p>크롤링 강좌, 자료 등에는 자주 등장하는 조합이 몇가지 있다. 가장 많이 등장하는 조합은</p><ul><li>Python + BeautifulSoup</li><li>Python + Selenium</li><li>Node.js + cheerio</li><li>Node.js + Selenium</li></ul><p>이런 조합이 가장 많이 눈에 띄는데 가장 눈에 띄는 조합은 당연 Python + BeautifulSoup 이다.</p><a id="more"></a><blockquote><p>가장 아름다운 하나의 답이 존재한다</p></blockquote><p>라는 디자인 철학에서 알 수 있듯이 주변에서 사용해본 사람들은 모두 쉽고 빠른 속도로 개발할 수 있다고 한다. 심지어 웬만한 작업 (머신러닝, 웹서버, etc) 은 모두 할 수 있으니 관련 자료가 많지 않나 싶다. (심지어 Node.js 설치하다보면 파이썬이 같이 설치된다)</p><p>물론 나는 그런 내용과 관계 없이 크롤링 작업에 파이썬을 써본적은 없다. 주로</p><ul><li>Java + Selenium + Jsoup</li><li>Java + OkHttp + Jsoup</li><li>Node.js + request + cheerio</li><li>Node.js + puppeteer + cheerio</li></ul><p>이런 조합으로 많이 작업했다. 물론 따로 특정 환경에서 필요하면 그 환경에 맞춰서 작업했다.</p><p>C# 코드를 작성한적도 있고 JQuery를 사용한적도 있다. 즉, 크롤링을 하는데 있어서 사용하는 언어 등은 전혀 문제가 되지 않는다. 환경에 따라 난이도의 차이는 있을지 몰라도 ‘저는 파이썬을 할 줄 몰라서 못할것 같아요’ 같은 일은 없다는 것이다.</p><p>당연히 저는 프로그래밍을 못해서 크롤링을 못해요 라는 말도 하지 않아도 된다. 이미 다양한 자료가 있고 심지어 VBA 등에서도 크롤링이 가능하다. 구글 스프레드시트를 사용해서 하는 크롤링도 본 적 있으니 그저 찾아보기만 하면 된다.</p><p>대부분의 경우에 내가 해야 할 작업은 이미 누군가가 열심히 삽질해서 얻은 노하우를 인터넷에 공개해 놓았기 때문에 처음부터 끝까지 홀로 삽질할 걱정은 하지 않아도 된다.</p>]]></content:encoded>
       
       <comments>https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02/#disqus_thread</comments>
     </item>
@@ -53,19 +53,19 @@
       
         &lt;blockquote&gt;
 &lt;p&gt;크롤링 시리즈&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;크롤링은 왜 하는걸까&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;꼭 Python, Node.js 로만 가능할까?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;크롤링을 하는데 알야야 할 것은?&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-01&quot;&gt;크롤링은 왜 하는걸까&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02&quot;&gt;꼭 Python, Node.js 로만 가능할까?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-03&quot;&gt;크롤링을 하는데 알야야 할 것은?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;크롤링(crawling) 또는 스크래핑(scraping)그리고 파싱(parsing)은 구분하기가 애매하다고 생각한다. 물론 파싱은 컴파일러 설계 등에서 사용되는 의미있는 토큰으로 나누어 파스트리를 만드는 파싱의 의미도 있지만 여기서는 단순히 데이터를 가공하여 정보로 만드는 과정을 말하려고 한다.&lt;/p&gt;
 &lt;p&gt;인터넷의 발달에 따라 우리는 기존의 신문, 잡지등에서 웹브라우저로, 앱으로 정보 수집의 창구가 이동하고 있다. 그리고 어떠한 정보를 가지고 있는가, 얼마나 빠르게 습득하느냐도 점차 중요해지면서 주기적으로 데이터를 수집하는 업무가 증가하고 있으며 이로 인하여 인터넷에서 데이터를 가져오는 과정을 자동화하는 크롤링이 관심을 받고 있다.&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<blockquote><p>크롤링 시리즈</p><ol><li><a href="">크롤링은 왜 하는걸까</a></li><li><a href="">꼭 Python, Node.js 로만 가능할까?</a></li><li><a href="">크롤링을 하는데 알야야 할 것은?</a></li></ol></blockquote><hr><p>크롤링(crawling) 또는 스크래핑(scraping)그리고 파싱(parsing)은 구분하기가 애매하다고 생각한다. 물론 파싱은 컴파일러 설계 등에서 사용되는 의미있는 토큰으로 나누어 파스트리를 만드는 파싱의 의미도 있지만 여기서는 단순히 데이터를 가공하여 정보로 만드는 과정을 말하려고 한다.</p><p>인터넷의 발달에 따라 우리는 기존의 신문, 잡지등에서 웹브라우저로, 앱으로 정보 수집의 창구가 이동하고 있다. 그리고 어떠한 정보를 가지고 있는가, 얼마나 빠르게 습득하느냐도 점차 중요해지면서 주기적으로 데이터를 수집하는 업무가 증가하고 있으며 이로 인하여 인터넷에서 데이터를 가져오는 과정을 자동화하는 크롤링이 관심을 받고 있다.</p><a id="more"></a><p>특히 요즘에는 인터넷 강의 업체에서도 크롤링을 통한 업무 자동화 등 다양한 홍보를 하고 있다. 그런데 대부분 50 ~ 80 만원 정도의 가격대를 형성하고 있는데 사실 개인적인 기준에서는 수강하기에는 좀 부담스러운 가격이긴 하다. 더군다나 대부분은 파이썬 등 프로그래밍 언어를 사용하는 강의이고 어느정도 프로그래밍이 가능해야 또는 최소한 개념은 알아야 수강할 수 있는 강의라는 얘기를 들었다.</p><p>그래서 이번에는 정리 겸 크롤링에 대해 써보려고 한다.</p><hr><h2 id="크롤링은-왜-하는걸까"><a href="#크롤링은-왜-하는걸까" class="headerlink" title="크롤링은 왜 하는걸까"></a>크롤링은 왜 하는걸까</h2><p>크롤링을 하는데는 다양한 이유가 있다. 구글, 네이버 등 검색 엔진에서 자사 서비스에 검색 결과로 노출하기 위한 크롤링부터 기업이 CS 업무용 카페를 모니터링하기 위한 크롤링, 연구를 위한 데이터 수집용 크롤링, 그 외 업무에 필요한 데이터 수집용 크롤링 등 다양한 목적에서 사용되고 있다.</p><p><img src="/crawling/crawling_1.png" alt="이미지 설명"></p><p>기업업무 등에서 사용되는 크롤링이던 개인적으로 쓰는 크롤링이던간에 사실 크롤링은 시간만 충분히 있다면 사람이 처리할 수 있는 작업이다.</p><ol><li>컴퓨터를 켜고</li><li>해당 사이트에 접속해서</li><li>원하는 페이지를 열고</li><li>원하는 데이터 (제목, 내용 등)을 가져오고</li><li>엑셀이나 텍스트 파일 등 필요한 형태로 저장</li></ol><p>단순하게 이 과정만 반복하면 된다. 이 업무가 필요 없을 때 까지 말이다.</p><p>만약 회사에서 맡은 업무중 하나가 100개의 뉴스 사이트를 확인하면서 전날 새로 올라온 기사를 수집하는 업무라고 가정한다면 아마 처음 몇일은 열심히 하겠지만 다음날부터는 보기만 해도 지겹고 진절머리날 것 이다.</p><p>물론 오늘의 뉴스 헤드라인 전달 등 몇개 안되는 작업이라면 그정도 쯤이야 하면서 하는 사람도 있을지도 모른다 하지만 군대에서 매 주 기록 정리해서 보고하는 일 조차 귀찮아 했던 사람이 나다. 저런 업무를 매일 또는 주기적으로 할 수 있을리가 없다.</p><p>더군다나 해야할 일은 자료 수집만 있는것도 아니니 일이 많은 날에는 초조하기도 하고 짜증도 날 것이다.</p><p>이러한 시점에서 필요한것이 바로 <code>크롤링</code>이다. </p><p>크롤링용 시스템을 운영할 수 있는 기업에서는 기존에 데이터 수집에 소모되던 인력을 다른곳에 투입할 수 있게 되며 업무상 데이터 수집이 주기적으로 필요한 개인은 데이터 수집 업무에 소요되던 시간을 다른 업무나 휴식에 쓸 수 있을것이다. 개인적으로는 크롤링 작업을 자동화 해서 나쁠것은 없다고 생각한다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>크롤링 시리즈</p></blockquote><ol><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-01">크롤링은 왜 하는걸까</a></li><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02">꼭 Python, Node.js 로만 가능할까?</a></li><li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-03">크롤링을 하는데 알야야 할 것은?</a></li></ol><hr><p>크롤링(crawling) 또는 스크래핑(scraping)그리고 파싱(parsing)은 구분하기가 애매하다고 생각한다. 물론 파싱은 컴파일러 설계 등에서 사용되는 의미있는 토큰으로 나누어 파스트리를 만드는 파싱의 의미도 있지만 여기서는 단순히 데이터를 가공하여 정보로 만드는 과정을 말하려고 한다.</p><p>인터넷의 발달에 따라 우리는 기존의 신문, 잡지등에서 웹브라우저로, 앱으로 정보 수집의 창구가 이동하고 있다. 그리고 어떠한 정보를 가지고 있는가, 얼마나 빠르게 습득하느냐도 점차 중요해지면서 주기적으로 데이터를 수집하는 업무가 증가하고 있으며 이로 인하여 인터넷에서 데이터를 가져오는 과정을 자동화하는 크롤링이 관심을 받고 있다.</p><a id="more"></a><p>특히 요즘에는 인터넷 강의 업체에서도 크롤링을 통한 업무 자동화 등 다양한 홍보를 하고 있다. 그런데 대부분 50 ~ 80 만원 정도의 가격대를 형성하고 있는데 사실 개인적인 기준에서는 수강하기에는 좀 부담스러운 가격이긴 하다. 더군다나 대부분은 파이썬 등 프로그래밍 언어를 사용하는 강의이고 어느정도 프로그래밍이 가능해야 또는 최소한 개념은 알아야 수강할 수 있는 강의라는 얘기를 들었다.</p><p>그래서 이번에는 정리 겸 크롤링에 대해 써보려고 한다.</p><hr><h2 id="크롤링은-왜-하는걸까"><a href="#크롤링은-왜-하는걸까" class="headerlink" title="크롤링은 왜 하는걸까"></a>크롤링은 왜 하는걸까</h2><p>크롤링을 하는데는 다양한 이유가 있다. 구글, 네이버 등 검색 엔진에서 자사 서비스에 검색 결과로 노출하기 위한 크롤링부터 기업이 CS 업무용 카페를 모니터링하기 위한 크롤링, 연구를 위한 데이터 수집용 크롤링, 그 외 업무에 필요한 데이터 수집용 크롤링 등 다양한 목적에서 사용되고 있다.</p><p><img src="/crawling/crawling_1.png" alt="이미지 설명"></p><p>기업업무 등에서 사용되는 크롤링이던 개인적으로 쓰는 크롤링이던간에 사실 크롤링은 시간만 충분히 있다면 사람이 처리할 수 있는 작업이다.</p><ol><li>컴퓨터를 켜고</li><li>해당 사이트에 접속해서</li><li>원하는 페이지를 열고</li><li>원하는 데이터 (제목, 내용 등)을 가져오고</li><li>엑셀이나 텍스트 파일 등 필요한 형태로 저장</li></ol><p>단순하게 이 과정만 반복하면 된다. 이 업무가 필요 없을 때 까지 말이다.</p><p>만약 회사에서 맡은 업무중 하나가 100개의 뉴스 사이트를 확인하면서 전날 새로 올라온 기사를 수집하는 업무라고 가정한다면 아마 처음 몇일은 열심히 하겠지만 다음날부터는 보기만 해도 지겹고 진절머리날 것 이다.</p><p>물론 오늘의 뉴스 헤드라인 전달 등 몇개 안되는 작업이라면 그정도 쯤이야 하면서 하는 사람도 있을지도 모른다 하지만 군대에서 매 주 기록 정리해서 보고하는 일 조차 귀찮아 했던 사람이 나다. 저런 업무를 매일 또는 주기적으로 할 수 있을리가 없다.</p><p>더군다나 해야할 일은 자료 수집만 있는것도 아니니 일이 많은 날에는 초조하기도 하고 짜증도 날 것이다.</p><p>이러한 시점에서 필요한것이 바로 <code>크롤링</code>이다. </p><p>크롤링용 시스템을 운영할 수 있는 기업에서는 기존에 데이터 수집에 소모되던 인력을 다른곳에 투입할 수 있게 되며 업무상 데이터 수집이 주기적으로 필요한 개인은 데이터 수집 업무에 소요되던 시간을 다른 업무나 휴식에 쓸 수 있을것이다. 개인적으로는 크롤링 작업을 자동화 해서 나쁠것은 없다고 생각한다.</p>]]></content:encoded>
       
       <comments>https://duswnd25.github.io/2019/05/16/Crawling/crawling-parsing-01/#disqus_thread</comments>
     </item>
