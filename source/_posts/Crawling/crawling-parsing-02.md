@@ -1,6 +1,6 @@
 ---
 title: 'crawling, parsing #2'
-thumbnail: /image/(source/crawling/crawling_1.png)
+thumbnail: /image/crawling/crawling_1.png
 date: 2019-05-20 12:48:28
 tags:
     - Crawling
