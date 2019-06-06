@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>YeonJung Kim Blog</description>
-    <pubDate>Thu, 06 Jun 2019 19:25:41 GMT</pubDate>
+    <pubDate>Thu, 06 Jun 2019 19:27:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>크롤링 그리고 파싱 #2</title>
+      <title>크롤링 그리고 파싱 #3</title>
       <link>https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/</link>
       <guid>https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/</guid>
       <pubDate>Tue, 04 Jun 2019 03:31:00 GMT</pubDate>
