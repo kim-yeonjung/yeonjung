@@ -3,26 +3,27 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta name="google-site-verification" content="VKzImJNbhYL6xqqwyYCQyVQ3QYLRFwNYPRFI-VuxAss">
     <meta charset="utf-8">
-<title>YeonJung Kim</title>
+<title>크롤링 그리고 파싱 #2 - YeonJung Kim</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="YeonJung Kim Blog">
-<meta name="keywords" content="blog, tech, programming">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YeonJung Kim">
-<meta property="og:url" content="https://duswnd25.github.io/index.html">
+    <meta name="description" content="크롤링 시리즈   크롤링은 왜 하는걸까 꼭 Python, Node.js 로만 가능할까? 크롤링을 하는데 알야야 할 것은?   크롤링을 하는데 알아야 할 것은?크롤링을 하려면 다음과 같은 내용을 한번 생각해 봐야한다.  내가 원하는 정보가 정확히 무엇인가 어떤 언어(환경)을 쓸것인가  특히 1번은 크롤링 뿐만 아니라 흔히 말하는 IT 서비스가 필요한 사람들">
+<meta name="keywords" content="Crawling,Parsing,Scraping,크롤링,스크래핑,파싱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="크롤링 그리고 파싱 #2">
+<meta property="og:url" content="https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/index.html">
 <meta property="og:site_name" content="YeonJung Kim">
-<meta property="og:description" content="YeonJung Kim Blog">
+<meta property="og:description" content="크롤링 시리즈   크롤링은 왜 하는걸까 꼭 Python, Node.js 로만 가능할까? 크롤링을 하는데 알야야 할 것은?   크롤링을 하는데 알아야 할 것은?크롤링을 하려면 다음과 같은 내용을 한번 생각해 봐야한다.  내가 원하는 정보가 정확히 무엇인가 어떤 언어(환경)을 쓸것인가  특히 1번은 크롤링 뿐만 아니라 흔히 말하는 IT 서비스가 필요한 사람들">
 <meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2019-06-06T19:25:41.283Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YeonJung Kim">
-<meta name="twitter:description" content="YeonJung Kim Blog">
+<meta name="twitter:title" content="크롤링 그리고 파싱 #2">
+<meta name="twitter:description" content="크롤링 시리즈   크롤링은 왜 하는걸까 꼭 Python, Node.js 로만 가능할까? 크롤링을 하는데 알야야 할 것은?   크롤링을 하는데 알아야 할 것은?크롤링을 하려면 다음과 같은 내용을 한번 생각해 봐야한다.  내가 원하는 정보가 정확히 무엇인가 어떤 언어(환경)을 쓸것인가  특히 1번은 크롤링 뿐만 아니라 흔히 말하는 IT 서비스가 필요한 사람들">
 
 
 
-<link rel="alternative" href="https://duswnd25.github.io/rss2.xml" title="YeonJung Kim" type="application/atom+xml">
+<link rel="alternative" href="https://duswnd25.github.io/rss2.xml" title="크롤링 그리고 파싱 #2" type="application/atom+xml">
 
 
 
@@ -91,7 +92,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://yeonjung.herokuapp.com/public/blog/logo.png" alt="YeonJung Kim" height="28">
+                <img src="https://yeonjung.herokuapp.com/public/blog/logo.png" alt="크롤링 그리고 파싱 #2" height="28">
             
             </a>
         </div>
@@ -99,7 +100,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active" href="/">Home</a>
+                <a class="navbar-item" href="/">Home</a>
                 
                 <a class="navbar-item" href="/archives">Archives</a>
                 
@@ -127,13 +128,12 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    <div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-image">
-        <a href="/2019/06/04/Crawling/crawling-parsing-03/" class="image is-7by1">
+        <span class="image is-7by1">
             <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #2">
-        </a>
+        </span>
     </div>
     
     <div class="card-content article ">
@@ -154,12 +154,17 @@
                 </span>
                 
                 
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/06/04/Crawling/crawling-parsing-03/">크롤링 그리고 파싱 #2</a>
+                크롤링 그리고 파싱 #2
             
         </h1>
         <div class="content">
@@ -178,159 +183,58 @@
 <li>어떤 언어(환경)을 쓸것인가</li>
 </ol>
 <p>특히 1번은 크롤링 뿐만 아니라 흔히 말하는 IT 서비스가 필요한 사람들 중 상당수의 문제이기도 하다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/06/04/Crawling/crawling-parsing-03/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
+<a id="more"></a>
 
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/05/20/Crawling/crawling-parsing-02/" class="image is-7by1">
-            <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #2">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-20T03:48:28.000Z">2019-05-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4분 read (About 609 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/20/Crawling/crawling-parsing-02/">크롤링 그리고 파싱 #2</a>
-            
-        </h1>
-        <div class="content">
-            <blockquote>
-<p>크롤링 시리즈</p>
-</blockquote>
+<p>실제로 아르바이트 하던 쇼핑몰에서 다른 쇼핑몰의 스마트폰 애플리케이션을 보고 우리도 저런 애플리케이션을 만들어달라는 요청을 했었다.</p>
+<p>받은 내용을 보니 단순히 모바일 쇼핑몰 웹페이지를 앱으로 감싼 구조 였으며 PUSH 메시지 등의 기능은 전혀 없고 말 그대로 바로가기 정도의 역할을 하는 구조였다.</p>
+<p>혹시나 싶어서 내용을 설명하고 이를 하기 위해 필요한 최소 비용을 설명하니 ‘아 그런거면 우리는 그런거 안하죠 그거 할거면 그 돈을 왜 써요’ 라는 답변을 받았다.</p>
+<p>저런 대화를 수십번을 하다보니 다른 아르바이트나 외주를 할 때도 항상 먼저 하는 작업이 정말로 원하는게 무엇인지 다시 물어보는 것 이었다. <code>의외로 많은 사람들이 이 작업을 왜 해야하는지 모르는 경우가 많았으며</code> 대화를 하다보면 처음 요구사항이 A 였다면 대화가 끝난뒤에는 Z 정도 되는 경우도 자주 있었다.</p>
+<p>2번의 어떤 환경을 쓸것인가는 업무에 적합한 내용을 선택하면 되는 문제니 개인의 취향과 업무 환경에 맞추면 된다. VBA 쓰는 사람이면 VBA를 사용하면 되고 Node.js를 쓰면 Node.js 파이썬이면 파이썬 용도와 취향에 맞게 고르면 된다. 그럼에도 이렇게 언급하는 이유는 차후에 나올 Server Side Rendering 과 Client Side Rendering 의 차이 때문이다.</p>
+<hr>
+<p>크롤링을 하기 위한 기본 지식</p>
 <ol>
-<li><a href="https://duswnd25.github.io/2019/05/16/Crawling/crawling-parsing-01/">크롤링은 왜 하는걸까</a></li>
-<li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02">꼭 Python, Node.js 로만 가능할까?</a></li>
-<li><a href="https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03">크롤링을 하는데 알야야 할 것은?</a></li>
+<li>SSR (Server Side Rendering)과 CSR (Client Side Rendering) 덤으로 SPA</li>
+<li>CSS Selector</li>
+<li>Query와 Parameter 그리고 body</li>
 </ol>
 <hr>
-<h1 id="꼭-Python-Node-js-로만-가능할까"><a href="#꼭-Python-Node-js-로만-가능할까" class="headerlink" title="꼭 Python, Node.js 로만 가능할까?"></a>꼭 Python, Node.js 로만 가능할까?</h1><p>정답부터 말하면 그렇지 않다.</p>
-<p>크롤링 강좌, 자료 등에는 자주 등장하는 조합이 몇가지 있다. 가장 많이 등장하는 조합은</p>
-<ul>
-<li>Python + BeautifulSoup</li>
-<li>Python + Selenium</li>
-<li>Node.js + cheerio</li>
-<li>Node.js + Selenium</li>
-</ul>
-<p>이런 조합이 가장 많이 눈에 띄는데 가장 눈에 띄는 조합은 당연 Python + BeautifulSoup 이다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/05/20/Crawling/crawling-parsing-02/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/05/16/Crawling/crawling-parsing-01/" class="image is-7by1">
-            <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #1">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-16T03:48:28.000Z">2019-05-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8분 read (About 1137 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/16/Crawling/crawling-parsing-01/">크롤링 그리고 파싱 #1</a>
-            
-        </h1>
-        <div class="content">
-            <blockquote>
-<p>크롤링 시리즈</p>
-</blockquote>
+<h3 id="SSR-Server-Side-Rendering-과-CSR-Client-Side-Rendering-덤으로-SPA"><a href="#SSR-Server-Side-Rendering-과-CSR-Client-Side-Rendering-덤으로-SPA" class="headerlink" title="SSR (Server Side Rendering)과 CSR (Client Side Rendering) 덤으로 SPA"></a>SSR (Server Side Rendering)과 CSR (Client Side Rendering) 덤으로 SPA</h3><p>결국에는 화면을 누가, 어떻게 렌더링하느냐는 책임전가의 문제이다. 자세한 내용은 알면 좋겠지만 핵심부터 말하자면 우리가 크롤링하려는 사이트가 데이터가 들어있는 상태로 응답을 하는가 응답먼저 하고 Javascript를 이용해서 데이터를 가져오는가 차이이다.</p>
+<p>이 데이터의 로딩 시점의 차이 때문에 우리는 단순히 http request를 요청 할 것인가 headless browser를 사용 할 것인지 결정해야 한다. 만일 크롤링하려는 사이트가 데이터가 들어와 있는 상태의 html을 반환한다면 매우 편리하고 쉽겠지만 javascript를 사용해서 데이터를 로딩하는 사이트도 많기 때문에 headless browser또한 고려해야 한다.</p>
+<p>웹 사이트를 분석해서 headless browser를 사용할지 결정할 수 도 있겠지만 단순히 Okhttp 등을 써서 요청을 날렸는데 받은 결과에서 데이터들이 안보인다 싶으면 사용하면 될 듯 하다.</p>
+<p>참고로 headless browser는 웹 브라우저를 GUI없이 돌리는것을 의미한다. GUI만 빠지기 때문에 javascript를 사용할 수 있으며 스크린샷, 브라우저 테스트 등을 하는데 유용한다.</p>
+<h3 id="Query와-Parameter"><a href="#Query와-Parameter" class="headerlink" title="Query와 Parameter"></a>Query와 Parameter</h3><p>API를 컨트롤하기(웹페이지를 조건에 맞춰 띄우기) 위해 3가지를 쓸 수 있다.</p>
 <ol>
-<li><a href="https://duswnd25.github.io/2019/05/16/Crawling/crawling-parsing-01/">크롤링은 왜 하는걸까</a></li>
-<li><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02">꼭 Python, Node.js 로만 가능할까?</a></li>
-<li><a href="https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03">크롤링을 하는데 알야야 할 것은?</a></li>
+<li>parameter</li>
+<li>query</li>
+<li>body</li>
 </ol>
-<hr>
-<p>크롤링(crawling) 또는 스크래핑(scraping)그리고 파싱(parsing)은 구분하기가 애매하다고 생각한다. 물론 파싱은 컴파일러 설계 등에서 사용되는 의미있는 토큰으로 나누어 파스트리를 만드는 파싱의 의미도 있지만 여기서는 단순히 데이터를 가공하여 정보로 만드는 과정을 말하려고 한다.</p>
-<p>인터넷의 발달에 따라 우리는 기존의 신문, 잡지등에서 웹브라우저로, 앱으로 정보 수집의 창구가 이동하고 있다. 그리고 어떠한 정보를 가지고 있는가, 얼마나 빠르게 습득하느냐도 점차 중요해지면서 주기적으로 데이터를 수집하는 업무가 증가하고 있으며 이로 인하여 인터넷에서 데이터를 가져오는 과정을 자동화하는 크롤링이 관심을 받고 있다.</p>
+<p>3번 body의 경우에는 주로 form 등의 데이터를 담는데 사용된다. URL에서는 확인할 수 없고 크롤링 하려는 페이지가 form데이터나 json 등의 데이터 등을 전달해야 응답해주는 페이지라면 사용되겠지만 아직까지 그런 일은 거의 없었다.</p>
+<p>1번 parameter는 URL에 포함되는 값 이다. 예를들어</p>
+<p><a href="https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02/">https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02/</a></p>
+<p>라는 주소에서 <a href="https://duswnd25.github.io">https://duswnd25.github.io</a> 라는 웹사이트 주소 이후에 /값 형식으로 붙는것이 parameter라고 보면된다. 지금 주소에서는 각각 2019, 05, 20, Crawling, crawling-parsing-02 총 5개가 parameter라고 보면된다.</p>
+<p>2번 query는 주소 이후 ? 다음부터 시작되는 값 이다. ?key=value&amp;key=value 형태로 붙게된다.</p>
+<p><a href="https://www.google.com/?q=검색" target="_blank" rel="noopener">https://www.google.com/?q=검색</a></p>
+<p>이 주소에서 parameter는 없으며 q=검색 부분이 query 이다.</p>
+<p>그렇다면 어떤 경우에는 query를 쓰고 어떤 경우에는 parameter를 쓸까? 정답은 없다. 이를 어떻게 사용하는가는 그 사이트를 또는 api를 개발한 개발자의 판단 또는 취향이기 때문에 딱히 뭐라고 하기 어렵다.</p>
+<p>나같은 경우에는 보통 레이아웃 별로 parameter를 써서 url을 매핑하고 query를 써서 조건을 다는 편이다. 예를들어 집 주소를 parameter와 query를 써서 만든다고 한다면</p>
+<p>http://지도.com/서울시/용산구/전자상가?건물=선인상가&amp;호수=000</p>
+<p>이런 식으로 자주 하는 편이다. 당연히 모든 parameter를 query로 바꿀수 도 있고 그 반대도 가능하다. 위의 주소도</p>
+<p>http://지도.com/서울시/용산구/전자상가/선인상가/000</p>
+<p>라던가</p>
+<p>http://지도.com?도시=서울시&amp;구=용산구&amp;종류=전자상가&amp;건물=선인상가&amp;호수=100</p>
+<p>처럼 바꿀 수 있다. 때문에 원하는 조건에 따라 크롤링을 하려면 둘 다 살펴봐야 한다.</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/05/16/Crawling/crawling-parsing-01/#more">자세히 보기</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Crawling/">Crawling</a>, <a class="has-link-grey -link" href="/tags/Parsing/">Parsing</a>, <a class="has-link-grey -link" href="/tags/Scraping/">Scraping</a>, <a class="has-link-grey -link" href="/tags/스크래핑/">스크래핑</a>, <a class="has-link-grey -link" href="/tags/크롤링/">크롤링</a>, <a class="has-link-grey -link" href="/tags/파싱/">파싱</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -340,468 +244,44 @@
 
 
 
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/" class="image is-7by1">
-            <img class="thumbnail" src="/image/nomad.jpg" alt="뜻하지 않은 유목민 인생 그리고 바뀐점">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-02-28T17:22:07.000Z">2019-03-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/DailyLife/">DailyLife</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6분 read (About 917 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/">뜻하지 않은 유목민 인생 그리고 바뀐점</a>
-            
-        </h1>
-        <div class="content">
-            <p>유목민[nomad] : 한곳에 정착하지 않고 다른 장소로 이주하면서 생활하는 사람이나 그런 사람들로 구성된 사회</p>
-<p>네 최근 몇 년간의 저를 나타내는 단어 중 하나입니다.</p>
-<p>정확히는 대학에 입학한 시점부터 바뀐 삶의 패턴이라고 할 수 있겠네요</p>
-<p>저는 흔히 말하는 지방러입니다. 그리고 학교는 아직 위치에 대해 의견이 분분하니 1호선으로 타협하겠습니다. 아마 경험이 있으신 분들은 이쯤에서 감이 오실 겁니다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="image is-7by1">
-            <img class="thumbnail" src="/image/response_time.png" alt="NodeJS + Express 의 잔여 메모리와 응답시간">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-02-27T10:08:26.000Z">2019-02-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    12분 read (About 1731 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/">NodeJS + Express 의 잔여 메모리와 응답시간</a>
-            
-        </h1>
-        <div class="content">
-            <p>작년 초 지인의 소개로 모 인디게임의 서버 프로그램을 개발하였습니다.</p>
-<p>서버의 주 역할은 주기적으로 (짧게는 몇 초부터 길게는 5분) 사용자의 게임 데이터를 서버로 전송해 운영팀이 게임 상황을 파악할 수 있게 해주거나 사용자 차단, 일일 보상 체크 등의 간단한 역할만 수행하고 있습니다.</p>
-<p>처음에는 사용자의 수가 적었기 때문에 10 rps (초당 요청 수) 정 도로 아무런 문제가 없었지만 최근 몇 달간 사용자가 급증하기 시작하면서 평균적으로 40rps 를 유지하고 있으며 피크타임 또는 공격을 받을 때는 80 rps까지 올라가는 상황이 벌어지고 있습니다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/" class="image is-7by1">
-            <img class="thumbnail" src="/image/form_tampered.png" alt="Cluster 환경에서의 Parse Dashboard">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-02-08T17:58:46.000Z">2019-02-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/NodeJs/Parse/">Parse</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7분 read (About 1031 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/">Cluster 환경에서의 Parse Dashboard</a>
-            
-        </h1>
-        <div class="content">
-            <p>Node.js와 웹 프레임워크를 사용해 구현한 웹 서버는 생산성이나 편의성 면에서 확실히 매력이 있습니다.</p>
-<p>NPM의 방대한 라이브러리와 Javascript의 다양한 자료들은 부족한 실력에도 원하는 목적을 달성하게 도와줍니다.</p>
-<p>저는 그중에서도 Node.js + Express + Parse Server + MongoDB + Parse Dashboard 구조를 주로 사용하는데</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/" class="image is-7by1">
-            <img class="thumbnail" src="/image/smart_mirror/smart_mirror_12.jpg" alt="Smart Mirror #5">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-12-01T08:55:00.000Z">2017-12-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    12분 read (About 1828 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/">Smart Mirror #5</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="사용"><a href="#사용" class="headerlink" title="사용"></a>사용</h1><h2 id="Library"><a href="#Library" class="headerlink" title="Library"></a>Library</h2><ul>
-<li>Jsoup</li>
-<li>OkHttp</li>
-<li>AutofitTextView</li>
-<li>otto</li>
-</ul>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><ul>
-<li>DarkSky</li>
-<li>ip-api</li>
-</ul>
-<h2 id="그외"><a href="#그외" class="headerlink" title="그외"></a>그외</h2><ul>
-<li>Google New Rss</li>
-</ul>
-<h1 id="전체-과정"><a href="#전체-과정" class="headerlink" title="전체 과정"></a>전체 과정</h1><h2 id="계기"><a href="#계기" class="headerlink" title="계기"></a>계기</h2><p>처음 시작은 몇년 전 뉴스에 나온 Smart Mirror 에 관한 글My Bathroom Mirror Is Smarter Than Yours입니다.</p>
-<p>당시 ‘오…… 저런것도 있구나….’ 생각하였고 따라서 해보고 싶었지만 당시 저는 군복무 중 이었고 그렇게 기억 한편으로 사라지게 되었습니다.</p>
-<p>그리고 전역 후 학교를 다니던 중 우연히 다시 그 내용을 보게 되었고 이번에는 한번 해보자고 생각하여 틈틈히 만들어보게 되었습니다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/" class="image is-7by1">
-            <img class="thumbnail" src="/image/smart_mirror/smart_mirror_8.jpg" alt="Smart Mirror #4">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-25T16:35:00.000Z">2017-11-26</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5분 read (About 794 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/">Smart Mirror #4</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="실제-데이터-연동하기"><a href="#실제-데이터-연동하기" class="headerlink" title="실제 데이터 연동하기"></a>실제 데이터 연동하기</h1><p>이제 틀은 갖췄으니 실제 데이터를 연동해야합니다.</p>
-<p>이번에 구현할 부분은</p>
-<ol>
-<li>지정시간 이후 Greeting 메시지 제거, 시간 표시</li>
-<li>날씨정보 표시</li>
-</ol>
-<p>입니다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2017/11/26/Android/SmartMirror/Smart-Mirror-4/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2017/11/25/Android/SmartMirror/Smart-Mirror-3/" class="image is-7by1">
-            <img class="thumbnail" src="/image/smart_mirror/smart_mirror_7.jpg" alt="Smart Mirror #3">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-25T05:23:00.000Z">2017-11-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5분 read (About 675 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2017/11/25/Android/SmartMirror/Smart-Mirror-3/">Smart Mirror #3</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="이제-카메라-위에-정보를-띄워봅시다"><a href="#이제-카메라-위에-정보를-띄워봅시다" class="headerlink" title="이제 카메라 위에 정보를 띄워봅시다."></a>이제 카메라 위에 정보를 띄워봅시다.</h1><p>먼저 저는 다음과 같은 정보를 띄우려고 합니다.</p>
-<ol>
-<li>날씨</li>
-<li>인사</li>
-</ol>
-<p>다른 정보는 차차 추가하기로 하고 일단 저 두가지만 해보기로 합니다.</p>
-<h2 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h2>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2017/11/25/Android/SmartMirror/Smart-Mirror-3/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2017/11/25/Android/SmartMirror/Smart-Mirror-2/" class="image is-7by1">
-            <img class="thumbnail" src="/image/smart_mirror/smart_mirror_3.jpg" alt="Smart Mirror #2">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-25T02:32:00.000Z">2017-11-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Android/SmartMirror/">SmartMirror</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3분 read (About 440 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2017/11/25/Android/SmartMirror/Smart-Mirror-2/">Smart Mirror #2</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Android-Vision-알아보기"><a href="#Android-Vision-알아보기" class="headerlink" title="Android Vision 알아보기"></a>Android Vision 알아보기</h1><p>먼저 목표인 기분에 따라 달라지는 인사말 을 책임져줄 Android Vision을 알아보기로 했습니다. 여기에서 Google Sample을 찾아볼 수 있는데요 저는 여기서 FaceTracker를 사용하려고 합니다.</p>
-<h1 id="FaceTracker-실행하기"><a href="#FaceTracker-실행하기" class="headerlink" title="FaceTracker 실행하기"></a>FaceTracker 실행하기</h1><p>실행은 그저 소스를 받아와서 컴파일 하면 끝입니다. 실행시키면 다음과 같은 화면을 볼 수 있습니다.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2017/11/25/Android/SmartMirror/Smart-Mirror-2/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-    
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/0/">이전</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/05/20/Crawling/crawling-parsing-02/">
+                <span class="level-item">크롤링 그리고 파싱 #2</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/2/">다음</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link is-current" href="/">1</a></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">댓글</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/';
+        this.page.identifier = '2019/06/04/Crawling/crawling-parsing-03/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'yeonjung' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
 </div>
 </div>
                 
@@ -1397,7 +877,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="https://yeonjung.herokuapp.com/public/blog/logo.png" alt="YeonJung Kim" height="28">
+                    <img src="https://yeonjung.herokuapp.com/public/blog/logo.png" alt="크롤링 그리고 파싱 #2" height="28">
                 
                 </a>
                 <p class="is-size-7">
