@@ -3,9 +3,9 @@ title: 'Smart Mirror #4'
 thumbnail: /image/smart_mirror/smart_mirror_8.jpg
 date: 2017-11-26 01:35:00
 tags:
-  - Smart Mirror
-  - Android
-  - Android Vision
+    - Smart Mirror
+    - Android
+    - Android Vision
 ---
 
 # 실제 데이터 연동하기
@@ -42,6 +42,7 @@ tags:
         android:format24Hour="hh:mm:ss"
         android:textSize="@dimen/greeting_message_size" />
 ```
+
 저는 이 중에서 TextClock을 사용하였는데 여기서 별도로 수정한 부분은 alpha와 format24Hour 입니다. 거울위에 반투명하게 표시하기 위해서 alpha값을 변경하였으며 TextClock은 기본적으로 시간과 분만 표시하기 때문에 초까지 표시하기 위해서 format24Hour 의 값을 hh:mm:ss로 설정하였습니다. 이 부분은 대부분의 언어, 프로그램에서 시간을 표시하는 방법과 동일합니다.
 
 ![설명 이미지8](/image/smart_mirror/smart_mirror_8.jpg)
@@ -65,42 +66,43 @@ tags:
 
 ```java
 WeatherItem weatherItem = new WeatherItem();
-        OkHttpClient client = new OkHttpClient();
+OkHttpClient client = new OkHttpClient();
 
-        Location location = new Location("");
-        location.setLatitude(37.4536);
-        location.setLongitude(126.7317);
+Location location = new Location("");
+location.setLatitude(37.4536);
+location.setLongitude(126.7317);
 
-        Request request = new Request.Builder().url("http://ip-api.com/json").build();
+Request request = new Request.Builder().url("http://ip-api.com/json").build();
 
-        try (Response response = client.newCall(request).execute()) {
-            JSONObject responseJson = new JSONObject(response.body().string());
-            double latitude = responseJson.getDouble("lat");
-            double longitude = responseJson.getDouble("lon");
-            location.setLatitude(latitude);
-            location.setLongitude(longitude);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+try (Response response = client.newCall(request).execute()) {
+	JSONObject responseJson = new JSONObject(response.body().string());
+	double latitude = responseJson.getDouble("lat");
+	double longitude = responseJson.getDouble("lon");
+    location.setLatitude(latitude);
+    location.setLongitude(longitude);
+} catch (Exception e) {
+	e.printStackTrace();
+}
 
-        String url = "https://api.darksky.net/forecast/"
-                + params[0].getResources().getString(R.string.darksky_key)
-                + "/" + location.getLatitude() + "," + location.getLongitude();
+String url = "https://api.darksky.net/forecast/"
+	+ params[0].getResources().getString(R.string.darksky_key)
+	+ "/" + location.getLatitude() + "," + location.getLongitude();
 
-        request = new Request.Builder().url(url).build();
+request = new Request.Builder().url(url).build();
 
-        try (Response response = client.newCall(request).execute()) {
-            JSONObject data = new JSONObject(response.body().string());
-            data = data.getJSONObject("currently");
+try (Response response = client.newCall(request).execute()) {
+	JSONObject data = new JSONObject(response.body().string());
+	data = data.getJSONObject("currently");
 
-            weatherItem.setSummary(data.getString("summary"));
-            weatherItem.setTemperature(data.getDouble("temperature"));
-            weatherItem.setImageId(iconResources.get(data.getString("icon")));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return weatherItem;
+	weatherItem.setSummary(data.getString("summary"));
+	weatherItem.setTemperature(data.getDouble("temperature"));
+	weatherItem.setImageId(iconResources.get(data.getString("icon")));
+} catch (Exception e) {
+	e.printStackTrace();
+}
+return weatherItem;
 ```
+
 ![설명 이미지9](/image/smart_mirror/smart_mirror_9.jpg)
 
 ![설명 이미지10](/image/smart_mirror/smart_mirror_10.jpg)

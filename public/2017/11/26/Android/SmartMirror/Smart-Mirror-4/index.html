@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta name="google-site-verification" content="VKzImJNbhYL6xqqwyYCQyVQ3QYLRFwNYPRFI-VuxAss">
     <meta charset="utf-8">
 <title>Smart Mirror #4 - YeonJung Kim</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,7 +18,7 @@
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_8.jpg">
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_9.jpg">
 <meta property="og:image" content="https://duswnd25.github.io/image/smart_mirror/smart_mirror_10.jpg">
-<meta property="og:updated_time" content="2019-05-12T08:12:07.815Z">
+<meta property="og:updated_time" content="2019-06-10T04:35:36.704Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Smart Mirror #4">
 <meta name="twitter:description" content="실제 데이터 연동하기이제 틀은 갖췄으니 실제 데이터를 연동해야합니다. 이번에 구현할 부분은  지정시간 이후 Greeting 메시지 제거, 시간 표시 날씨정보 표시  입니다.">
@@ -199,7 +198,7 @@
 <li>darksky에서 현위치의 날씨 조회</li>
 </ol>
 <p>두 순서 모두 데이터를 json형식으로 반환하기 때문에 okhttp로 값을 받아오고 이를 JSONObject로 가져왔습니다.</p>
-<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">WeatherItem weatherItem = <span class="hljs-keyword">new</span> WeatherItem();</span><br><span class="line">        OkHttpClient client = <span class="hljs-keyword">new</span> OkHttpClient();</span><br><span class="line"></span><br><span class="line">        Location location = <span class="hljs-keyword">new</span> Location(<span class="hljs-string">""</span>);</span><br><span class="line">        location.setLatitude(<span class="hljs-number">37.4536</span>);</span><br><span class="line">        location.setLongitude(<span class="hljs-number">126.7317</span>);</span><br><span class="line"></span><br><span class="line">        Request request = <span class="hljs-keyword">new</span> Request.Builder().url(<span class="hljs-string">"http://ip-api.com/json"</span>).build();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">            JSONObject responseJson = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">            <span class="hljs-keyword">double</span> latitude = responseJson.getDouble(<span class="hljs-string">"lat"</span>);</span><br><span class="line">            <span class="hljs-keyword">double</span> longitude = responseJson.getDouble(<span class="hljs-string">"lon"</span>);</span><br><span class="line">            location.setLatitude(latitude);</span><br><span class="line">            location.setLongitude(longitude);</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String url = <span class="hljs-string">"https://api.darksky.net/forecast/"</span></span><br><span class="line">                + params[<span class="hljs-number">0</span>].getResources().getString(R.string.darksky_key)</span><br><span class="line">                + <span class="hljs-string">"/"</span> + location.getLatitude() + <span class="hljs-string">","</span> + location.getLongitude();</span><br><span class="line"></span><br><span class="line">        request = <span class="hljs-keyword">new</span> Request.Builder().url(url).build();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">            JSONObject data = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">            data = data.getJSONObject(<span class="hljs-string">"currently"</span>);</span><br><span class="line"></span><br><span class="line">            weatherItem.setSummary(data.getString(<span class="hljs-string">"summary"</span>));</span><br><span class="line">            weatherItem.setTemperature(data.getDouble(<span class="hljs-string">"temperature"</span>));</span><br><span class="line">            weatherItem.setImageId(iconResources.get(data.getString(<span class="hljs-string">"icon"</span>)));</span><br><span class="line">        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> weatherItem;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">WeatherItem weatherItem = <span class="hljs-keyword">new</span> WeatherItem();</span><br><span class="line">OkHttpClient client = <span class="hljs-keyword">new</span> OkHttpClient();</span><br><span class="line"></span><br><span class="line">Location location = <span class="hljs-keyword">new</span> Location(<span class="hljs-string">""</span>);</span><br><span class="line">location.setLatitude(<span class="hljs-number">37.4536</span>);</span><br><span class="line">location.setLongitude(<span class="hljs-number">126.7317</span>);</span><br><span class="line"></span><br><span class="line">Request request = <span class="hljs-keyword">new</span> Request.Builder().url(<span class="hljs-string">"http://ip-api.com/json"</span>).build();</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">	JSONObject responseJson = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">	<span class="hljs-keyword">double</span> latitude = responseJson.getDouble(<span class="hljs-string">"lat"</span>);</span><br><span class="line">	<span class="hljs-keyword">double</span> longitude = responseJson.getDouble(<span class="hljs-string">"lon"</span>);</span><br><span class="line">    location.setLatitude(latitude);</span><br><span class="line">    location.setLongitude(longitude);</span><br><span class="line">&#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">	e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">String url = <span class="hljs-string">"https://api.darksky.net/forecast/"</span></span><br><span class="line">	+ params[<span class="hljs-number">0</span>].getResources().getString(R.string.darksky_key)</span><br><span class="line">	+ <span class="hljs-string">"/"</span> + location.getLatitude() + <span class="hljs-string">","</span> + location.getLongitude();</span><br><span class="line"></span><br><span class="line">request = <span class="hljs-keyword">new</span> Request.Builder().url(url).build();</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">try</span> (Response response = client.newCall(request).execute()) &#123;</span><br><span class="line">	JSONObject data = <span class="hljs-keyword">new</span> JSONObject(response.body().string());</span><br><span class="line">	data = data.getJSONObject(<span class="hljs-string">"currently"</span>);</span><br><span class="line"></span><br><span class="line">	weatherItem.setSummary(data.getString(<span class="hljs-string">"summary"</span>));</span><br><span class="line">	weatherItem.setTemperature(data.getDouble(<span class="hljs-string">"temperature"</span>));</span><br><span class="line">	weatherItem.setImageId(iconResources.get(data.getString(<span class="hljs-string">"icon"</span>)));</span><br><span class="line">&#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;</span><br><span class="line">	e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">return</span> weatherItem;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/image/smart_mirror/smart_mirror_9.jpg" alt="설명 이미지9"></p>
 <p><img src="/image/smart_mirror/smart_mirror_10.jpg" alt="설명 이미지10"></p>
@@ -228,9 +227,9 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/02/09/NodeJs/Parse/Cluster-환경에서의-Parse-Dashboard/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2017/12/01/Android/SmartMirror/Smart-Mirror-5/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Cluster 환경에서의 Parse Dashboard</span>
+                <span class="level-item">Smart Mirror #5</span>
             </a>
         </div>
         
@@ -363,7 +362,7 @@
                 <span class="level-item">Android</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">4</span>
+                <span class="level-item tag">5</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Android/SmartMirror/">
@@ -371,7 +370,7 @@
                 <span class="level-item">SmartMirror</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">4</span>
+                <span class="level-item tag">5</span>
             </span>
         </a></li></ul></li><li>
         <a class="level is-marginless" href="/categories/Crawling/">
@@ -379,7 +378,7 @@
                 <span class="level-item">Crawling</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">4</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/DailyLife/">
@@ -425,7 +424,7 @@
                     <span class="level-item">6월 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -464,6 +463,17 @@
         </li>
         
         <li>
+            <a class="level is-marginless" href="/archives/2017/12/">
+                <span class="level-start">
+                    <span class="level-item">12월 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
             <a class="level is-marginless" href="/archives/2017/11/">
                 <span class="level-start">
                     <span class="level-item">11월 2017</span>
@@ -490,42 +500,42 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Android/">
                         <span class="tag">Android</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Android-Vision/">
                         <span class="tag">Android Vision</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Crawling/">
                         <span class="tag">Crawling</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Parsing/">
                         <span class="tag">Parsing</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Scraping/">
                         <span class="tag">Scraping</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Smart-Mirror/">
                         <span class="tag">Smart Mirror</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
@@ -588,21 +598,21 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/스크래핑/">
                         <span class="tag">스크래핑</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/크롤링/">
                         <span class="tag">크롤링</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/파싱/">
                         <span class="tag">파싱</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -622,25 +632,6 @@
         <h3 class="menu-label">
             최근 글
         </h3>
-        
-        <article class="media">
-            
-            <a href="/2019/06/10/Crawling/crawling-parsing-04/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-10T03:38:00.000Z">2019-06-10</time></div>
-                    <a href="/2019/06/10/Crawling/crawling-parsing-04/" class="has-link-black-ter is-size-6">크롤링 그리고 파싱 #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
-                    </p>
-                </div>
-            </div>
-        </article>
         
         <article class="media">
             
@@ -713,6 +704,25 @@
                     <a href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/" class="has-link-black-ter is-size-6">뜻하지 않은 유목민 인생 그리고 바뀐점</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/DailyLife/">DailyLife</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/response_time.png" alt="NodeJS + Express 의 잔여 메모리와 응답시간">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T10:08:26.000Z">2019-02-27</time></div>
+                    <a href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="has-link-black-ter is-size-6">NodeJS + Express 의 잔여 메모리와 응답시간</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a>
                     </p>
                 </div>
             </div>
@@ -744,25 +754,6 @@
         
         <article class="media">
             
-            <a href="/2019/06/10/Crawling/crawling-parsing-04/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-10T03:38:00.000Z">2019-06-10</time></div>
-                    <a href="/2019/06/10/Crawling/crawling-parsing-04/" class="has-link-black-ter is-size-6">크롤링 그리고 파싱 #4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Crawling/">Crawling</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/06/04/Crawling/crawling-parsing-03/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/image/crawling/crawling_0.png" alt="크롤링 그리고 파싱 #3">
@@ -832,6 +823,25 @@
                     <a href="/2019/03/01/DailyLife/뜻하지-않은-유목민-인생-그리고-바뀐점/" class="has-link-black-ter is-size-6">뜻하지 않은 유목민 인생 그리고 바뀐점</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/DailyLife/">DailyLife</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/response_time.png" alt="NodeJS + Express 의 잔여 메모리와 응답시간">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-27T10:08:26.000Z">2019-02-27</time></div>
+                    <a href="/2019/02/27/NodeJs/NodeJS-Express-의-잔여-메모리와-응답시간/" class="has-link-black-ter is-size-6">NodeJS + Express 의 잔여 메모리와 응답시간</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/NodeJs/">NodeJs</a>
                     </p>
                 </div>
             </div>
@@ -970,7 +980,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
