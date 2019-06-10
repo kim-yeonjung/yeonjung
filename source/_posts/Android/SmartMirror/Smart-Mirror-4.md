@@ -26,7 +26,16 @@ tags:
 먼저 일정시간 초과 후 메시지를 사라지게 만들겠습니다. 이 경우 핸들러를 사용하는게 가장 빠른데 다음과 같이 사용할 수 있습니다.
 
 ```java
-@SuppressLint("HandlerLeak") Handler handler = new Handler() { public void handleMessage(Message msg) { super.handleMessage(msg); greetingTextView.setVisibility(View.GONE); timeContainer.setVisibility(View.VISIBLE); } }; handler.sendEmptyMessageDelayed(0, 4000);
+@SuppressLint("HandlerLeak")
+Handler handler = new Handler() {
+	public void handleMessage(Message msg) {
+		super.handleMessage(msg);
+		greetingTextView.setVisibility(View.GONE);
+		timeContainer.setVisibility(View.VISIBLE);
+	}
+};
+
+handler.sendEmptyMessageDelayed(0, 4000);
 ```
 
 시간정보 표시는 그렇게 어렵지 않습니다. 이미 안드로이드에서 TextClock, DigitalClock , AnalogClock 등 위젯을 지원하고 있으며 별도의 작업 없이 추가만 하면 알아서 시간을 표시합니다.
