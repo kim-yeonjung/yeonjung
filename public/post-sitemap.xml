@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/</loc>
-        <lastmod>2019-06-06T19:27:42.514Z</lastmod>
+        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-3/</loc>
+        <lastmod>2019-06-10T04:10:22.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2019/05/16/Crawling/crawling-parsing-01/</loc>
-        <lastmod>2019-06-06T19:26:20.164Z</lastmod>
+        <loc>https://duswnd25.github.io/2019/06/10/Crawling/crawling-parsing-04/</loc>
+        <lastmod>2019-06-10T03:54:17.551Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/2019/06/04/Crawling/crawling-parsing-03/</loc>
+        <lastmod>2019-06-06T19:29:09.169Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +33,15 @@
 
     <url>
         <loc>https://duswnd25.github.io/2019/05/20/Crawling/crawling-parsing-02/</loc>
-        <lastmod>2019-06-06T19:26:17.109Z</lastmod>
+        <lastmod>2019-06-06T19:29:09.166Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/2019/05/16/Crawling/crawling-parsing-01/</loc>
+        <lastmod>2019-06-06T19:29:09.164Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,24 +72,8 @@
     </url>
 
     <url>
-        <loc>https://duswnd25.github.io/2017/12/01/Android/SmartMirror/Smart-Mirror-5/</loc>
-        <lastmod>2019-05-12T08:12:07.816Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://duswnd25.github.io/2017/11/26/Android/SmartMirror/Smart-Mirror-4/</loc>
         <lastmod>2019-05-12T08:12:07.815Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/2017/11/25/Android/SmartMirror/Smart-Mirror-3/</loc>
-        <lastmod>2019-05-12T08:12:07.814Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -8,8 +8,22 @@
     </url>
 
     <url>
+        <loc>https://duswnd25.github.io/categories/Android/SmartMirror/</loc>
+        <lastmod>2019-06-10T04:10:22.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/categories/Android/</loc>
+        <lastmod>2019-06-10T04:10:22.938Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://duswnd25.github.io/categories/Crawling/</loc>
-        <lastmod>2019-06-06T19:27:42.514Z</lastmod>
+        <lastmod>2019-06-10T03:54:17.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -31,20 +45,6 @@
     <url>
         <loc>https://duswnd25.github.io/categories/DailyLife/</loc>
         <lastmod>2019-05-12T08:12:07.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/categories/Android/SmartMirror/</loc>
-        <lastmod>2019-05-12T08:12:07.816Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://duswnd25.github.io/categories/Android/</loc>
-        <lastmod>2019-05-12T08:12:07.816Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
