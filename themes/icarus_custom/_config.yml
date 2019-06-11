@@ -1,5 +1,5 @@
 # Version of the Icarus theme that is currently used
-version: 2.3.0
+version: 2.4.0
 # Path or URL to the website's icon
 favicon: https://yeonjung.herokuapp.com/public/favicon/favicon.ico
 # Path or URL to RSS atom.xml
@@ -29,11 +29,13 @@ navbar:
         Tags: /tags
         About: https://yeonjung.herokuapp.com
 # Navigation bar links to be shown on the right
+
 #    links:
 #        Download on GitHub:
 #            icon: fab fa-github
 #            url: 'http://github.com/ppoffice/hexo-theme-icarus'
 # Footer section link settings
+
 footer:
     # Links to be shown on the right of the footer section
     links:
@@ -46,6 +48,7 @@ footer:
         Download on GitHub:
             icon: fab fa-github
             url: 'http://github.com/ppoffice/hexo-theme-icarus'
+
 # Article display settings
 article:
     # Code highlight theme
@@ -55,17 +58,20 @@ article:
     thumbnail: true
     # Whether to show estimate article reading time
     readtime: true
+
 # Search plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins
 search:
     # Name of the search plugin
     type: insight
+
 # Comment plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins
 comment:
     # Name of the comment plugin
     type: disqus
     shortname: yeonjung
+
 # Donation entries
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 #donate:
@@ -77,11 +83,13 @@ comment:
 #        # Currency code
 #        currency_code: KRW
 #    -
+
 # Share plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
 share:
     # Share plugin name
     type:
+
 # Sidebar settings.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -95,6 +103,7 @@ sidebar:
         # Whether the right sidebar is sticky when page scrolls
         # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
         sticky: false
+
 # Sidebar widget settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -117,18 +126,17 @@ widgets:
       # Path or URL for the follow button
       follow_link: 'http://github.com/duswnd25'
       # Links to be shown on the bottom of the profile widget
-    #        social_links:
-    #            Github:
-    #                icon: fab fa-github
-    #                url: 'http://github.com/duswnd25'
-    #            RSS:
-    #                icon: fas fa-rss
-    #                url: /
-    -
-      # Widget name
-      # type: toc
+      # social_links:
+      #     Github:
+      #         icon: fab fa-github
+      #         url: 'http://github.com/duswnd25'
+      #     RSS:
+      #         icon: fas fa-rss
+      #         url: /
+    - # Widget name
+      type: toc
       # Where should the widget be placed, left or right
-      # position: right
+      position: right
     #    -
     #        # Widget name
     #        type: links
@@ -147,10 +155,10 @@ widgets:
     #        type: tagcloud
     #        # Where should the widget be placed, left or right
     #        position: left
-    -  # Widget name
-      # type: recent_posts
+    - # Widget name
+      type: recent_posts
       # Where should the widget be placed, left or right
-      # position: right
+      position: right
     - # Widget name
       type: archive
       # Where should the widget be placed, left or right
