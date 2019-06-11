@@ -136,7 +136,7 @@ widgets:
     - # Widget name
       type: toc
       # Where should the widget be placed, left or right
-      position: right
+      position: left
     #    -
     #        # Widget name
     #        type: links
