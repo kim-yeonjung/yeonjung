@@ -3,120 +3,148 @@
 
 
     <url>
+        <loc>https://duswnd25.github.io/tags/%ED%9B%84%EA%B8%B0/</loc>
+        <lastmod>2019-07-16T18:23:55.773Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/tags/%ED%8C%8C%ED%8C%8C/</loc>
+        <lastmod>2019-07-16T18:23:55.773Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/tags/%EC%8A%B9%EC%B0%A8%EA%B3%B5%EC%9C%A0/</loc>
+        <lastmod>2019-07-16T18:23:55.773Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://duswnd25.github.io/tags/mobility/</loc>
+        <lastmod>2019-07-16T18:23:55.773Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://duswnd25.github.io/tags/cluster/</loc>
-        <lastmod>2019-06-11T03:40:35.535Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.369Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/parse-dashboard/</loc>
-        <lastmod>2019-06-11T03:40:35.535Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.369Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/node-js/</loc>
-        <lastmod>2019-06-11T03:40:35.535Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.369Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/response-time/</loc>
-        <lastmod>2019-06-11T03:40:35.534Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.367Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/memory/</loc>
-        <lastmod>2019-06-11T03:40:35.534Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.367Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/express/</loc>
-        <lastmod>2019-06-11T03:40:35.534Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.367Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/daily-life/</loc>
-        <lastmod>2019-06-11T03:40:35.533Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.366Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/nomad/</loc>
-        <lastmod>2019-06-11T03:40:35.533Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.366Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/%ED%8C%8C%EC%8B%B1/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/%EC%8A%A4%ED%81%AC%EB%9E%98%ED%95%91/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Scraping/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Parsing/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Crawling/</loc>
-        <lastmod>2019-06-11T03:40:35.532Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Android-Vision/</loc>
-        <lastmod>2019-06-11T03:40:35.527Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Android/</loc>
-        <lastmod>2019-06-11T03:40:35.527Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://duswnd25.github.io/tags/Smart-Mirror/</loc>
-        <lastmod>2019-06-11T03:40:35.527Z</lastmod>
+        <lastmod>2019-07-16T16:20:23.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -1,32 +1,32 @@
 {
-	"name": "hexo-site",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"start": "npm run generate && npm run deploy && npm run git_update",
-		"generate": "./node_modules/.bin/hexo g",
-		"deploy": "./node_modules/.bin/hexo deploy",
-		"git_update": "git add . && git commit -am \"site update\" && git push",
-		"check": "./node_modules/.bin/npm-check -u"
-	},
-	"hexo": {
-		"version": "3.8.0"
-	},
-	"dependencies": {
-		"hexo": "^3.8.0",
-		"hexo-deployer-git": "^1.0.0",
-		"hexo-directory-category": "^1.0.7",
-		"hexo-generator-archive": "^0.1.5",
-		"hexo-generator-category": "^0.1.3",
-		"hexo-generator-feed": "^1.2.2",
-		"hexo-generator-index": "^0.2.1",
-		"hexo-generator-json-content": "^4.1.3",
-		"hexo-generator-seo-friendly-sitemap": "0.0.25",
-		"hexo-generator-tag": "^0.2.0",
-		"hexo-renderer-ejs": "^0.3.1",
-		"hexo-renderer-marked": "^1.0.1",
-		"hexo-renderer-stylus": "^0.3.3",
-		"hexo-server": "^0.3.1",
-		"npm-check": "^5.9.0"
-	}
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run generate && npm run deploy && npm run git_update",
+    "generate": "./node_modules/.bin/hexo g",
+    "deploy": "./node_modules/.bin/hexo deploy",
+    "git_update": "git add . && git commit -am \"site update\" && git push",
+    "check": "./node_modules/.bin/npm-check -u"
+  },
+  "hexo": {
+    "version": "3.9.0"
+  },
+  "dependencies": {
+    "hexo": "^3.9.0",
+    "hexo-deployer-git": "^1.0.0",
+    "hexo-directory-category": "^1.0.7",
+    "hexo-generator-archive": "^0.1.5",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-feed": "^1.2.2",
+    "hexo-generator-index": "^0.2.1",
+    "hexo-generator-json-content": "^4.1.6",
+    "hexo-generator-seo-friendly-sitemap": "0.0.25",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-marked": "^1.0.1",
+    "hexo-renderer-stylus": "^0.3.3",
+    "hexo-server": "^0.3.1",
+    "npm-check": "^5.9.0"
+  }
 }
