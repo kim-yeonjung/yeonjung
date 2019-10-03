@@ -14,3 +14,18 @@ patch:
         patched: '2019-07-03T23:42:49.914Z'
     - pm2 > vizion > async > lodash:
         patched: '2019-07-03T23:42:49.914Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - newrelic > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - pm2 > @pm2/agent > proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - pm2 > @pm2/agent > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - pm2 > @pm2/io > @pm2/agent-node > proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
+    - pm2 > @pm2/io > @pm2/agent-node > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-03T23:46:11.674Z'
