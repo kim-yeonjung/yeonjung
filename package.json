@@ -43,7 +43,7 @@
     "pm2": "^3.5.1",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
