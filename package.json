@@ -40,7 +40,7 @@
     "http-errors": "^1.7.2",
     "morgan": "1.9.1",
     "newrelic": "^5.9.1",
-    "pm2": "^3.5.1",
+    "pm2": "^4.3.0",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0",
     "snyk": "^1.189.0"
