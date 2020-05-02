@@ -10,7 +10,7 @@
     "check": "./node_modules/.bin/npm-check -u"
   },
   "hexo": {
-    "version": "3.9.0"
+    "version": "4.2.0"
   },
   "dependencies": {
     "hexo": "^4.2.0",
@@ -27,6 +27,6 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "npm-check": "^5.9.0"
+    "npm-check": "^5.9.2"
   }
 }
