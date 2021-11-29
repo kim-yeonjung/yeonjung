@@ -62,7 +62,7 @@ ignore: null
 theme: icarus
 deploy:
   type: git
-  repo: https://github.com/kim-yeonjung/kim-yeonjung.github.io
+  repo: git@github.com:kim-yeonjung/kim-yeonjung.github.io.git
   branch: master
 
 # sitemap auto generator
