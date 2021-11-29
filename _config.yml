@@ -68,3 +68,14 @@ deploy:
 # sitemap auto generator
 sitemap:
   path: sitemap.xml
+
+feed:
+  enable: true
+  type: rss2
+  path: rss.xml
+  limit: 20
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: https://ko.gravatar.com/userimage/68721845/f1f9ee673f77218fc8c7644c604a60d8.png
+  autodiscovery: true
