@@ -28,11 +28,11 @@ head:
         # Image files that can serve as application icons for different contexts
         icons:
             -
-                # The path to the image file
+                # The path to the images file
                 src: 'https://ko.gravatar.com/userimage/68721845/f1f9ee673f77218fc8c7644c604a60d8.png'
-                # A string containing space-separated image dimensions
+                # A string containing space-separated images dimensions
                 sizes: ''
-                # A hint as to the media type of the image
+                # A hint as to the media type of the images
                 type: 
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
@@ -46,7 +46,7 @@ head:
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
         url:
-        # Page cover (og:image) (optional)
+        # Page cover (og:images) (optional)
         # You should leave this blank for most of the time
         image: 
         # Site name (og:site_name) (optional)
@@ -169,7 +169,7 @@ donates:
     # Alipay donate button configurations
     -
         type: alipay
-        # Alipay qrcode image URL
+        # Alipay qrcode images URL
         qrcode: ''
     # "Buy me a coffee" donate button configurations
     -
@@ -191,7 +191,7 @@ donates:
     # Wechat donate button configurations
     -
         type: wechat
-        # Wechat qrcode image URL
+        # Wechat qrcode images URL
         qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
@@ -224,9 +224,9 @@ widgets:
         author_title: YeonJung
         # Author's current location
         location: Seoul / Korea
-        # URL or path to the avatar image
+        # URL or path to the avatar images
         avatar:
-        # Whether show the rounded avatar image
+        # Whether show the rounded avatar images
         avatar_rounded: false
         # Email address for the Gravatar
         gravatar: duswnd25@gmail.com
